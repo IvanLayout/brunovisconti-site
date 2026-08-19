@@ -1693,6 +1693,96 @@ input[type=checkbox]:checked + .checkbox__text::after
 ------------*/
 
 /*------------
+    cats-main
+------------*/
+
+.cats-main__grid
+{
+	margin-top: 10px;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.cats-main__item
+{
+	text-decoration: none;
+	display: block;
+	position: relative;
+	
+	width: calc(50% - 10px);
+	aspect-ratio: 1 / .9731;
+	margin-top: 20px;
+
+	color: #3D322C;
+	padding: 50px;
+	transition: color .2s linear;
+}
+
+.cats-main__item::after 
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 54, 48, .3);
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+
+.cats-main__name
+{
+	font-family: var(--second-family);
+	font-size: 32px;
+	line-height: 1.3;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #3D322C;
+
+	position: relative;
+	z-index: 1;
+	transition: border .2s linear;
+}
+
+.cats-main__img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+@media (any-hover: hover)
+{
+	.cats-main__item:hover
+	{
+		color: #fff;
+	}
+
+	.cats-main__item:hover .cats-main__name
+	{
+		border-color: #fff;
+	}
+
+	.cats-main__item:hover::after
+	{
+		opacity: 1;
+	} 
+}
+
+/*------------
     products
 ------------*/
 
@@ -2132,7 +2222,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	width: 100%;
 	height: 100%;
 
-	background: rgba(184, 149, 106, .3);
+	background: rgba(61, 54, 48, .3);
 	opacity: 0;
 	transition: opacity .2s linear;
 }
@@ -2142,6 +2232,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: block;
 	width: 100%;
 	aspect-ratio: 1 / 1.011;
+
+	object-fit: cover;
 }
 
 @media (any-hover: hover)
