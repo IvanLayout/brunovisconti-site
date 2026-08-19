@@ -116,6 +116,11 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 3
 				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
 			}
 		})
 	}

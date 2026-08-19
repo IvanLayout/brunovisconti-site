@@ -202,7 +202,7 @@ body
     min-height: -webkit-fill-available;
     min-height:         fill-available;
 
-    background: #fff;
+    background: #FFFCF9;
 }
 
 ._lock-add
@@ -327,6 +327,12 @@ button
 /*------------
     BTNS
 ------------*/
+.wrap-btn
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
 .btn-brown
 {
     color: #FFF;
@@ -349,11 +355,40 @@ button
     transition: background .2s linear;
 }
 
+.btn-border
+{
+	color: #B8956A;
+    font-size: 16px;
+    line-height: 48px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+
+    display: inline-block;
+
+    padding: 0 29px;
+
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+	text-transform: uppercase;
+
+    background: transparent;
+	border: 1px solid #B8956A;
+
+    transition: background .2s linear, color .2s linear;
+}
+
 @media (any-hover: hover)
 {
 	.btn-brown:hover
 	{
 		background: #3D322C;
+	}
+
+	.btn-border:hover
+	{
+		background: #B8956A;
+		color: #fff;
 	}
 }
 /*------------
@@ -1150,7 +1185,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 ---------------*/
 .head-section_pad
 {
-	padding-right: 150px;
+	padding-right: 160px;
 }
 
 .main-title
@@ -1369,9 +1404,22 @@ input[type=checkbox]:checked + .checkbox__text::after
     left: 0;
 }
 
+.slider-button-prev._top
+{
+	top: -97px;
+	left: auto;
+	right: 84px;
+}
+
 .slider-button-next
 {
     right: 0;
+}
+
+.slider-button-next._top
+{
+	top: -106px;
+	margin-top: 0;
 }
 
 .slider-button-prev.swiper-button-disabled,
@@ -1618,6 +1666,114 @@ input[type=checkbox]:checked + .checkbox__text::after
 /*------------
     reviews
 ------------*/
+
+.reviews__slider
+{
+	margin-top: 30px;
+}
+
+.reviews__item
+{
+	height: auto;
+	background: #fff;
+	padding: 100px 30px;
+	text-align: center;
+}
+
+.reviews__name-city
+{
+	color: #3D322C;
+	font-family: var(--second-family);
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+}
+
+.reviews__border
+{
+	max-width: 405px;
+	margin: 30px auto 32px;
+	position: relative;
+	height: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	opacity: .4;
+}
+
+.reviews__border::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 1px;
+	width: 100%;
+	background: #B8956A;
+}
+
+.reviews__border span
+{
+	position: relative;
+	display: block;
+	width: 57px;
+	height: 22px;
+	background: #fff;
+}
+
+.reviews__border span:after
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 50%;
+
+	display: block;
+
+	width: 27px;
+	height: 22px;
+
+	transform: translateX(-50%);
+	
+	background: url(../images/quotes.svg) 50%/contain no-repeat;
+}
+
+.reviews__desc
+{
+	max-width: 340px;
+	margin: 0 auto;
+}
+
+.reviews__bot
+{
+	margin-top: 24px;
+}
+
+.reviews__btn
+{
+	color: #B8956A;
+	font: 700 16px/1.3 var(--font-family);
+	letter-spacing: 0.01em;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #B8956A;
+	text-transform: uppercase;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.reviews__btn:hover
+	{
+		border-bottom-color: transparent;
+	}
+}
 
 /*------------
     section-gallery
