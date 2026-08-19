@@ -251,9 +251,9 @@ button
     position: relative;
 
     width: 100%;
-    max-width: 1845px;
+    max-width: 1840px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 
@@ -327,33 +327,33 @@ button
 /*------------
     BTNS
 ------------*/
-.btn-red
+.btn-brown
 {
     color: #FFF;
-    font-size: 14px;
-    line-height: 44px;
-	font-weight: 600;
+    font-size: 16px;
+    line-height: 50px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
 
     display: inline-block;
 
-    padding: 0 20px;
+    padding: 0 32px;
 
     text-align: center;
     vertical-align: top;
     text-decoration: none;
 	text-transform: uppercase;
 
-    border-radius: 4px;
-    background: #D64923;
+    background: #B8956A;
 
     transition: background .2s linear;
 }
 
 @media (any-hover: hover)
 {
-	.btn-red:hover
+	.btn-brown:hover
 	{
-		background: #B71517;
+		background: #3D322C;
 	}
 }
 /*------------
@@ -563,36 +563,76 @@ button
     position: relative;
 }
 
+.form .form__input-anim
+{
+    padding-top: 9px;
+}
+
+.section-subscribe__input.form__input-anim
+{
+	padding-top: 10px;
+}
+
+.form__label
+{
+    position: absolute;
+    top: 0;
+
+    color: rgba(90, 74, 66, .5);
+    font-size: 16px;
+    line-height: 50px;
+
+    overflow: hidden;
+
+    width: 100%;
+    padding: 0 20px;
+
+    pointer-events: none;
+}
+
+.section-subscribe__form .form__label
+{
+	line-height: 60px;
+}
+
+.form .form__input:focus + .form__label,
+.form ._full .form__label
+{
+	color: rgba(90, 74, 66, .4);
+    font-size: 12px;
+    line-height: 1.4;
+
+    padding-top: 7px;
+}
+
 .form .form__input
 {
-    color: #1B2745;
-    font: 18px var(--font-family);
+    color: #3D322C;
+    font: 16px var(--font-family);
 
     display: block;
 
     width: 100%;
-    height: 44px;
-    padding: 0 15px;
+    height: 50px;
+    padding: 0 20px;
 
-	border: none;
-    border-radius: 4px;
-    background: #ECEEF1;
+	border: 1px solid #E8E0D5;
+    background: none;
 }
 
 .form .form__textarea
 {
-    color: #1B2745;
-    font: 18px var(--font-family);
+    color: #3D322C;
+    font: 16px var(--font-family);
 
     display: block;
 
     width: 100%;
     height: 111px;
-    padding: 15px;
+    padding: 20px;
 
-	border: none;
-    border-radius: 4px;
-    background: #ECEEF1;
+	border: 1px solid #E8E0D5;
+    background: none;
 	resize: none;
 }
 
@@ -1110,10 +1150,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 ---------------*/
 .main-title
 {
-	font-size: 48px;
-	line-height: 1.2;
-	color: #3A3B55;
+	font-size: 40px;
+	line-height: 1.3;
+	color: #3D322C;
 	font-weight: 500;
+	font-family: var(--second-family);
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
 }
 
 .main-subtitle{
@@ -1558,13 +1601,268 @@ input[type=checkbox]:checked + .checkbox__text::after
 ------------*/
 
 /*------------
+    section-subscribe
+------------*/
+
+.section-subscribe__wrap
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 30px;
+}
+
+.section-subscribe__info
+{
+	width: calc(50% - 15px);
+}
+
+.section-subscribe__form
+{
+	max-width: 696px;
+	width: calc(50% - 15px);
+}
+
+.section-subscribe__desc
+{
+	margin-top: 17px;
+}
+
+.section-subscribe__flex
+{
+	flex-wrap: nowrap;
+	gap: 15px;
+}
+
+.section-subscribe__line
+{
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.form__input.section-subscribe__input
+{
+	max-width: 510px;
+	height: 60px;
+	border-color: #5A4A42;
+}
+
+.section-subscribe__btn
+{
+	line-height: 60px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+
+@media (any-hover: hover)
+{
+
+}
+
+/*------------
     Footer
 ------------*/
 .footer
 {
-	color: red;
+	background: #FAF5EB;
+	position: relative;
 }
 
+.button-up
+{
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    margin-left: 840px;
+	text-align: center;
+    
+    transition: background .2s linear, color .2s linear;
+    z-index: 20;
+}
+
+.button-up__arrow
+{
+	width: 50px;
+    height: 50px;
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+	margin: 0 auto;
+
+	background: #fff;
+	transition: background .2s linear;
+}
+
+.button-up svg
+{
+    display: block;
+    width: 14px;
+    height: 8px;
+    fill: none;
+	stroke: #B8956A;
+	transition: stroke .2s linear;
+}
+
+.button-up__text
+{
+	margin-top: 5px;
+	color: rgba(90, 74, 66, .5);
+	transition: color .2s linear;
+	display: block;
+}
+
+@media (any-hover: hover)
+{
+    .button-up:hover .button-up__text
+	{
+        color: rgba(90, 74, 66, 1);
+    }
+
+	.button-up:hover .button-up__arrow
+	{
+		background: #B8956A;
+	}
+
+	.button-up:hover svg
+	{
+		stroke: #fff;
+	}
+}
+
+.footer__top
+{
+	padding: 32px 0;
+	border-bottom: 1px solid rgba(184, 149, 106, .3);
+}
+
+.footer__info
+{
+	padding: 40px 0;
+}
+
+.footer__items
+{
+	justify-content: space-between;
+	padding-right: 110px;
+	gap: 30px;
+}
+
+.footer-menu__title
+{
+	color: #3D322C;
+	letter-spacing: 0.01em;
+	font-weight: 500;
+	font-family: var(--second-family);
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.footer-menu__title a
+{
+	text-decoration: none;
+	color: currentColor;
+	transition: color .2s linear;
+}
+
+.footer-menu__item + .footer-menu__item
+{
+	margin-top: 10px;
+}
+
+.footer-menu__link
+{
+	color: #5A4A42;
+	transition: color .2s linear;
+	text-decoration: none;
+}
+
+@media (any-hover: hover)
+{
+	.footer-menu__title a:hover,
+	.footer-menu__link:hover
+	{
+		color: #B8956A;
+	}
+}
+
+.socials__flex
+{
+	gap: 15px;
+}
+
+.socials__link
+{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #fff;
+	overflow: hidden;
+	transition: opacity .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.socials__link:hover
+	{
+		opacity: .7;
+	}
+}
+
+.socials__link img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.footer__bot
+{
+	margin-top: 65px;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.footer__copy
+{
+	color: rgba(90, 74, 66, .5);
+}
+
+.footer__creator 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+	color: rgba(90, 74, 66, .5);
+}
+
+.footer__creator-img 
+{
+    margin-left: 3px;
+	opacity: .5;
+	transition: opacity .2s linear;
+}
+
+.footer__creator-img img 
+{
+    display: block;
+    max-width: 100%;
+}
+
+@media (any-hover: hover)
+{
+	.footer__creator-img:hover
+	{
+		opacity: 1;
+	}
+}
 /*------------
     Modal
 ------------*/
