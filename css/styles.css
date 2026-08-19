@@ -1159,22 +1159,36 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-transform: uppercase;
 }
 
-.main-subtitle{
+.main-title span
+{
+	color: #B8956A;
+	border-bottom: 1px solid #B8956A;
+}
+
+.main-subtitle
+{
 	margin-top: 20px;
+}
+
+.main-subtitle span
+{
+	color: #B8956A;
 }
 
 .page-title
 {
-	font-weight: 500;
-	font-size: 56px;
-	line-height: 1.2;
-	color: #1B2745;
+	
 }
 
 .page-title_white{
-	color: #fff;
+	
 }
 
+
+._marg
+{
+	margin-top: 100px;
+}
 
 /*--------------
     Fancybox
@@ -1599,6 +1613,81 @@ input[type=checkbox]:checked + .checkbox__text::after
 /*------------
     Commit
 ------------*/
+
+@media (any-hover: hover)
+{
+
+}
+
+/*------------
+    section-gallery
+------------*/
+
+.section-gallery__head
+{
+	width: calc(70% - 30px);
+}
+
+.section-gallery .cont
+{
+	justify-content: space-between;
+}
+
+.section-gallery__wrap
+{
+	width: 100%;
+	margin-top: 30px;
+}
+
+.section-gallery__grid
+{
+	align-items: stretch;
+	align-content: stretch;
+
+	margin: -20px 0 0 -20px;
+}
+
+.section-gallery__img
+{
+	display: block;
+	text-decoration: none;
+
+	width: calc(100%/3 - 20px);
+	margin: 20px 0 0 20px;
+	position: relative;
+}
+
+.section-gallery__img::after
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(184, 149, 106, .3);
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+
+.section-gallery__img img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 1 / 1.011;
+}
+
+@media (any-hover: hover)
+{
+	.section-gallery__img:hover::after
+	{
+		opacity: 1;
+	}
+}
 
 /*------------
     section-subscribe
