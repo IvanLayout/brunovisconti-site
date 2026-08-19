@@ -170,7 +170,7 @@ $(() => {
 					slidesPerView: 3
 				},
 				'1024': {
-					spaceBetween: 15,
+					spaceBetween: 24,
 					slidesPerView: 4
 				}
 			},
@@ -245,6 +245,18 @@ $(() => {
 			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
 			if (_self.val() > maximum) _self.val(maximum)
 		})
+	})
+
+
+	// favorite
+	$('body').on('click', '.product-favorite', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
 	})
 });
 
