@@ -1,5 +1,8 @@
 <svg width="0" height="0">
-	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow1" viewBox="0 0 14 8">
+	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow1" viewBox="0 0 55 12">
+		<path d="M54.5303 6.05377C54.8232 5.76087 54.8232 5.286 54.5303 4.99311L49.7574 0.220137C49.4645 -0.0727568 48.9896 -0.0727568 48.6967 0.220137C48.4038 0.51303 48.4038 0.987904 48.6967 1.2808L52.9393 5.52344L48.6967 9.76608C48.4038 10.059 48.4038 10.5338 48.6967 10.8267C48.9896 11.1196 49.4645 11.1196 49.7574 10.8267L54.5303 6.05377ZM0 5.52344V6.27344H54V5.52344V4.77344H0V5.52344Z" fill="#5A4A42"/>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow2" viewBox="0 0 14 8">
 		<path d="M13 7L7 1L1 7" fill-opacity="0.2"/>
 		<path d="M13 7L7 1L1 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>

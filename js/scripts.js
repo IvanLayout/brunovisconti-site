@@ -79,6 +79,47 @@ $(() => {
 		})
 	}
 
+	if ($('.reviews__slider').length) {
+		new Swiper(".reviews__slider", {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3
+				}
+			}
+		})
+	}
+
 	$('body').on('submit', '.form-ajax', function (e) {
 		e.preventDefault()
 
