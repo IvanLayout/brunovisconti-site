@@ -1749,6 +1749,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	max-width: 340px;
 	margin: 0 auto;
+
+	max-height: 84px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
 .reviews__bot

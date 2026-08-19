@@ -121,6 +121,22 @@ $(() => {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
 				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+
+					$(swiper.el).find('.reviews__name-city, .reviews__desc').height('auto')
+
+					setHeight( $(swiper.el).find('.reviews__name-city') )
+					setHeight( $(swiper.el).find('.reviews__desc') )
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.reviews__name-city, .reviews__desc').height('auto')
+
+					setHeight( $(swiper.el).find('.reviews__name-city') )
+					setHeight( $(swiper.el).find('.reviews__desc') )
+				}
 			}
 		})
 	}
