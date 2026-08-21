@@ -1807,6 +1807,87 @@ input[type=checkbox]:checked + .checkbox__text::after
 ------------*/
 
 /*------------
+    categories-small
+------------*/
+
+.categories-small_marg
+{
+	margin: 30px 0;
+}
+
+.categories-small__item
+{
+	width: 363px;
+	height: auto;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	border: 1px solid #E8E0D5;
+	border-radius: 66px;
+}
+
+.categories-small__thumb
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	width: 103px;
+	height: 103px;
+	border-radius: 66px;
+	background: #fff;
+	padding: 15px;
+
+	flex-shrink: 0;
+}
+
+.categories-small__thumb img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.categories-small__info
+{
+	padding: 16px;
+	display: block;
+	width: calc(100% - 103px);
+}
+
+.categories-small__name
+{
+	font-family: var(--second-family);
+	font-weight: 500;
+	color: #3D322C;
+	text-transform: uppercase;
+	transition: color .2s linear;
+
+	display: block;
+}
+
+.categories-small__val
+{
+	display: block;
+	margin-top: 10px;
+	color: #5A4A42;
+}
+
+@media (any-hover: hover)
+{
+	.categories-small__item:hover .categories-small__name
+	{
+		color: #B8956A;
+	}
+}
+
+/*------------
     cats-main
 ------------*/
 
