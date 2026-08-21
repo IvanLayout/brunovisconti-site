@@ -31,6 +31,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1699.css" media="(max-width: 1699px)">
@@ -128,6 +129,36 @@
 										<span class="categories-small__val">100 товаров</span>
 									</span>
 								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="sorting">
+					<div class="cont">
+						<div class="sorting__flex _flex">
+							<button type="button" data-content="#modal-filter" class="filter-open modal-btn">
+								<span class="filter-open__icon">
+									<svg>
+										<use xlink:href="images/sprite.svg#filter"></use>
+									</svg>
+								</span>
+
+								<span class="filter-open__name">Фильтр</span>
+							</button>
+
+							<div class="sorting__val">5861 товар</div>
+
+							<div class="select-wrap select-wrap_left-list">
+								<select>
+									<option value="1">По популярности</option>
+									<option value="2">Цена: по возрастанию</option>
+									<option value="3">Цена: по убыванию</option>
+									<option value="4">Новинки</option>
+									<option value="5">Хиты продаж</option>
+									<option value="6">По рейтингу</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -297,7 +328,7 @@
 
 		<div id="modal-review" class="modal">
 			<div class="modal__box">
-				<div class="main-title">Анна, Москва</div>
+				<div class="main-title main-title_center">Анна, Москва</div>
 
 				<div class="quotes-border">
 					<span></span>
@@ -323,6 +354,263 @@
 			</div>
 		</div>
 
+		<div id="modal-filter" class="modal modal-filter">
+			<div class="modal__box">
+				<div class="main-title modal-title">Фильтры</div>
+
+				<div class="modal-filter__filter">
+					<div class="filter accord">
+						<form action="" class="form">
+							<div class="filter__item accord__item">
+								<div class="filter__title accord__open active">
+									<span>Категория</span>
+
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow3"></use>
+									</svg>
+								</div>
+
+								<div class="filter__data accord__data" style="display: block;">
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="" checked>
+
+											<span class="checkbox__text">Планёры</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Ежедневники</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Календари</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Блокноты</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item accord__item">
+								<div class="filter__title accord__open active">
+									<span>Цвет</span>
+
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow3"></use>
+									</svg>
+								</div>
+
+								<div class="filter__data accord__data" style="display: block;">
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Серый</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="" checked>
+
+											<span class="checkbox__text">Графит</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="" checked>
+
+											<span class="checkbox__text">Песочный</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Чёрный</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Белый</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item accord__item">
+								<div class="filter__title accord__open active">
+									<span>Формат</span>
+
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow3"></use>
+									</svg>
+								</div>
+
+								<div class="filter__data accord__data" style="display: block;">
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Pocket</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">A6</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="" checked>
+
+											<span class="checkbox__text">A5</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">A4</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item accord__item">
+								<div class="filter__title">
+									<span>Ценовой диапазон</span>
+								</div>
+
+								<div class="filter__data">
+									<div class="range price_range">
+										<input type="text" id="price_range" name="price_range" value="">
+									</div>
+								</div>
+							</div>
+							<div class="filter__item accord__item">
+								<div class="filter__title accord__open active">
+									<span>Коллекция</span>
+
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow3"></use>
+									</svg>
+								</div>
+
+								<div class="filter__data accord__data" style="display: block;">
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Коллекция</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Коллекция</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Коллекция</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Коллекция</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item accord__item">
+								<div class="filter__title accord__open active">
+									<span>Наличие</span>
+
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow3"></use>
+									</svg>
+								</div>
+
+								<div class="filter__data accord__data" style="display: block;">
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">В наличии</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Предзаказ</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Ожидается</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item accord__item">
+								<div class="filter__title accord__open active">
+									<span>Статус</span>
+
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow3"></use>
+									</svg>
+								</div>
+
+								<div class="filter__data accord__data" style="display: block;">
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Новинки</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Хиты</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input type="checkbox" name="">
+
+											<span class="checkbox__text">Распродажа</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
@@ -331,6 +619,7 @@
 		<script src="js/fancybox.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

@@ -272,6 +272,17 @@ $(() => {
 
 	// commit
 
+	// favorite
+	$('body').on('click', '.product-favorite', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+
 	$('.form__input-anim').each(function(){
 		let value = $(this).val()
 
@@ -289,6 +300,20 @@ $(() => {
 			$(this).closest('.form__field').addClass('_full')
 		} else {
 			$(this).closest('.form__field').removeClass('_full')
+		}
+	})
+
+
+	// Аккордион простой
+	$('body').on('click', '.accord__open', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$(this).next().slideUp(300)
+		} else {
+			$(this).addClass('active')
+			$(this).next().slideDown(300)
 		}
 	})
 })
