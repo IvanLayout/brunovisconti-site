@@ -1477,8 +1477,6 @@ input[type=checkbox]:checked + .checkbox__text::after
     pointer-events: none;
 
     opacity: .3;
-	color: #1B2745;
-	background: #fff;
 }
 
 .swiper-button-lock
@@ -1801,14 +1799,25 @@ input[type=checkbox]:checked + .checkbox__text::after
     products
 ------------*/
 
+.products_marg
+{
+	margin-top: -100px;
+}
+
 .product__wrap
 {
 	position: relative;
 }
 
-.products__slider
+.products__slider-marg
 {
 	margin-top: 30px;
+}
+
+.products__slider-pad
+{
+	padding-left: 84px;
+	padding-right: 84px;
 }
 
 .product__stickers
@@ -1840,6 +1849,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 	min-width: 55px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.product__stickers-small .product__sticker
+{
+	min-width: 44px;
+	line-height: 44px;
+
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .product__sticker.discount
@@ -1940,9 +1959,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 .product__thumb
 {
 	background: #fff;
-	padding: 60px;
 	width: 100%;
-	aspect-ratio: 1 / .9931;
+	aspect-ratio: 1 / 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2039,13 +2057,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 	position: relative;
 	width: 100%;
 	aspect-ratio: 1 / .4445;
-	padding: 60px;
+	padding: 130px 60px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
+}
+
+.main-banner__bg-height
+{
+	aspect-ratio: 1 / .4167;
 }
 
 .main-banner__bg::after
@@ -2094,9 +2117,26 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-transform: uppercase;
 }
 
+.main-banner__desc
+{
+	margin-top: 16px;
+	text-align: center;
+	color: #fff;
+}
+
+.main-banner__desc + .main-banner__bot
+{
+	margin-top: 32px;
+}
+
 .main-banner__bot
 {
 	margin-top: 4px;
+}
+
+.main-banner__btn
+{
+	min-width: 258px;
 }
 
 /*------------
