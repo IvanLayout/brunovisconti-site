@@ -55,6 +55,16 @@
     url("../fonts/Hero-Bold.ttf") format("truetype");
 }
 
+@font-face
+{
+    font-family: "Gogol";
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    src: url("../fonts/Gogol-Regular.woff") format("woff"),
+    url("../fonts/Gogol-Regular.ttf") format("truetype");
+}
 
 /*------------------
     Reset styles
@@ -159,6 +169,7 @@ input[type=number]
 {
     --font-family: "Hero", sans-serif;
 	--second-family: "Brygada 1918", sans-serif;
+	--third-family: "Gogol", sans-serif;
 
     --scroll_width: 17px;
 }
@@ -2858,6 +2869,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-right: 24px;
 }
 
+
+.uppercase-font
+{
+	font-family: var(--third-family);
+	color: #B8956A;
+	font-size: 83px;
+	line-height: 1.2;
+}
 
 /*------------
     filter
