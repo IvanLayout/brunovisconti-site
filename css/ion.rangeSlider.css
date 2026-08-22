@@ -17,7 +17,7 @@
 
 .irs .irs
 {
-    height: 4px;
+    height: 1px;
     margin-bottom: 0;
 }
 
@@ -27,44 +27,44 @@
 
     display: block;
 
-    height: 4px;
+    height: 1px;
 
-    background: #EDF2EF;
+    background: #E8E0D5;
 }
 
 .irs-bar
 {
     top: 0;
 
-    height: 4px;
+    height: 1px;
 
-    background: rgba(0, 118, 87, .3);
+    background: #B8956A;
 }
 
 
 .irs-slider
 {
     z-index: 9;
-    top: -3px;
+    top: -10px;
 
     display: block;
 
-    width: 10px;
-    height: 10px;
+    width: 22px;
+    height: 22px;
 
     cursor: pointer;
     text-indent: -9999px;
 
-    border: 1px solid #007657;
+    border: 1px solid #B8956A;
     border-radius: 50%;
-    background: #007657;
+    background: #fff;
 
     transition: background .2s linear;
 }
 
 .irs-slider:hover
 {
-    background: #FFF;
+    background: #B8956A;
 }
 
 
@@ -315,19 +315,33 @@
 .irs-to
 {
     position: absolute;
-    top: 25px;
-    left: 0;
+    top: -55px;
 
-    color: #0B0303;
+    color: #3D322C;
     font-family: var(--font_family);
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 30px;
+	background: rgba(90, 74, 66, .1);
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 25px;
 
-    display: none !important;
+    display: block;
 
     cursor: default;
     white-space: nowrap;
+}
+
+.irs-from
+{
+	left: 0 !important;
+}
+
+.irs-to
+{
+	left: auto !important;
+	right: 0 !important;
 }
 
 .irs-single

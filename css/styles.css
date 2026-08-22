@@ -2715,7 +2715,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .accord__open 
 {
-
+	cursor: pointer;
 }
 
 .filter__data
@@ -2726,6 +2726,99 @@ input[type=checkbox]:checked + .checkbox__text::after
 .accord__data 
 {
     display: none;
+}
+
+.price_range
+{
+	margin-top: 56px;
+}
+
+.filter__item-more
+{
+	color: #B8956A;
+    font-size: 14px;
+    line-height: 1.3;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+    margin-top: 10px;
+    border-bottom: 1px solid currentColor;
+    transition: border .2s linear;
+	text-transform: uppercase;
+	display: none;
+}
+
+.filter__item-more._show 
+{
+    display: block;
+}
+
+.filter__item-more span + span 
+{
+    display: none;
+}
+
+.filter__item-more._active span + span 
+{
+    display: block;
+}
+
+.filter__item-more._active span 
+{
+    display: none;
+}
+
+.filter__data .checkbox:nth-child(n + 5)
+{
+    display: none;
+}
+
+.filter__data._all .checkbox:nth-child(n + 5)
+{
+    display: block;
+}
+
+.filter__bot
+{
+	margin-top: 30px;
+	text-align: center;
+
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	padding: 30px 60px;
+	background: #fff;
+	box-shadow: 0 -8px 26.9px rgba(204, 204, 204, .25);
+}
+
+.filter__submit
+{
+	width: 100%;
+}
+
+.filter__reset
+{
+	color: #5A4A42;
+    font-size: 16px;
+    line-height: 1.3;
+	letter-spacing: 0.01em;
+	font-weight: 700;
+    margin-top: 10px;
+    border-bottom: 1px solid currentColor;
+    transition: border .2s linear;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+@media (any-hover: hover)
+{
+	.filter__item-more:hover,
+	.filter__reset:hover
+	{
+		border-bottom-color: transparent;
+	}
 }
 
 @media (any-hover: hover)
@@ -2957,7 +3050,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .modal-filter
 {
 	width: 800px;
-	padding: 30px 60px;
+	padding: 0;
 }
 
 .modal__box
@@ -2965,9 +3058,17 @@ input[type=checkbox]:checked + .checkbox__text::after
 	width: 100%;
 }
 
+.modal-filter__form
+{
+	padding:  30px 60px;
+	position: relative;
+}
+
 .modal-filter__filter
 {
 	margin-top: 30px;
+	/* overflow: hidden;
+    overflow-y: auto; */
 }
 
 @media (max-width: 1799px)
