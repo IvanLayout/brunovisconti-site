@@ -1915,6 +1915,94 @@ input[type=checkbox]:checked + .checkbox__text::after
 	transform: translate(-50%, -50%);
 }
 
+.sorting__bot
+{
+	margin-bottom: 30px;
+}
+
+/*------------
+    filter-use
+------------*/
+
+.filter-use__flex
+{
+    margin: -24px 0 0 -24px;
+	align-content: center;
+	align-content: center;
+}
+
+.filter-use__item
+{
+    width: auto;
+    margin: 24px 0 0 24px;
+}
+
+.filter-use__link
+{
+    color: #5A4A42;
+    font-size: 16px;
+    line-height: 42px;
+
+    min-width: 135px;
+    padding: 0 14px;
+
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+
+    border-radius: 42px;
+	border: 1px solid #5A4A42;
+    background: transparent;
+
+    transition: background .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .filter-use__link:hover
+    {
+        background: #E8E0D5;
+    }
+}
+
+.filter-use__link svg
+{
+    flex-shrink: 0;
+
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+
+    fill: none;
+    stroke: currentColor;
+}
+
+.filter-use__clear
+{
+	color: #5A4A42;
+    font-size: 16px;
+    line-height: 44px;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    text-transform: uppercase;
+	transition: color .2s linear;
+}
+
+.filter-use__clear span
+{
+	border-bottom: 1px solid rgba(61, 50, 44, .5);
+    transition: border .2s linear;
+	padding-bottom: 5px;
+}
+
+@media (any-hover: hover)
+{
+	.filter-use__clear:hover
+	{
+		color: #B8956A;
+	}
+}
+
 /*------------
     categories-small
 ------------*/

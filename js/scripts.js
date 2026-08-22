@@ -346,6 +346,22 @@ $(() => {
 			$priceRange.reset()
 		}
 	})
+
+	$('body').on('click', '.filter-use__link', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.filter-use__item').remove()
+
+		if ($(window).width() < 1024 && $(this).closest('.filter-use').hasClass('swiper-initialized')) {
+			filterUseSwiper.update()
+		}
+	})
+
+	$('body').on('click', '.filter-use__clear', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.filter-use').remove()
+	})
 });
 
 
