@@ -25,4 +25,11 @@
 		<path d="M11.5 0.5L0.5 11.5" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M0.5 0.5L11.5 11.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="lupa" viewBox="0 0 15 15">
+		<path d="M7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M14 13.5L11 10.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow4" viewBox="0 0 5 8">
+		<path d="M0.329254 7.37598L4.32925 3.87598L0.329254 0.375977" stroke-linejoin="round"/>
+	</symbol>
 </svg>
