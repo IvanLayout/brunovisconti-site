@@ -265,6 +265,43 @@ $(() => {
 		})
 	}
 
+	if ($('.text-block__slider').length) {
+		new Swiper(".text-block__slider", {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 24,
+					slidesPerView: 2
+				}
+			}
+		})
+	}
+
 	$('body').on('submit', '.form-ajax', function (e) {
 		e.preventDefault()
 
