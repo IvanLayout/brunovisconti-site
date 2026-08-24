@@ -4497,6 +4497,172 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 15px;
 }
 
+/*------------
+    delivery-stages
+------------*/
+
+.delivery-stages__bg
+{
+	background-color: #fff;
+	padding: 50px 0 78px;
+	position: relative;
+}
+
+.delivery-stages__bg::before
+{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 180px;
+
+	background-color: #fff;
+}
+
+.delivery-stages__items
+{
+	position: relative;
+	margin-top: 30px;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	gap: 24px;
+}
+
+.delivery-stages__items::before
+{
+	position: absolute;
+	content: '';
+	top: 27px;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 1px;
+
+	background-color: #E8E0D5;
+}
+
+.delivery-stages__stage
+{
+	text-align: center;
+	position: relative;
+}
+
+.delivery-stages__stage:first-child
+{
+	text-align: left;
+}
+
+.delivery-stages__stage:last-child
+{
+	text-align: right;
+}
+
+.delivery-stages__number
+{
+	background-color: #fff;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 56px;
+	color: #B8956A;
+	font-family: var(--second-family);
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.delivery-stages__number::before
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(184, 149, 106, .1);
+}
+
+.delivery-stages__stage:first-child .delivery-stages__number
+{
+	margin-left: 0;
+}
+
+.delivery-stages__stage:last-child .delivery-stages__number
+{
+	margin-right: 0;
+}
+
+.delivery-stages__number span
+{
+	position: relative;
+	z-index: 3;
+}
+
+.delivery-stages__name
+{
+	color: #3D322C;
+	text-transform: uppercase;
+	font-family: var(--second-family);
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	margin-top: 16px;
+}
+
+.delivery-stages__desc
+{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.delivery-stages__grid
+{
+	margin: -24px 0 0 -24px;
+}
+
+.delivery-stage__item
+{
+	width: calc(100%/3 - 24px);
+	margin: 24px 0 0 24px;
+}
+
+.delivery-stage__img img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 1 / .9573;
+	object-fit: cover;
+}
+
+.delivery-stage__name
+{
+	margin-top: 15px;
+	color: #3D322C;
+	font-family: var(--second-family);
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+}
+
+.delivery-stage__desc
+{
+	margin-top: 12px;
+}
 
 @media (any-hover: hover)
 {
