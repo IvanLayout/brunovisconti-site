@@ -5461,6 +5461,10 @@ input[type=radio]:checked + .sorting-radio__text::before
 	flex-shrink: 0;
 }
 
+/*------------
+    product-info
+------------*/
+
 @media (any-hover: hover)
 {
 
