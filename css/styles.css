@@ -495,11 +495,13 @@ button
 .header__nav-link_burger._active::before{
 	transform: rotate(45deg);
 	margin-top: 0;
+	width: 16px;
 }
 
 .header__nav-link_burger._active::after{
 	transform: rotate(-45deg);
 	margin-top: 0;
+	width: 16px;
 }
 
 .header__info-colr{
