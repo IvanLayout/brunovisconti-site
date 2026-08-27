@@ -417,6 +417,10 @@ $(() => {
 
 		let parent = $(this).closest('.amount')
 
+		if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
+			parent = $('.product-global-added')
+		}
+
 		let input = parent.find('input')
 		let inputVal = parseFloat(input.val())
 		let minimum = parseFloat(input.data('minimum'))
@@ -429,14 +433,32 @@ $(() => {
 		}
 
 		if (inputVal-1 == minimum) {
-			$(this).prop("disabled", true)
+			if ( !parent.hasClass('product__amount') && !parent.closest('.product-global-added').hasClass('product-global-added') ){
+				$(this).prop("disabled", true)
+			}
+		}
+
+		if (inputVal == minimum) {
+			if ( parent.hasClass('product__amount') ){
+				$(this).closest('.product').find('.product__added').removeClass('_show')
+				$(this).closest('.product').find('.product__bot').removeClass('_hide')
+			}
+
+			if ( parent.closest('.product-global-added').hasClass('product-global-added') ){
+				$('.product-global-added').removeClass('_show')
+				$('.product-global-buy').removeClass('_hide')
+			}
 		}
 	})
-
+	
 	$('body').on('click', '.amount__btn_plus', function (e) {
 		e.preventDefault()
 
 		let parent = $(this).closest('.amount')
+
+		if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
+			parent = $('.product-global-added')
+		}
 
 		let input = parent.find('input')
 		let inputVal = parseFloat(input.val())

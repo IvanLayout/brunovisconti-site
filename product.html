@@ -163,7 +163,87 @@
 								</div>
 							</div>
 
-							<div class="product-info__box"></div>
+							<div class="product-info__box">
+								<div class="product-color mini-modal">
+									<button type="button" class="mini-modal__btn product-color__btn">
+										<span class="product-color__color">
+											<img data-src="images/tmp/color1.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+
+										<span class="product-color__name">Мокко</span>
+									</button>
+	
+									<div class="mini-modal__modal product-color__list">
+										<div class="scrollbar">
+											<a href="/" class="product-color__item">
+												<span class="product-color__color">
+													<img data-src="images/tmp/color2.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="product-color__name">Мокко</span>
+											</a>
+											<a href="/" class="product-color__item">
+												<span class="product-color__color">
+													<img data-src="images/tmp/color3.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="product-color__name">Мокко</span>
+											</a>
+											<a href="/" class="product-color__item">
+												<span class="product-color__color">
+													<img data-src="images/tmp/color4.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="product-color__name">Мокко</span>
+											</a>
+										</div>
+									</div>
+
+									<div class="product-info__bonus">+ 85 бонусов</div>
+
+									<div class="product-info__prices">
+										<div class="product-info__price">2 490 ₽</div>
+
+										<div class="product-info__price-old">2 990 ₽</div>
+									</div>
+
+									<div class="product-info__discount">со скидкой -4% при авторизации</div>
+
+									<div class="product-info__btns _flex">
+										<div class="product-info__buy-box">
+											<button type="button" class="btn-brown product-info__buy product-global-buy">Добавить в корзину</button>
+
+											<div class="product-info__added _flex product-global-added">
+												<div class="amount product-info__amount">
+													<div class="amount__val _flex">
+														<button type="button" class="amount__btn amount__btn_minus">
+															<svg>
+																<use xlink:href="images/sprite.svg#minus"></use>
+															</svg>
+														</button>
+	
+														<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+	
+														<button type="button" class="amount__btn amount__btn_plus">
+															<svg>
+																<use xlink:href="images/sprite.svg#plus"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<button type="button" class="product-info__btns-favorite product-favorite">
+											<svg>
+												<use xlink:href="images/sprite.svg#favorite"></use>
+											</svg>
+										</button>
+									</div>
+
+									<button type="button" data-content="#modal-city" class="product-info__city-btn modal-btn">Москва</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -330,356 +410,85 @@
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
 
-		<div id="modal-review" class="modal">
+		<div id="modal-city" class="modal modal-city">
 			<div class="modal__box">
-				<div class="main-title main-title_center">Анна, Москва</div>
+				<form action="" class="form modal-city__form _flex">
+					<input type="text" value="" placeholder="Найти город" class="modal-city__input">
 
-				<div class="quotes-border">
-					<span></span>
-				</div>
-
-				<div class="text-block">
-					<p>
-						Заказывала набор Bruno Visconti в подарок маме на день рождения — и это было лучшее решение. Начну с упаковки: крафт-бумага с атласной лентой, внутри тишью и персональная открытка. Мама была в восторге ещё до того, как открыла коробку.
-					</p>
-					<p>
-						Сам блокнот — настоящее произведение. Обложка из плотного текстурированного картона, приятная на ощупь. Бумага внутри кремовая, плотная, 120 г/м² — ручка не просвечивает и не растекается. Переплёт прошит нитками, а не склеен, поэтому страницы открываются ровно на 180 градусов.
-					</p>
-					<p>
-						Отдельно хочу отметить доставку: заказала в понедельник вечером, а во вторник после обеда курьер уже был у двери. Всё аккуратно упаковано, ничего не помялось.
-					</p>
-					<p>
-						Единственный нюанс — хотелось бы больше цветов обложки, сейчас в серии всего четыре оттенка. Но это скорее пожелание, чем минус.
-					</p>
-					<p>
-						Буду заказывать ещё. Уже присмотрела набор ручек из той же коллекции для себя. Спасибо за качество и внимание к деталям — чувствуется, что каждая мелочь продумана.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div id="modal-filter" class="modal modal-filter">
-			<div class="modal__box">
-				<form action="" class="modal-filter__form form">
-					<div class="main-title modal-title">Фильтры</div>
-
-					<div class="modal-filter__filter">
-						<div class="filter accord">
-							<div class="filter__item accord__item">
-								<div class="filter__title accord__open active">
-									<span>Категория</span>
-
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
-									</svg>
-								</div>
-
-								<div class="filter__data accord__data" style="display: block;">
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="" checked>
-
-											<span class="checkbox__text">Планёры</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Ежедневники</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Календари</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Блокноты</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="filter__item accord__item">
-								<div class="filter__title accord__open active">
-									<span>Цвет</span>
-
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
-									</svg>
-								</div>
-
-								<div class="filter__data accord__data" style="display: block;">
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Серый</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="" checked>
-
-											<span class="checkbox__text">Графит</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="" checked>
-
-											<span class="checkbox__text">Песочный</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Чёрный</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Белый</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="filter__item accord__item">
-								<div class="filter__title accord__open active">
-									<span>Формат</span>
-
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
-									</svg>
-								</div>
-
-								<div class="filter__data accord__data" style="display: block;">
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Pocket</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">A6</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="" checked>
-
-											<span class="checkbox__text">A5</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">A4</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="filter__item accord__item">
-								<div class="filter__title">
-									<span>Ценовой диапазон</span>
-								</div>
-
-								<div class="filter__data">
-									<div class="range price_range">
-										<input type="text" id="price_range" name="price_range" value="">
-									</div>
-								</div>
-							</div>
-							<div class="filter__item accord__item">
-								<div class="filter__title accord__open active">
-									<span>Коллекция</span>
-
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
-									</svg>
-								</div>
-
-								<div class="filter__data accord__data" style="display: block;">
-									<div class="filter__box">
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="checkbox__label">
-												<input type="checkbox" name="">
-
-												<span class="checkbox__text">Коллекция</span>
-											</label>
-										</div>
-									</div>
-
-									<button type="button" class="filter__item-more">
-										<span>Показать все</span>
-										<span>Свернуть</span>
-									</button>
-								</div>
-							</div>
-							<div class="filter__item accord__item">
-								<div class="filter__title accord__open active">
-									<span>Наличие</span>
-
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
-									</svg>
-								</div>
-
-								<div class="filter__data accord__data" style="display: block;">
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">В наличии</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Предзаказ</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Ожидается</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="filter__item accord__item">
-								<div class="filter__title accord__open active">
-									<span>Статус</span>
-
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
-									</svg>
-								</div>
-
-								<div class="filter__data accord__data" style="display: block;">
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Новинки</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Хиты</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox__label">
-											<input type="checkbox" name="">
-
-											<span class="checkbox__text">Распродажа</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="filter__bot">
-								<button type="submit" class="filter__submit btn-brown">Показать 24 товара</button>
-			
-								<button type="reset" class="filter__reset reset-btn">Сбросить фильтр</button>
-							</div>
-						</div>
-					</div>
+					<button type="submit" class="modal-city__btn">
+						<svg>
+							<use xlink:href="images/sprite.svg#ic_marker"></use>
+						</svg>
+					</button>
 				</form>
+
+				<div class="modal-city__desc">Вы можете выбрать из более, чем 150 000 населённых пунктов по всей Российской Федерации.</div>
+
+				<div class="modal-city__list">
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Москва</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Санкт-Петербург</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Челябинск</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Хабаровск</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Екатеринбург</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Краснодар</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Ростов-на-Дону</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Сочи</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Самара</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Новосибирск</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Казань</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Нижний Новгород</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Волгоград</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Пермь</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Иркутск</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Красноярск</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Уфа</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Воронеж</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Сургут</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Тюмень</a>
+					</div>
+					<div class="modal-city__item">
+						<a href="/" class="modal-city__link">Ставрополь</a>
+					</div>
+				</div>
 			</div>
 		</div>
 

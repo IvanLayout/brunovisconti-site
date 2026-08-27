@@ -302,6 +302,21 @@ $(() => {
 	})
 
 
+	$('body').on('click', '.product__btn', function (e) {
+		e.preventDefault()
+		
+		$(this).closest('.product__bot').addClass('_hide')
+		$(this).closest('.product').find('.product__added').addClass('_show')
+	})
+
+	$('body').on('click', '.product-global-buy', function (e) {
+		e.preventDefault()
+		
+		$('.product-global-buy').addClass('_hide')
+		$('.product-global-added').addClass('_show')
+	})
+
+
 	// Аккордион простой
 	$('body').on('click', '.accord__open', function (e) {
 		e.preventDefault()

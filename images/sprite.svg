@@ -37,4 +37,14 @@
 		<path d="M11 4L8 1L5 4" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M8 1V9" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 16 16">
+		<path d="M3 8H12.3333" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 16 16">
+		<path d="M8 3V12.3333" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M3 8H12.3333" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="ic_marker" viewBox="0 0 24 24">
+		<path d="M3 11L22 2L13 21L11 13L3 11Z" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 </svg>
