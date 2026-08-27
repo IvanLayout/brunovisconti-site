@@ -32,4 +32,9 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow4" viewBox="0 0 5 8">
 		<path d="M0.329254 7.37598L4.32925 3.87598L0.329254 0.375977" stroke-linejoin="round"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="share" viewBox="0 0 15 15">
+		<path d="M3 8V12.8C3 13.1183 3.1317 13.4235 3.36612 13.6485C3.60054 13.8736 3.91848 14 4.25 14H11.75C12.0815 14 12.3995 13.8736 12.6339 13.6485C12.8683 13.4235 13 13.1183 13 12.8V8" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M11 4L8 1L5 4" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M8 1V9" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 </svg>

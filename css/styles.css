@@ -3364,6 +3364,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 
 	pointer-events: none;
 	width: calc(100% - 80px);
+	z-index: 2;
 }
 
 .product__sticker
@@ -5466,6 +5467,278 @@ input[type=radio]:checked + .sorting-radio__text::before
 /*------------
     product-info
 ------------*/
+
+.product-info__wrap
+{
+    display: grid;
+
+    gap: 30px 40px;
+    grid-template-columns: 49.278% calc(50.722% - 40px);
+    grid-template-rows: auto auto;
+}
+
+.product-info__images
+{
+    justify-content: space-between;
+
+    grid-row: 1 / span 2;
+}
+
+.product-thumbs
+{
+    width: 127px;
+    height: 736px;
+}
+
+.product-thumbs__img
+{
+    position: relative;
+
+    overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+    aspect-ratio: 1 / 1;
+	width: 100%;
+	object-fit: cover;
+
+    cursor: pointer;
+
+    background: #fff;
+}
+
+.product-thumbs__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product-images
+{
+    position: relative;
+
+    width: calc(100% - 151px);
+}
+
+.product-images .slider-pagination
+{
+    display: none;
+}
+
+.product-images__img
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    height: 736px;
+
+    background: #fff;
+}
+
+.product-images__img-wrap
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+}
+
+.product-images__img img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-images__open
+{
+	position: absolute;
+	right: 115px;
+	bottom: 67px;
+
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+
+	border: 1px solid #B8956A;
+	background: #fff;
+	pointer-events: none;
+
+	transition: background .2s linear;
+
+	z-index: 2;
+}
+
+.product-images__open::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	transform: translate(-50%, -50%);
+
+	width: 14px;
+	height: 1px;
+
+	background: #B8956A;
+	transition: background .2s linear;
+}
+
+.product-images__open::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	transform: translate(-50%, -50%);
+
+	width: 1px;
+	height: 14px;
+
+	background: #B8956A;
+	transition: background .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.product-images__img:hover .product-images__open
+	{
+		background: #B8956A;
+	}
+
+	.product-images__img:hover .product-images__open::after,
+	.product-images__img:hover .product-images__open::before
+	{
+		background: #fff;
+	}
+}
+
+.product-info__use
+{
+	color: #3D322C;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+
+.product-info__title
+{
+	margin-top: 10px;
+
+	font-family: var(--second-family);
+	font-size: 36px;
+	line-height: 1.3;
+	color: #3D322C;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	font-weight: 500;
+}
+
+.product-info__info 
+{
+	margin: -5px 0 0 -20px;
+}
+
+.product-info__availability
+{
+	margin: 20px 0 0 20px;
+	position: relative;
+	padding-left: 11px;
+}
+
+.product-info__availability::before
+{
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 0;
+
+	display: block;
+
+	width: 5px;
+	height: 5px;
+
+	background-color: #00B731;
+	border-radius: 50%;
+}
+
+.product-info__availability._sold-out::before
+{
+	background-color: #FF383C;
+}
+
+.product-info__share
+{
+	margin: 20px 0 0 20px;
+}
+
+.product-info__share a
+{
+	text-decoration: none;
+	color: #5A4A42;
+	position: relative;
+	transition: color .2s linear;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.product-info__share svg
+{
+	display: block;
+
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	fill: none;
+
+	stroke: #5A4A42;
+	transition: stroke .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.product-info__share a:hover
+	{
+		color: #B8956A;
+	}
+
+	.product-info__share a:hover svg
+	{
+		stroke: #B8956A;
+	}
+}
+
+.product-info__box
+{
+	margin-top: 20px;
+	max-width: 566px;
+}
 
 @media (any-hover: hover)
 {
