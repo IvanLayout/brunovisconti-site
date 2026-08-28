@@ -4596,8 +4596,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 	margin: 15px 0 0 20px;
 	color: #B8956A;
 	font-weight: 700;
-	border-bottom: 1px solid #B8956A;
-	padding-bottom: 5px;
+	border-bottom: 1px solid currentColor;
 	transition: border .2s linear;
 	text-transform: uppercase;
 }
@@ -4606,8 +4605,13 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.our-partners__link:hover
 	{
-		border-bottom-color: transparent;
+		color: #A07D54;
 	}
+}
+
+.our-partners__link:active
+{
+	color: #8A6B45;
 }
 
 /*------------
@@ -6037,20 +6041,42 @@ input[type=radio]:checked + .sorting-radio__text::before
 	fill: transparent;
 	stroke: #B8956A;
 
-	transition: fill .2s linear;
+	transition: fill .2s linear, stroke .2s linear;
 }
 
 @media (any-hover: hover)
 {
+	.product-info__btns-favorite:hover
+	{
+		border-color: #A07D54;
+	}
+
 	.product-info__btns-favorite:hover svg
 	{
-		fill: #B8956A;
+		stroke: #A07D54;
 	}
+}
+
+.product-info__btns-favorite.product-favorite._active 
+{
+    border-color: #AF895B;
 }
 
 .product-info__btns-favorite.product-favorite._active svg 
 {
-    fill: #B8956A;
+    fill: #AF895B;
+	stroke: #AF895B;
+}
+
+.product-info__btns-favorite:disabled 
+{
+    border-color: #E8E0D5;
+	cursor: default;
+}
+
+.product-info__btns-favorite:disabled svg 
+{
+	stroke: #E8E0D5;
 }
 
 .product-info__buy-box
@@ -6260,9 +6286,8 @@ input[type=radio]:checked + .sorting-radio__text::before
 	display: inline-block;
 	color: #5A4A42;
 	font-weight: 700;
-	border-bottom: 1px solid #5A4A42;
-	padding-bottom: 3px;
-	transition: border .2s linear;
+	border-bottom: 1px solid currentColor;
+	transition: color .2s linear, border .2s linear;
 	text-transform: uppercase;
 	letter-spacing: 0.01em;
 }
@@ -6286,8 +6311,19 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.product-info__bot-btn:hover
 	{
-		border-bottom-color: transparent;
+		color: #7D6F69;
 	}
+}
+
+.product-info__bot-btn:active
+{
+	color: #5A4A42;
+}
+
+.product-info__bot-btn:disabled
+{
+	color: #E8E0D5;
+	cursor: default;
 }
 
 .product-info__copy-btn 
@@ -6364,6 +6400,8 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	display: block;
 	color: #5A4A42;
+
+	transition: color .2s linear;
 }
 
 .help-btn__name
@@ -6374,14 +6412,49 @@ input[type=radio]:checked + .sorting-radio__text::before
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.01em;
+
+	transition: color .2s linear;
 }
 
 @media (any-hover: hover)
 {
 	.help-btn:hover svg
 	{
-		stroke: #3D322C;
+		stroke: #A07D54;
 	}
+
+	.help-btn:hover .help-btn__top,
+	.help-btn:hover .help-btn__name
+	{
+		color: #A07D54;
+	}
+}
+
+.help-btn:active svg
+{
+	stroke: #8A6B45;
+}
+
+.help-btn:active .help-btn__top,
+.help-btn:active .help-btn__name
+{
+	color: #8A6B45;
+}
+
+.help-btn:disabled
+{
+	cursor: default;
+}
+
+.help-btn:disabled .help-btn__top,
+.help-btn:disabled .help-btn__name
+{
+	color: #E8E0D5;
+}
+
+.help-btn:disabled svg
+{
+	stroke: #E8E0D5;
 }
 
 .information
