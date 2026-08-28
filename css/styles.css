@@ -2812,7 +2812,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     .amount__btn:not(:disabled):hover
     {
-        color: #B8956A;
+        color: #AF895B;
     }
 }
 
@@ -2936,8 +2936,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	.filter-open:hover
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
+}
+
+.filter-open:active
+{
+	color: #8A6B45;
+}
+
+.filter-open:disabled
+{
+	color: #E8E0D5;
 }
 
 .sorting__val
@@ -2977,26 +2987,42 @@ input[type=checkbox]:checked + .checkbox__text::after
     transition: color .2s linear;
 }
 
-.sorting__choice-btn:after
+.sorting__choice-btn svg
 {
-    content: "";
-
     position: absolute;
     top: 50%;
     right: 0;
 
 	width: 8px;
 	height: 5px;
-
-	background: url(../images/ic_arrow.svg) 50% no-repeat;
 	margin-top: -1px;
 
-    transition: border .2s linear;
+	stroke: currentColor;
+	fill: none;
 }
 
-.sorting__choice-btn._active:after
+@media (any-hover: hover)
+{
+	.sorting__choice-btn:hover
+	{
+		color: #AF895B;
+	}
+}
+
+.sorting__choice-btn._active
+{
+	color: #AF895B;
+}
+
+.sorting__choice-btn._active svg
 {
     transform: rotate(180deg);
+}
+
+.sorting__choice-btn:disabled
+{
+	color: #E8E0D5;
+	cursor: default;
 }
 
 .sorting__choice-list
@@ -3075,7 +3101,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	.sorting-radio__text:hover
 	{
-		color: #B8956A;
+		color: #AF895B;
 		background: rgba(184, 149, 106, .1);
 	}
 }
@@ -3124,17 +3150,23 @@ input[type=radio]:checked + .sorting-radio__text::before
 
     border-radius: 42px;
 	border: 1px solid #5A4A42;
-    background: transparent;
 
-    transition: background .2s linear;
+    transition: border .2s linear, color .2s linear;
 }
 
 @media (any-hover: hover)
 {
     .filter-use__link:hover
     {
-        background: #E8E0D5;
+        border-color: #AF895B;
+		color: #AF895B;
     }
+}
+
+.filter-use__link:active
+{
+	border-color: #8A6B45;
+	color: #8A6B45;
 }
 
 .filter-use__link svg
@@ -3162,22 +3194,27 @@ input[type=radio]:checked + .sorting-radio__text::before
 
 .filter-use__clear span
 {
-	border-bottom: 1px solid rgba(61, 50, 44, .5);
+	border-bottom: 1px solid currentColor;
     transition: border .2s linear;
-	padding-bottom: 5px;
 }
 
 @media (any-hover: hover)
 {
 	.filter-use__clear:hover
 	{
-		color: #B8956A;
+		color: #7D6F69;
 	}
+}
 
-	.filter-use__clear:hover span
-	{
-		border-color: transparent;
-	}
+.filter-use__clear:active
+{
+	color: #5A4A42;
+}
+
+.filter-use__clear:disabled
+{
+	color: #E8E0D5;
+	cursor: default;
 }
 
 /*------------
@@ -3262,8 +3299,13 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.categories-small__item:hover .categories-small__name
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
+}
+
+.categories-small__item:active .categories-small__name
+{
+	color: #8A6B45;
 }
 
 /*------------
@@ -3601,7 +3643,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.product__name a:hover
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
 
 	.product:hover .product__cart-box
@@ -4328,7 +4370,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.article__name a:hover
 	{
-		color: #b8956a;
+		color: #AF895B;
 	}
 }
 
@@ -4451,7 +4493,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
     .categories-btns__btn:hover
     {
-        color: #B8956A;
+        color: #AF895B;
     }
 }
 
@@ -5782,7 +5824,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.product-info__share a:hover
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
 
 	.product-info__share a:hover svg
@@ -6081,7 +6123,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.product-info__city-btn:hover
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
 }
 
@@ -6274,12 +6316,12 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.product-info__copy-btn:hover 
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
 
 	.product-info__copy-btn:hover svg 
 	{
-		stroke: #B8956A;
+		stroke: #AF895B;
 	}
 }
 
@@ -6519,7 +6561,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 	.footer-menu__title a:hover,
 	.footer-menu__link:hover
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
 }
 
@@ -6738,7 +6780,7 @@ input[type=radio]:checked + .sorting-radio__text::before
 {
 	.modal-city__link:hover
 	{
-		color: #B8956A;
+		color: #AF895B;
 	}
 }
 
