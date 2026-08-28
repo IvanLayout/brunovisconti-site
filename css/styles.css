@@ -1311,17 +1311,16 @@ button
     text-decoration: none;
 	text-transform: uppercase;
 
-    background: transparent;
 	border: 1px solid #B8956A;
 
-    transition: background .2s linear, color .2s linear;
+    transition: border .2s linear;
 }
 
 @media (any-hover: hover)
 {
 	.btn-brown:hover
 	{
-		background: #3D322C;
+		background: #A07D54;
 	}
 
 	.btn-white:hover
@@ -1332,9 +1331,34 @@ button
 
 	.btn-border:hover
 	{
-		background: #B8956A;
-		color: #fff;
+		border-color: #A07D54;
 	}
+}
+
+.btn-border:active
+{
+	color: #8A6B45;
+	border-color: #8A6B45;
+}
+
+.btn-border:disabled
+{
+	color: #E8E0D5;
+	border-color: #E8E0D5;
+	opacity: .5;
+	cursor: default;
+}
+
+.btn-brown:active
+{
+	background: #8A6B45;
+}
+
+.btn-brown:disabled
+{
+	border-color: #E8E0D5;
+	opacity: .5;
+	cursor: default;
 }
 /*------------
     breadcrumbs
@@ -2538,8 +2562,14 @@ input[type=checkbox]:checked + .checkbox__text::after
     {
         z-index: 11;
 
-        color: #B8956A;
+        color: #AF895B;
     }
+}
+
+.slider-button-prev:active,
+.slider-button-next:active
+{
+	color: #8A6B45;
 }
 
 .slider-button-prev svg,
@@ -2600,7 +2630,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     cursor: default;
     pointer-events: none;
 
-    opacity: .3;
+	color: #E8E0D5;
 }
 
 .swiper-button-lock
@@ -3445,11 +3475,21 @@ input[type=radio]:checked + .sorting-radio__text::before
     height: 20px;
     fill: transparent;
     stroke: #3D322C;
+	transition: stroke .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.product-favorite:hover svg
+	{
+		stroke: #AF895B;
+	}
 }
 
 .product-favorite._active svg
 {
-	fill: #3D322C;
+	stroke: #AF895B;
+	fill: #AF895B;
 }
 
 .product__cart-box
@@ -6494,24 +6534,36 @@ input[type=radio]:checked + .sorting-radio__text::before
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background: #fff;
 	overflow: hidden;
 	transition: opacity .2s linear;
 }
 
+.socials__link svg
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	fill: #B8956A;
+	transition: fill .2s linear;
+}
+
 @media (any-hover: hover)
 {
-	.socials__link:hover
+	.socials__link:hover svg
 	{
-		opacity: .7;
+		fill: #A07D54;
 	}
 }
 
-.socials__link img
+.socials__link:active svg
 {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
+	fill: #8A6B45;
+}
+
+.socials__link:disabled svg
+{
+	fill: #E8E0D5;
 }
 
 .footer__bot
