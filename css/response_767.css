@@ -1,5 +1,74 @@
 @media (max-width: 767px)
 {
+	.submenu-third__flex{
+		gap: 16px 0;
+		padding-left: 4px;
+	}
+
+	.submenu-third__item {
+		width: calc(100% / 3 - 16px);
+		margin-left: 16px;
+	}
+
+	.submenu-third__img{
+		aspect-ratio: 1/.92;
+	}
+
+	.submenu-third__name{
+		margin-top: 5px;
+	}
+
+	.header__collections{
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.header__collections-coll{
+		width: 100%;
+	}
+
+	.top-collection{
+		aspect-ratio: 1/.7433;
+	}
+
+	.grid-collectios{
+		gap: 16px 0;
+		margin-left: -16px;
+	}
+	
+	.grid-collectios__item{
+		width: calc(100% / 3 - 16px);
+		margin-left: 16px;
+	}
+
+	.grid-collectios__img{
+		aspect-ratio: 1/.92;
+	}
+
+	.grid-collectios__name{
+		margin-top: 5px;
+	}
+
+	.header__top-info a{
+		display: none;
+	}
+
+	.open-search{
+		font-size: 0;
+		padding: 0;
+		width: 20px;
+		height: 20px;
+	}
+
+	.open-search svg{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.open-search svg + svg{
+		top: 50%;
+	}
 	/*------------
 		Commit
 	------------*/

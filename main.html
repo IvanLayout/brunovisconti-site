@@ -109,16 +109,8 @@
 						</div>
 
 						<div class="header-catalog">
+							<button type="button" data-title-close="Каталог" data-title-second class="header-catalog__close">Каталог</button>
 							<div class="cont">
-								<div class="header-catalog__head">
-									<button type="button" class="catalog-head__back">
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow_back"></use>
-										</svg>
-										<span data-title="Каталог" class="catalog-head__title">Каталог</span>
-									</button>
-								</div>
-
 								<div class="header-catalog__wrap">
 									<div class="header-list">
 										<div class="header-list__item">
@@ -1624,13 +1616,17 @@
 					<div class="header__bot">
 						<div class="cont">
 							<nav class="header__menu _flex">
+								<div class="header__menu-item _mob">
+									<a href="/" class="header__menu-link">О бренде</a>
+								</div>
 								<div class="header__menu-item">
 									<a href="/" class="header__menu-link">Новинки</a>
 								</div>
 								<div class="header__menu-item">
-									<a href="/" class="header__menu-link _sub" data-title="Коллекции">Коллекции</a>
+									<a href="/" class="header__menu-link _sub">Коллекции</a>
 
 									<div class="header__submenu">
+										<button type="button" class="header__submenu-close">Коллекции</button>
 										<div class="cont">
 											<div class="header__collections _flex">
 												<div class="header__collections-coll">
@@ -1716,9 +1712,10 @@
 									<a href="/" class="header__menu-link">Офис</a>
 								</div>
 								<div class="header__menu-item">
-									<a href="/" class="header__menu-link _sub" data-title="Искусство подарка">Искусство подарка</a>
+									<a href="/" class="header__menu-link _sub">Искусство подарка</a>
 
 									<div class="header__submenu">
+										<button type="button" data-title-close="Искусство подарка" class="header__submenu-close">Искусство подарка</button>
 										<div class="cont">
 											<div class="submenu-second">
 												<div class="submenu-second__items">
@@ -1988,8 +1985,6 @@
 				<div class="overlay-menu"></div>
 				<div class="overlay-search"></div>
 
-				<!-- <div class="overlay"></div>
-
 				<div class="fix-btns">
 					<a href="/" class="fix-btns__btn">
 						<span class="fix-btns__btn-icon">
@@ -2000,26 +1995,15 @@
 
 						<span class="fix-btns__btn-name">Главная</span>
 					</a>
-					<button type="button" class="fix-btns__btn open-catalog-mob">
+					<button type="button" class="fix-btns__btn open-catalog">
 						<span class="fix-btns__btn-icon">
-							<svg class="fix-btns__btn-catalog">
-								<use xlink:href="images/sprite.svg#ic_catalog"></use>
+							<svg>
+								<use xlink:href="images/sprite.svg#catalog"></use>
 							</svg>
 						</span>
 
 						<span class="fix-btns__btn-name">Каталог</span>
 					</button>
-					<a href="/" class="fix-btns__btn">
-						<span class="fix-btns__btn-icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#favorite"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-number">999</span>
-
-						<span class="fix-btns__btn-name">Избранное</span>
-					</a>
 					<button type="button" class="fix-btns__btn open-user-info modal-btn" data-content="#modal-login">
 						<span class="fix-btns__btn-icon">
 							<svg>
@@ -2027,20 +2011,31 @@
 							</svg>
 						</span>
 
-						<span class="fix-btns__btn-name">Профиль</span>
+						<span class="fix-btns__btn-name">Войти</span>
 					</button>
-					<button type="button" class="fix-btns__btn modal-btn" data-content="#modal-cart">
+					<a href="/" class="fix-btns__btn">
 						<span class="fix-btns__btn-icon">
-							<svg>
+							<svg style="width: 24px; height: 20px;">
+								<use xlink:href="images/sprite.svg#favorite"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">0</span>
+
+						<span class="fix-btns__btn-name">Избранное</span>
+					</a>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg style="width: 19px; height: 19px;">
 								<use xlink:href="images/sprite.svg#cart"></use>
 							</svg>
 						</span>
 
-						<span class="fix-btns__btn-number">999</span>
+						<span class="fix-btns__btn-number">0</span>
 
 						<span class="fix-btns__btn-name">Корзина</span>
-					</button>
-				</div> -->
+					</a>
+				</div>
 				<!-- End Шапка -->
 
 				<section class="first-section">

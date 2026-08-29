@@ -566,6 +566,18 @@ button
 	position: relative;
 	display: block;
 	text-decoration: none;
+	color: #3D322C;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover){
+	.header__btn:hover{
+		color: #B8956A;
+	}
+}
+
+.header__btn:active{
+	color: #B8956A;
 }
 
 .header__btn svg{
@@ -631,7 +643,7 @@ button
 	left: 0;
 	top: 100%;
 	width: 100%;
-	background: #FCF9F7;
+	background: #FFFCF9;
 
 	opacity: 0;
 	visibility: hidden;
@@ -881,7 +893,7 @@ button
 	left: 0;
 	top: 100%;
 	width: 100%;
-	background: #FCF9F7;
+	background: #FFFCF9;
 
 	opacity: 0;
 	visibility: hidden;
@@ -937,7 +949,7 @@ button
 	position: relative;
 }
 
-.header-catalog__head{
+.header-catalog__close{
 	display: none;
 }
 
@@ -1347,6 +1359,7 @@ button
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: 50% 100%;
 	transition: transform .4s linear, opacity .5s linear;
 }
 
@@ -1581,7 +1594,20 @@ button
 	margin-top: 10px;
 }
 
+.header__menu-item._mob{
+	display: none;
+}
+
 .mob-menu-btn{
+	display: none;
+}
+
+.header__submenu-close{
+	display: none;
+}
+
+
+.fix-btns{
 	display: none;
 }
 /*------------

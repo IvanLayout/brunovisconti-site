@@ -1,5 +1,33 @@
 @media (max-width: 479px)
 {
+	.grid-collectios__item {
+		width: calc(100% / 2 - 16px);
+	}
+	
+	.submenu-third__item {
+		width: calc(100% / 2 - 16px);
+	}
+
+	.header__top-links{
+		display: none;
+	}
+
+	.header__top-info{
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-catalog__cats{
+		gap: 25px 0;
+	}
+
+	.header-catalog__cats-item{
+		width: 100%;
+	}
+
+	.header-catalog__cats-img {
+		aspect-ratio: 1 / 0.7433;
+	}
 	/*------------
 		Commit
 	------------*/
