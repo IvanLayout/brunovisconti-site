@@ -211,31 +211,12 @@
 										<div class="product-info__price-old">2 990 ₽</div>
 									</div>
 	
-									<div class="product-info__discount">со скидкой -4% при авторизации</div>
+									<div class="product-info__discount">Оформите предзаказ сейчас и получите скидку 20%.
+										Оплата при получении. Отмена в любой момент.</div>
 	
 									<div class="product-info__btns _flex">
 										<div class="product-info__buy-box">
-											<button type="button" class="btn-brown product-info__buy product-global-buy">Добавить в корзину</button>
-	
-											<div class="product-info__added _flex product-global-added">
-												<div class="amount product-info__amount">
-													<div class="amount__val _flex">
-														<button type="button" class="amount__btn amount__btn_minus">
-															<svg>
-																<use xlink:href="images/sprite.svg#minus"></use>
-															</svg>
-														</button>
-	
-														<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
-	
-														<button type="button" class="amount__btn amount__btn_plus">
-															<svg>
-																<use xlink:href="images/sprite.svg#plus"></use>
-															</svg>
-														</button>
-													</div>
-												</div>
-											</div>
+											<button type="button" data-content="#modal-preorder" class="modal-btn btn-brown product-info__buy">Оформить предзаказ</button>
 										</div>
 	
 										<button type="button" class="product-info__btns-favorite product-favorite">
@@ -244,6 +225,8 @@
 											</svg>
 										</button>
 									</div>
+
+									<div class="product-info__notify">Или <button type="button" data-content="#modal-notify" class="modal-btn product-info__notify-btn">уведомить</button>, когда появится в наличии</div>
 	
 									<button type="button" data-content="#modal-city" class="product-info__city-btn modal-btn">Москва</button>
 	
@@ -736,6 +719,146 @@
 			</div>
 		</div>
 
+
+		<div id="modal-notify" class="modal modal-notify">
+			<div class="modal-notify__box">
+				<div class="modal-notify__top">
+					<div class="main-title main-title_center">Узнать <br>о поступлении</div>
+
+					<div class="modal__desc">Оставьте ваш номер телефона, и мы <br>оповестим вас, когда товар появится</div>
+				</div>
+
+				<form action="" class="form modal-notify__form">
+					<div class="modal-notify__form-top">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="" name="" placeholder="+7 999 000-00-00*" data-mask="+7 (999) 999-99-99" class="form__input">
+							</div>
+						</div>
+						<div class="form__submit">
+							<button type="submit" class="btn-brown form__submit-btn">уведомить</button>
+						</div>
+					</div>
+
+					<div class="form__agree">Я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a></div>
+				</form>
+			</div>
+		</div>
+
+
+		<div id="modal-preorder" class="modal modal-preorder">
+			<div class="modal__box">
+				<div class="main-title main-title_center">Оформить предзаказ</div>
+
+				<form action="" class="form modal-preorder__form">
+					<div class="modal-preorder__product _flex">
+						<div class="modal-preorder__thumb">
+							<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+						</div>
+	
+						<div class="modal-preorder__info _flex">
+							<div class="modal-preorder__box">
+								<div class="modal-preorder__name">Тетрадь общая <br>«СКАЗОЧНЫЙ ЛЕС»</div>
+	
+								<div class="modal-preorder__bot _flex">
+									<div class="modal-preorder__articula">Артикул 10-TRx-LCD</div>
+	
+									<div class="modal-preorder__color _flex">
+										<div class="modal-preorder__color-img">
+											<img data-src="images/tmp/color1.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+	
+										<div class="modal-preorder__color-name">Мокко</div>
+									</div>
+								</div>
+							</div>
+	
+							<div class="modal-preorder__prices">
+								<div class="modal-preorder__price">10 369 ₽</div>
+	
+								<div class="modal-preorder__price-old">10 369 ₽</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim">
+							<label class="form__label">Фамилия*</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim">
+							<label class="form__label">Имя*</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim">
+							<label class="form__label">Отчество</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="tel" value="" name="" placeholder="" data-mask="+7 (999) 999-99-99" class="form__input form__input-anim">
+							<label class="form__label">+7 999 000-00-00</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="email" value="" class="form__input form__input-anim">
+							<label class="form__label">Ваш email</label>
+						</div>
+					</div>
+					<div class="form__line modal-preorder__amount-flex _flex">
+						<div class="modal-preorder__amount-val">Количество</div>
+
+						<div class="amount modal-preorder__amount">
+							<div class="amount__val _flex">
+								<button type="button" class="amount__btn amount__btn_minus">
+									<svg>
+										<use xlink:href="images/sprite.svg#minus"></use>
+									</svg>
+								</button>
+
+								<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+
+								<button type="button" class="amount__btn amount__btn_plus">
+									<svg>
+										<use xlink:href="images/sprite.svg#plus"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="select-wrap">
+							<select>
+								<option value="1">Москва</option>
+								<option value="2">Санкт-Петербург</option>
+								<option value="3">Челябинск</option>
+								<option value="4">Саратов</option>
+								<option value="5">Хабаровск</option>
+								<option value="6">Екатеринбург</option>
+								<option value="7">Краснодар</option>
+								<option value="4" selected>Город доставки</option>
+							</select>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<textarea placeholder="" class="form__textarea"></textarea>
+							<label class="form__label">Ваш email</label>
+						</div>
+					</div>
+					<div class="form__submit">
+						<button type="submit" class="btn-brown form__submit-btn">Оформить предзаказ</button>
+					</div>
+					<div class="form__agree">Я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a></div>
+				</form>
+			</div>
+		</div>
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
