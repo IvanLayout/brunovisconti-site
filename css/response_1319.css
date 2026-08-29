@@ -1,5 +1,74 @@
 @media (max-width: 1319px)
 {
+	.top-collection{
+		padding: 50px 20px 20px;
+	}
+
+	.top-collection__title{
+		font-size: 14px;
+	}
+
+	.top-collection__name{
+		font-size: 26px;
+	}
+
+	.top-collection__desc{
+		font-size: 14px;
+	}
+
+	.grid-collectios__item{
+		font-size: 14px;
+	}
+
+	.submenu-third__item{
+		font-size: 14px;
+	}
+
+	.header-catalog__top {
+		left: calc(15.112% + 60px);
+	}
+
+	.header-catalog__cats{
+		gap: 30px 20px;
+	}
+
+	.header-catalog__cats-item{
+		width: calc(50% - 10px);
+	}
+
+	.header-thirdlist{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.header-secondlist__items{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.header-list{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.header__collections{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.submenu-second__items{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.submenu-third{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.header__menu {
+    	gap: 30px;
+	}
 	/*------------
 		Commit
 	------------*/

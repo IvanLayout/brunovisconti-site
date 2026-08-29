@@ -411,7 +411,9 @@ $(() => {
 			if (!$(this).hasClass('_active-pc')) {
 				$(this).closest('.header-list').find('.header-list__item').removeClass('_active-pc')
 	
-				$(this).addClass('_active-pc')
+				if ($(this).find('.header-list__link._sub').length) {
+					$(this).addClass('_active-pc')
+				}
 
 				$('.header-catalog__top').addClass('_hide')
 			}
@@ -426,6 +428,37 @@ $(() => {
 				if ($(this).find('.header-secondlist__link._sub').length) {
 					$(this).addClass('_active-pc')
 				}
+			}
+		}
+	})
+
+	$('body').on('mouseover', '.header__menu-item', function (e) {
+		if ( $(window).width() > 1023 ) {
+			if (!$(this).hasClass('_active-pc')) {
+				$(this).closest('.header__menu').find('.header__menu-item').removeClass('_active-pc')
+	
+				$(this).addClass('_active-pc')
+
+				if ( $(this).find('.header__menu-link._sub').length ) {
+					$('.overlay-menu').addClass('_show')
+				}
+			}
+		}
+	})
+
+	$('body').on('mouseleave', '.header__menu-item', function (e) {
+		if ( $(window).width() > 1023 ) {
+			$('.header__menu-item').removeClass('_active-pc')
+			$('.overlay-menu').removeClass('_show')
+		}
+	})
+
+	$('body').on('mouseover', '.submenu-second__item', function (e) {
+		if ( $(window).width() > 1023 ) {
+			if (!$(this).hasClass('_active-pc')) {
+				$(this).closest('.submenu-second').find('.submenu-second__item').removeClass('_active-pc')
+	
+				$(this).addClass('_active-pc')
 			}
 		}
 	})
