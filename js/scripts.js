@@ -13,10 +13,14 @@ $(() => {
 	$('body').on('click', '.mob-menu-btn', function (e) {
 		e.preventDefault()
 
-		$('.header__top').addClass('_show')
-		$('.header__small-right').addClass('_show')
-		$('body').addClass('_lock')
-		$('.overlay').addClass('_show')
+		if ( $(this).hasClass('_active') ) {
+
+		} else {
+			$('.header__top').addClass('_show')
+			$('.header__small-right').addClass('_show')
+			$('body').addClass('_lock')
+			$('.overlay').addClass('_show')
+		}
 	})
 
 	if ($('.inner-news__slider').length) {

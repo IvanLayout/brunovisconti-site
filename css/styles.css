@@ -350,6 +350,7 @@ button
 	left: 0;
 	top: 0;
 	background: #fff;
+	border-bottom: 1px solid #E8E0D5;
 	z-index: 91;
 }
 
@@ -1578,6 +1579,10 @@ button
 .submenu-third__name{
 	display: block;
 	margin-top: 10px;
+}
+
+.mob-menu-btn{
+	display: none;
 }
 /*------------
     BTNS
