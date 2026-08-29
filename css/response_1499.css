@@ -1,5 +1,40 @@
 @media (max-width: 1499px)
 {
+	.header-list__link{
+		font-size: 14px;
+	}
+
+	.header-catalog__top {
+		left: calc(15.112% + 100px);
+	}
+
+	.header-secondlist__link{
+		font-size: 14px;
+	}
+
+	.header-thirdlist{
+		padding-left: 19px;
+	}
+
+	.header-thirdlist__coll {
+		width: calc(24.54% - 20px);
+	}
+
+	.header-thirdlist__link{
+		font-size: 14px;
+	}
+
+	.header-catalog__cats-name{
+		font-size: 20px;
+	}
+
+	.header-catalog__cats-desc{
+		font-size: 14px;
+	}
+
+	.submenu-second__link{
+		font-size: 14px;
+	}
 	/*------------
 		Commit
 	------------*/
