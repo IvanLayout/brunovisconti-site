@@ -590,6 +590,86 @@
 		padding-bottom: 1px;
 		margin-left: 2px;
 	}
+
+
+	.main-slider__coll::before{
+		bottom: 16px;
+	}
+
+	.main-slider__coll::after{
+		left: 16px;
+	}
+
+	.main-slider__linet{
+		top: 16px;
+	}
+
+	.main-slider__liner{
+		right: 16px;
+	}
+
+	.main-slider__icon{
+		height: 100px;
+	}
+
+	.main-slider__coll{
+		padding: 36px;
+	}
+
+	.main-slider__title{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+
+	.main-slider__subtitle{
+		font-size: 40px;
+		margin-top: -20px;
+	}
+
+	.main-slider__desc{
+		margin-top: 20px;
+	}
+
+	.main-slider__btn{
+		margin-top: 20px;
+	}
+
+	.main-collections__icon{
+		height: 50px;
+	}
+
+	.main-collections__colr{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-collections__box {
+		margin: auto;
+	}
+
+	.main-collections__title{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+
+	.main-collections__subtitle{
+		font-size: 40px;
+		margin-top: -20px;
+	}
+
+	.main-collections__desc{
+		margin-top: 20px;
+	}
+
+	.main-collections__btn{
+		margin-top: 20px;
+	}
+
+	.main-collections__slider .slider-pagination{
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 5px;
+	}
 	/*------------
 		Commit
 	------------*/

@@ -49,11 +49,6 @@ $(() => {
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-				pauseOnMouseEnter: true,
-			},
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',
@@ -72,6 +67,18 @@ $(() => {
 				clickableClass: 'slider-pagination-clickable',
 				el: '.slider-pagination',
 				clickable: true
+			},
+			on: {
+				init: function (swiper) {
+					let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
+
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+				},
+				resize: function (swiper) {
+					let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
+
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+				}
 			}
 		})
 	}

@@ -1,5 +1,64 @@
 @media (max-width: 1199px)
 {
+	.main-slider__coll::before{
+		bottom: 26px;
+	}
+
+	.main-slider__coll::after{
+		left: 26px;
+	}
+
+	.main-slider__linet{
+		top: 26px;
+	}
+
+	.main-slider__liner{
+		right: 26px;
+	}
+
+	.main-slider__coll{
+		padding: 50px;
+	}
+
+	.main-slider__title{
+		font-size: 36px;
+	}
+
+	.main-slider__subtitle{
+		font-size: 53px;
+		margin-top: -24px;
+	}
+
+	.main-slider__desc{
+		margin-top: 24px;
+	}
+
+	.main-slider__btn{
+		margin-top: 24px;
+	}
+
+	.main-collections__box {
+		padding-top: 12%;
+		padding-bottom: 10%;
+	}
+
+	.main-collections__title{
+		font-size: 36px;
+	}
+
+	.main-collections__subtitle{
+		font-size: 53px;
+		margin-top: -24px;
+	}
+
+	.main-collections__desc{
+		margin-top: 24px;
+	}
+
+	.main-collections__btn{
+		margin-top: 24px;
+	}
+
 	/*------------
 		Commit
 	------------*/

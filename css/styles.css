@@ -3615,6 +3615,31 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: none;
 }
 
+.main-collections__nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 12;
+	width: calc(50% - 10px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.main-collections__nav .slider-button-prev,
+.main-collections__nav .slider-button-next{
+	position: relative;
+	top: 0;
+	margin-top: -20px;
+}
+
+.main-collections__nav .slider-button-next{
+	right: 0;
+	margin-left: 30px;
+}
+
 .main-collections__slide{
 	position: relative;
 
@@ -3626,14 +3651,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .main-collections__colr{
 	width: calc(50% + 10px);
-	padding: 60px;
-	display: flex;
-	flex-direction: column;
+	padding: 0 20px;
 }
 
 .main-collections__box{
 	width: 100%;
-	margin: auto;
+	padding-top: 15.64%;
+	padding-bottom: 9.8%;
 }
 
 .main-collections__icon{

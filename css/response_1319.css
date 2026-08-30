@@ -69,6 +69,24 @@
 	.header__menu {
     	gap: 30px;
 	}
+
+	.main-slider__title{
+		font-size: 46px;
+	}
+
+	.main-slider__subtitle{
+		font-size: 73px;
+		margin-top: -30px;
+	}
+
+	.main-collections__title{
+		font-size: 46px;
+	}
+
+	.main-collections__subtitle{
+		font-size: 73px;
+		margin-top: -30px;
+	}
 	/*------------
 		Commit
 	------------*/

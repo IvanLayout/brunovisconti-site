@@ -35,6 +35,27 @@
 	.submenu-second__link{
 		font-size: 14px;
 	}
+
+
+	.main-slider__icon{
+		height: 130px;
+	}
+
+	.main-slider__title{
+		margin-top: 30px;
+	}
+
+	.main-slider__desc{
+		margin-top: 30px;
+	}
+
+	.main-collections__title{
+		margin-top: 30px;
+	}
+
+	.main-collections__desc{
+		margin-top: 30px;
+	}
 	/*------------
 		Commit
 	------------*/
