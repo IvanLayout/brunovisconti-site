@@ -28,6 +28,24 @@
 	.header-catalog__cats-img {
 		aspect-ratio: 1 / 0.7433;
 	}
+
+
+	.main-slider__btn .btn-brown{
+		width: 100%;
+	}
+
+	.main-collections__btn .btn-brown{
+		width: 100%;
+	}
+
+
+	.what-suitable__icon{
+		height: 68px;
+	}
+
+	.what-suitable__btn .btn-brown{
+		width: 100%;
+	}
 	/*------------
 		Commit
 	------------*/

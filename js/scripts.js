@@ -18,11 +18,11 @@ $(() => {
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-				pauseOnMouseEnter: true,
-			},
+			// autoplay: {
+			// 	delay: 5000,
+			// 	disableOnInteraction: false,
+			// 	pauseOnMouseEnter: true,
+			// },
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',

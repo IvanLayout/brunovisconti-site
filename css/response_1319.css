@@ -87,6 +87,31 @@
 		font-size: 73px;
 		margin-top: -30px;
 	}
+
+
+	.what-suitable .cont{
+		padding: 0;
+	}
+
+	.what-suitable__icon{
+		height: 140px;
+	}
+
+	.what-suitable__title{
+		margin-top: 40px;
+	}
+
+	.what-suitable__items{
+		margin-top: 30px;
+	}
+
+	.what-suitable__item-title{
+		font-size: 14px;
+	}
+
+	.what-suitable__btn{
+		margin-top: 30px;
+	}
 	/*------------
 		Commit
 	------------*/

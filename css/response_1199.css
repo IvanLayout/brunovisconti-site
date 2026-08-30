@@ -59,6 +59,57 @@
 		margin-top: 24px;
 	}
 
+
+	.what-suitable__wrap{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+	.what-suitable__icon{
+		height: 100px;
+	}
+
+	.what-suitable__title{
+		font-size: 32px;
+		margin-top: 24px;
+	}
+
+	.what-suitable__desc{
+		margin-top: 14px;
+		font-size: 14px;
+	}
+
+	.what-suitable__items{
+		justify-content: center;
+		gap: 20px 30px;
+		margin-top: 30px;
+	}
+
+	.what-suitable__item-icon{
+		height: 24px;
+	}
+
+	.what-suitable__item-title{
+		margin-top: 11px;
+	}
+
+	.what-suitable__item-desc{
+		margin-top: 3px;
+		font-size: 12px;
+	}
+
+	.what-suitable__btn{
+		margin-top: 24px;
+	}
+
+	.what-suitable__link{
+		margin-top: 15px;
+		font-size: 12px;
+	}
+
+	.what-suitable__coll{
+		padding-right: 30px;
+	}
 	/*------------
 		Commit
 	------------*/

@@ -609,7 +609,7 @@
 	}
 
 	.main-slider__icon{
-		height: 100px;
+		height: 80px;
 	}
 
 	.main-slider__coll{
@@ -632,6 +632,19 @@
 
 	.main-slider__btn{
 		margin-top: 20px;
+	}
+
+	.main-slider .slider-pagination{
+		display: flex;
+		position: absolute;
+		left: 0;
+		bottom: 36px;
+		width: 50%;
+		padding: 0 36px;
+	}
+
+	.main-slider__coll{
+		padding-bottom: 56px;
 	}
 
 	.main-collections__icon{
@@ -667,8 +680,35 @@
 
 	.main-collections__slider .slider-pagination{
 		display: flex;
-		flex-wrap: nowrap;
-		gap: 5px;
+		position: absolute;
+		left: auto;
+		right: 0;
+		bottom: 0;
+		width: calc(50% + 10px);
+		padding: 0 30px;
+	}
+
+
+	.what-suitable__coll{
+		padding-right: 20px;
+	}
+
+	.what-suitable__icon{
+		height: 80px;
+	}
+
+	.what-suitable__title {
+		font-size: 24px;
+		margin-top: 20px;
+	}
+
+	.what-suitable__desc{
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
+	.what-suitable__items{
+		margin-top: 27px;
 	}
 	/*------------
 		Commit
