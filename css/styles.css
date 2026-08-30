@@ -2438,16 +2438,14 @@ input[type=checkbox]:checked + .checkbox__text::after
     {
         color: #AF895B;
     }
+
+	.select-wrap.sorting-choice .nice-select .current:hover
+    {
+        color: #AF895B;
+    }
 }
 
-.select-wrap .nice-select.open .current,
-.select-wrap .nice-select .current.selected
-{
-    color: rgba(90, 74, 66, 1);
-}
-
-.select-wrap.sorting-choice .nice-select.open .current,
-.select-wrap.sorting-choice .nice-select .current.selected
+.select-wrap .nice-select.open .current
 {
     color: #AF895B;
 }
@@ -2485,6 +2483,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     transform: rotate(135deg);
 	margin-top: 0;
 	border-color: #AF895B;
+}
+
+.select-wrap.sorting-choice .nice-select .current.selected:after
+{
+	
 }
 
 .select-wrap .nice-select .list
@@ -2667,12 +2670,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .select-color .nice-select.open .current{
 	border-color: #3D322C;
-}
-
-.select-color .nice-select.open .current,
-.select-color .nice-select .current.selected
-{
-    
 }
 
 .select-color .nice-select .current:after
