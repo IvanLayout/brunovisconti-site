@@ -38,4 +38,32 @@
 	/*------------
 		Commit
 	------------*/
+
+	._marg 
+	{
+		margin-top: 70px;
+	}
+
+	.main-title 
+	{
+		font-size: 36px;
+	}
+
+	.products__slider-pad 
+	{
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+
+	.cats-main__item
+	{
+		padding: 40px;
+	}
+
+
+	.reviews__item
+	{
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
 }

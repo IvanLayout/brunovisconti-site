@@ -3,4 +3,41 @@
 	/*------------
 		Commit
 	------------*/
+
+	.main-title 
+	{
+		font-size: 34px;
+	}
+
+	.cats-main__item 
+	{
+		padding: 30px;
+	}
+
+	.cats-main__name
+	{
+		font-size: 28px;
+	}
+
+	.reviews__item 
+	{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.reviews__name-city
+	{
+		font-size: 22px;
+	}
+
+	.quotes-border
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.footer__items
+	{
+		padding-right: 0;
+	}
 }

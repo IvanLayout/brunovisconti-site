@@ -72,4 +72,9 @@
 	/*------------
 		Commit
 	------------*/
+
+	.product__name
+	{
+		font-size: 18px;
+	}
 }

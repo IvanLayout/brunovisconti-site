@@ -4028,7 +4028,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-transform: uppercase;
 	letter-spacing: 0.01em;
 	display: inline-block;
-	padding-bottom: 5px;
 	border-bottom: 1px solid #3D322C;
 
 	position: relative;
@@ -4691,18 +4690,30 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #B8956A;
 	font: 700 16px/1.3 var(--font-family);
 	letter-spacing: 0.01em;
-	padding-bottom: 9px;
 	border-bottom: 1px solid #B8956A;
 	text-transform: uppercase;
-	transition: border .2s linear;
+	transition: border .2s linear, color .2s linear;
 }
 
 @media (any-hover: hover)
 {
 	.reviews__btn:hover
 	{
+		color: #A07D54;
 		border-bottom-color: transparent;
 	}
+}
+
+.reviews__btn:active
+{
+	color: #8A6B45;
+	border-bottom-color: transparent;
+}
+
+.reviews__btn:disabled
+{
+	color: #B8956A;
+	border-bottom-color: transparent;
 }
 
 /*------------
@@ -7842,6 +7853,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 .modal-preorder__amount
 {
 	width: 83px;
+}
+
+@media (max-width: 1819px)
+{
+	.button-up
+	{
+		left: auto;
+		margin-left: 0;
+		right: 20px;
+	}
 }
 
 @media (max-width: 1699px)
