@@ -4152,6 +4152,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	z-index: 1;
 }
 
 .product__btns-btn 
@@ -4291,19 +4292,47 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .product__thumb
 {
-	background: #fff;
 	width: 100%;
 	aspect-ratio: 1 / 1;
+	display: block;
+	position: relative;
+
+	text-decoration: none;
+}
+
+.product__thumb-img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
-
-	text-decoration: none;
+	background: #fff;
 }
 
-.product__thumb img
+.product__thumb-img + .product__thumb-img
+{
+	opacity: 0;
+}
+
+@media (any-hover: hover)
+{
+	.product__thumb:hover .product__thumb-img + .product__thumb-img
+	{
+		opacity: 1;
+	}
+}
+
+
+
+.product__thumb-img img
 {
 	display: block;
 	max-width: 100%;
