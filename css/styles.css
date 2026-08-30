@@ -3388,7 +3388,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-content: center;
 	flex-wrap: wrap;
 
-    width: 30px;
+    width: 36px;
     height: 40px;
 	flex-shrink: 0;
 	color: #5A4A42;
@@ -4218,6 +4218,21 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-wrap: wrap;
 
 	background: #3D322C;
+	transition: background .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.product__cart-btn:hover
+	{
+		background: #60544E;
+	}
+}
+
+.product__cart-btn:disabled
+{
+	cursor: default;
+	background: #D9D9D9;
 }
 
 .product__cart-btn svg
@@ -4229,6 +4244,49 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	stroke: #fff;
 	fill: none;
+}
+
+.product__amount
+{
+	width: 111px;
+	height: 55px;
+	background: #3D322C;
+	border: none;
+}
+
+.product__amount .amount__btn
+{
+	height: 55px;
+	color: #fff;
+}
+
+.product__amount .amount__input
+{
+	height: 55px;
+	color: #fff;
+}
+
+@media (any-hover: hover)
+{
+    .product__amount .amount__btn:not(:disabled):hover
+    {
+        color: #fff;
+    }
+}
+
+.product__added
+{
+	display: none;
+}
+
+.product__added._show
+{
+	display: block;
+}
+
+.product__cart-btn._hide 
+{
+    display: none;
 }
 
 .product__thumb

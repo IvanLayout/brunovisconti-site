@@ -311,10 +311,10 @@ $(() => {
 	})
 
 
-	$('body').on('click', '.product__btn', function (e) {
+	$('body').on('click', '.product__cart-btn', function (e) {
 		e.preventDefault()
 		
-		$(this).closest('.product__bot').addClass('_hide')
+		$(this).closest('.product__cart-btn').addClass('_hide')
 		$(this).closest('.product').find('.product__added').addClass('_show')
 	})
 
