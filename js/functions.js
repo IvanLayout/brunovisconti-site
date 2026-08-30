@@ -326,6 +326,19 @@ $(() => {
 	})
 
 
+	$('body').on('click', '.footer-menu__title-arrow', function (e) {
+		e.preventDefault()
+
+		if ($(this).closest('.footer-menu__title').hasClass('_active')) {
+			$(this).closest('.footer-menu__title').removeClass('_active')
+			$(this).closest('.footer__item').find('.footer-menu__list').removeClass('_show')
+		} else {
+			$(this).closest('.footer-menu__title').addClass('_active')
+			$(this).closest('.footer__item').find('.footer-menu__list').addClass('_show')
+		}
+	})
+
+
 	// Показать все
 	$('body').on('click', '.product-info__bot-btn', function (e) {
 		e.preventDefault()

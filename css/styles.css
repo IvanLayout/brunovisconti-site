@@ -4819,7 +4819,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	max-width: 510px;
 	height: 60px;
-	border-color: #5A4A42;
 }
 
 .section-subscribe__btn
@@ -7348,6 +7347,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-family: var(--second-family);
 	text-transform: uppercase;
 	margin-bottom: 15px;
+	position: relative;
 }
 
 .footer-menu__title a
@@ -7355,6 +7355,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-decoration: none;
 	color: currentColor;
 	transition: color .2s linear;
+}
+
+.footer-menu__title-arrow
+{
+	display: none;
 }
 
 .footer-menu__item + .footer-menu__item
