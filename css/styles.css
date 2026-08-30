@@ -2420,11 +2420,23 @@ input[type=checkbox]:checked + .checkbox__text::after
     transition: color .2s linear;
 }
 
+.select-wrap.sorting-choice .nice-select .current
+{
+	color: #3D322C;
+	line-height: 21px;
+
+	height: 21px;
+    padding-right: 17px;
+	padding-left: 0;
+	height: auto;
+	border: none;
+}
+
 @media (any-hover: hover)
 {
     .select-wrap .nice-select .current:hover
     {
-        
+        color: #AF895B;
     }
 }
 
@@ -2434,26 +2446,45 @@ input[type=checkbox]:checked + .checkbox__text::after
     color: rgba(90, 74, 66, 1);
 }
 
+.select-wrap.sorting-choice .nice-select.open .current,
+.select-wrap.sorting-choice .nice-select .current.selected
+{
+    color: #AF895B;
+}
+
 .select-wrap .nice-select .current:after
 {
-    content: "";
-
+	content: "";
     position: absolute;
     top: 50%;
-    right: 20px;
-
-	width: 8px;
-	height: 5px;
-
-	background: url(../images/ic_arrow.svg) 50% no-repeat;
-	margin-top: -2px;
-
+    right: 19px;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #3D322C;
+    border-bottom: 1px solid #3D322C;
+    transform: rotate(-45deg);
+    margin-top: -3px;
     transition: border .2s linear;
+}
+
+.select-wrap.sorting-choice .nice-select .current:after
+{
+	right: 3px;
+}
+
+@media (any-hover: hover)
+{
+	.select-wrap .nice-select .current:hover:after
+	{
+		border-color: #AF895B;
+	}
 }
 
 .select-wrap .nice-select.open .current:after
 {
-    transform: rotate(180deg);
+    transform: rotate(135deg);
+	margin-top: 0;
+	border-color: #AF895B;
 }
 
 .select-wrap .nice-select .list
@@ -2514,6 +2545,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     transition: color .2s linear, background .2s linear;
 }
 
+.select-wrap.sorting-choice .nice-select .list .list_item
+{
+	white-space: nowrap;
+}
+
 .select-wrap .nice-select .list .list_item::after
 {
 	position: absolute;
@@ -2537,14 +2573,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .select-wrap .nice-select .list .list_item:hover
 {
-	color: #B8956A;
+	color: #AF895B;
 	background: rgba(184, 149, 106, .1);
 }
 
-
 .select-wrap .nice-select .list .list_item.selected
 {
-    color: #B8956A;
+    color: #AF895B;
 	font-weight: 700;
 	background: rgba(184, 149, 106, .1);
 }
@@ -3767,157 +3802,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .sorting__bot
 {
 	margin-bottom: 30px;
-}
-
-.sorting__choice-btn
-{
-    position: relative;
-
-    color: #3D322C;
-    font-size: 16px;
-    line-height: 21px;
-
-    display: block;
-    overflow: hidden;
-
-    height: 21px;
-    padding-right: 17px;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-    transition: color .2s linear;
-}
-
-.sorting__choice-btn svg
-{
-    position: absolute;
-    top: 50%;
-    right: 0;
-
-	width: 8px;
-	height: 5px;
-	margin-top: -1px;
-
-	stroke: currentColor;
-	fill: none;
-}
-
-@media (any-hover: hover)
-{
-	.sorting__choice-btn:hover
-	{
-		color: #AF895B;
-	}
-}
-
-.sorting__choice-btn._active
-{
-	color: #AF895B;
-}
-
-.sorting__choice-btn._active svg
-{
-    transform: rotate(180deg);
-}
-
-.sorting__choice-btn:disabled
-{
-	color: #E8E0D5;
-	cursor: default;
-}
-
-.sorting__choice-list
-{
-    top: calc(100% + 12px);
-
-	background: #fff;
-
-	min-width: 260px;
-}
-
-.sorting__choice-list
-{
-	left: auto;
-	right: 0;
-}
-
-.sorting__choice-list .scrollbar
-{
-    overflow: hidden;
-    overflow-y: auto;
-
-    max-height: 360px;
-
-    scrollbar-width: thin;
-}
-
-.sorting-radio input[type=radio]
-{
-    display: none;
-}
-
-.sorting-radio__label
-{
-    position: relative;
-
-    display: block;
-
-    cursor: pointer;
-}
-
-.sorting-radio__text
-{
-    position: relative;
-
-    color: #3D322C;
-    font-size: 16px;
-    line-height: 1.3;
-	display: block;
-	white-space: nowrap;
-
-    padding: 12px 49px 12px 20px;
-
-	background: transparent;
-
-    transition: color .2s linear, background .2s linear;
-}
-
-.sorting-radio__text::before
-{
-    position: absolute;
-	content: '';
-	top: 18px;
-	right: 20px;
-
-	display: block;
-
-	width: 10px;
-	height: 8px;
-	opacity: 0;
-
-	background: url(../images/ic_check.svg) 50% 50% no-repeat;
-}
-
-@media (any-hover: hover)
-{
-	.sorting-radio__text:hover
-	{
-		color: #AF895B;
-		background: rgba(184, 149, 106, .1);
-	}
-}
-
-input[type=radio]:checked + .sorting-radio__text
-{
-    color: #B8956A;
-	font-weight: 700;
-	background: rgba(184, 149, 106, .1);
-}
-
-input[type=radio]:checked + .sorting-radio__text::before
-{
-	opacity: 1;
 }
 
 /*------------
