@@ -77,4 +77,10 @@
 	{
 		font-size: 18px;
 	}
+
+	.product__sticker
+	{
+		min-width: 50px;
+		line-height: 50px;
+	}
 }

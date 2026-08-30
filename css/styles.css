@@ -4570,14 +4570,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #fff;
 }
 
-.main-banner__desc + .main-banner__bot
-{
-	margin-top: 32px;
-}
-
 .main-banner__bot
 {
-	margin-top: 4px;
+	margin-top: 32px;
 }
 
 .main-banner__btn
@@ -7346,6 +7341,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .footer-menu__title
 {
+	font-size: 16px;
 	color: #3D322C;
 	letter-spacing: 0.01em;
 	font-weight: 500;

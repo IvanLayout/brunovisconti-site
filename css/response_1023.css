@@ -593,4 +593,157 @@
 	/*------------
 		Commit
 	------------*/
+	
+	body
+	{
+		font-size: 14px;
+	}
+
+	.wrap-btn
+	{
+		margin-top: 25px;
+	}
+
+	.head-section_pad 
+	{
+		padding-right: 0;
+	}
+
+	.slider-button-next,
+	.slider-button-prev
+	{
+		display: none;
+	}
+
+	._marg 
+	{
+		margin-top: 50px;
+	}
+
+	.main-title 
+	{
+		font-size: 30px;
+	}
+	
+
+	.cats-main__name
+	{
+		border-bottom: none;
+		font-size: 24px;
+	}
+
+	.main-banner__bg
+	{
+		padding: 80px 30px;
+	}
+
+	.main-banner__bg-height
+	{
+		padding-bottom: 112px;
+	}
+
+	.products_marg 
+	{
+		margin-top: -60px;
+	}
+
+	.products__slider-pad
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
+	.reviews__slider .swiper-overflow
+	{
+		overflow: visible;
+	}
+
+	.reviews__item
+	{
+		width: 310px;
+		padding: 30px 20px;
+	}
+
+	.reviews__name-city 
+	{
+		font-size: 18px;
+	}
+
+	.quotes-border 
+	{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		max-width: 214px;
+	}
+
+	.quotes-border span
+	{
+		height: 16px;
+		width: 40px;
+	}
+	
+	.quotes-border span:after
+	{
+		width: 20px;
+		height: 16px;
+	}
+
+	.reviews__desc
+	{
+		max-height: 73px;
+	}
+
+	.reviews__bot
+	{
+		margin-top: 10px;
+	}
+
+	.reviews__btn
+	{
+		font-size: 14px;
+	}
+
+
+	.main-banner__bot 
+	{
+		margin-top: 24px;
+	}
+
+
+	.section-subscribe__wrap
+	{
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+
+	.section-subscribe__info
+	{
+		width: 100%;
+	}
+
+	.section-subscribe__form
+	{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.form__input.section-subscribe__input
+	{
+		max-width: 100%;
+	}
+
+
+	.footer__items
+	{
+		justify-content: flex-start;
+		gap: 0;
+		margin: -20px 0 0 -20px;
+	}
+
+	.footer__item
+	{
+		width: calc(100%/3 - 20px);
+		margin: 20px 0 0 20px;
+	}
 }
