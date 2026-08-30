@@ -526,6 +526,10 @@
 		margin-top: 5px;
 	}
 
+	.header__collections-btn{
+		margin-top: 20px;
+	}
+
 
 	.fix-btns{
 		position: fixed;

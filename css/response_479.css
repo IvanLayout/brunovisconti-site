@@ -29,6 +29,10 @@
 		aspect-ratio: 1 / 0.7433;
 	}
 
+	.header__collections-btn .btn-border{
+		width: 100%;
+	}
+
 
 	.main-slider__btn .btn-brown{
 		width: 100%;
