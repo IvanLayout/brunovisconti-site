@@ -31,4 +31,176 @@
 	/*------------
 		Commit
 	------------*/
+
+	body
+	{
+		font-size: 12px;
+	}
+
+	.main-title 
+	{
+		font-size: 24px;
+	}
+
+	.cats-main__item
+	{
+		aspect-ratio: 1 / 1.18;
+	}
+
+	.cats-main__name
+	{
+		font-size: 14px;
+	}
+
+
+	.product__stickers
+	{
+		width: calc(100% - 35px);
+	}
+
+	.product__btns-btn
+	{
+		width: 15px;
+		height: 13px;
+	}
+
+	.product__cart-btn
+	{
+		width: 30px;
+		height: 30px;
+	}
+	
+	.product__cart-btn svg
+	{
+		width: 14px;
+		height: 14px;
+	}
+
+	.product__amount
+	{
+		height: 30px;
+		width: 80px;
+	}
+
+	.product__amount .amount__btn
+	{
+		height: 30px;
+		width: 30px;
+	}
+
+	.product__amount .amount__input
+	{
+		height: 30px;
+	}
+
+	.product__name
+	{
+		font-size: 14px;
+	}
+
+	.product__size
+	{
+		font-size: 12px;
+	}
+
+
+	.main-banner__bg.main-banner__bg-height
+	{
+		padding-top: 80px;
+	}
+
+	.main-banner__desc
+	{
+		margin-top: 10px;
+	}
+
+	.main-banner__btn 
+	{
+		min-width: 193px;
+	}
+
+	.btn-brown, 
+	.btn-white
+	{
+		font-size: 12px;
+	}
+
+
+	.quotes-border span
+	{
+		height: 14px;
+		width: 30px;
+	}
+	
+	.quotes-border span:after
+	{
+		top: 2px;
+		width: 14px;
+		height: 12px;
+	}
+
+	.reviews__desc 
+	{
+		max-height: 63px;
+	}
+
+	.reviews__btn
+	{
+		font-size: 12px;
+	}
+
+	.wrap-btn
+	{
+		margin-top: 16px;
+	}
+
+	.wrap-btn > *,
+	.section-gallery__btn > *
+	{
+		width: 100%;
+	}
+
+	.main-banner__name
+	{
+		margin-bottom: 10px;
+	}
+
+	.section-gallery__img img
+	{
+		aspect-ratio: 1 / 1;
+	}
+
+
+	.section-subscribe__flex
+	{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.section-subscribe__submit,
+	.section-subscribe__btn
+	{
+		width: 100%;
+	}
+
+	.footer__bot 
+	{
+		display: block;
+	}
+
+	.footer__copy-mob
+	{
+		display: block;
+	}
+
+	.footer__creator
+	{
+		margin-top: 3px;
+	}
+
+	.footer__creator-img
+	{
+		height: 20px;
+		margin-left: 10px;
+	}
 }

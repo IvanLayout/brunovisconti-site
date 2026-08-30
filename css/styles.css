@@ -7439,6 +7439,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: rgba(90, 74, 66, .5);
 }
 
+.footer__copy-mob
+{
+	display: none;
+}
+
 .footer__creator 
 {
     display: flex;
@@ -7453,6 +7458,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     margin-left: 3px;
 	opacity: .5;
+	height: 26px;
 	transition: opacity .2s linear;
 }
 
@@ -7460,6 +7466,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     display: block;
     max-width: 100%;
+	max-height: 100%;
 }
 
 @media (any-hover: hover)

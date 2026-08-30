@@ -196,8 +196,8 @@ $(() => {
 	if ($('.products__slider').length) {
 		new Swiper(".products__slider", {
 			loop: false,
-			spaceBetween: 20,
-			slidesPerView: 1,
+			spaceBetween: 10,
+			slidesPerView: 2,
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -215,8 +215,8 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
-					slidesPerView: 1,
+					spaceBetween: 10,
+					slidesPerView: 2,
 				},
 				'480': {
 					spaceBetween: 15,
