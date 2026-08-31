@@ -1762,6 +1762,11 @@ button
 	font-weight: 700;
 }
 
+.page-head_marg
+{
+	margin-top: 40px;
+}
+
 .page-head__bg .breadcrumbs
 {
 	margin-top: 0;
@@ -4757,7 +4762,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	opacity: 0;
 	transition: opacity .2s linear;
-	z-index: 1;
+	z-index: 2;
 }
 
 .product__cart-btn
@@ -5005,6 +5010,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	width: 100%;
 	padding: 8px 40px;
+	z-index: 1;
 }
 
 .product__colors
