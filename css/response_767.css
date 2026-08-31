@@ -300,6 +300,11 @@
 	.section-form__form .form__textarea{
 		height: 86px;
 	}
+
+
+	.page-error__title{
+		font-size: 32px;
+	}
 	/*------------
 		Commit
 	------------*/

@@ -833,6 +833,19 @@
 	.contacts_marg{
 		margin-top: 30px;
 	}
+
+
+	.page-error__img{
+		margin-bottom: 30px;
+	}
+
+	.page-error__title{
+		font-size: 40px;
+	}
+
+	.page-error__text{
+		margin-top: 16px;
+	}
 	/*------------
 		Commit
 	------------*/

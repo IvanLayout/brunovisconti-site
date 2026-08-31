@@ -4529,6 +4529,51 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background-color: #CBCDD1;
 	mix-blend-mode: luminosity;
 }
+
+
+.page-error__img{
+	margin-bottom: 50px;
+}
+
+.page-error__img img{
+	display: block;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.page-error__title{
+	font-family: var(--second-family);
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.3;
+	letter-spacing: 0.01em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #3D322C;
+}
+
+.page-error__text{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.page-error__text a{
+	color: #3D322C;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+	.page-error__text a:hover{
+		border-bottom-color: transparent;
+	}
+}
+
+.page-error__text a:active{
+	border-bottom-color: transparent;
+}
 /*------------
     Commit
 ------------*/
