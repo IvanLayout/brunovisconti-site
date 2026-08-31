@@ -118,11 +118,7 @@ $(() => {
 
 		let href = $(this).data('anchor')
 
-		let offsetTop = 10;
-
-		if ( $(window).width() > 767 ){
-			offsetTop = 75
-		}
+		let offsetTop = 20;
 
 		if ( $('.product-fixed').length && $(window).width() > 767 ){
 			offsetTop = $('.product-fixed').innerHeight() + 10
