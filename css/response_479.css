@@ -95,6 +95,14 @@
 	.form-faq__clear{
 		display: none;
 	}
+
+	.adresess__time span{
+		width: 100%;
+	}
+
+	.adresess__btn .btn-border{
+		width: 100%;
+	}
 	/*------------
 		Commit
 	------------*/

@@ -1,6 +1,6 @@
 $(() => {
 	// Observer API
-	const boxes = document.querySelectorAll('.lazyload, .production-process__flex')
+	const boxes = document.querySelectorAll('.lazyload, .map-js')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
@@ -14,6 +14,18 @@ $(() => {
 				entry.target.srcset = entry.target.getAttribute('data-srcset')
 
 				entry.target.classList.add('loaded')
+			}
+
+			if (
+				entry.target.classList.contains('map-js') &&
+				!entry.target.classList.contains('map-loaded')
+			) {
+
+				if (yandexMapsReady) {
+					initMap(entry.target);
+				} else {
+					mapsQueue.push(entry.target);
+				}
 			}
 		}
 	}
@@ -667,3 +679,65 @@ function setHeight(className){
 }
 
 const is_touch_device = () => !!('ontouchstart' in window)
+
+
+let yandexMapsReady = false;
+const mapsQueue = [];
+
+ymaps.ready(() => {
+	yandexMapsReady = true;
+
+	mapsQueue.forEach(map => {
+		initMap(map);
+	});
+
+	mapsQueue.length = 0;
+});
+
+function initMap(element) {
+	if (element.classList.contains('map-loaded')) {
+		return;
+	}
+
+	// Захист від прихованих tab
+	if (element.offsetParent === null) {
+		return;
+	}
+
+	element.classList.add('map-loaded');
+
+	let center;
+	let placemark;
+
+	switch (element.id) {
+		case 'map':
+			center = [55.714115, 37.435331];
+			placemark = [55.714115, 37.435331];
+			break;
+
+		case 'map2':
+			center = [55.655402, 37.880554];
+			placemark = [55.655402, 37.880554];
+			break;
+
+		default:
+			return;
+	}
+
+	const myMap = new ymaps.Map(element.id, {
+		center: center,
+		zoom: 14
+	});
+
+	const myPlacemark = new ymaps.Placemark(
+		placemark,
+		{},
+		{
+			iconImageHref: 'images/marker.svg',
+			iconImageSize: [50, 50],
+			iconImageOffset: [25, 25]
+		}
+	);
+
+	myMap.geoObjects.add(myPlacemark);
+}

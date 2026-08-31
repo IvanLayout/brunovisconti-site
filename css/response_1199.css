@@ -145,6 +145,34 @@
 	.contacts__grid {
 		column-gap: 20px;
 	}
+
+	.tabs__item{
+		padding: 20px 20px 24px;
+	}
+
+	.adresess__title{
+		margin-bottom: 5px;
+	}
+
+	.adresess__sity{
+		font-size: 20px;
+	}
+
+	.adresess__time{
+		gap: 5px 12px;
+	}
+
+	.adresess__socials{
+		margin-top: 15px;
+	}
+
+	.adresess__btn{
+		margin-top: 24px;
+	}
+
+	.adresess__coll {
+		width: calc(42% - 16px);
+	}
 	/*------------
 		Commit
 	------------*/

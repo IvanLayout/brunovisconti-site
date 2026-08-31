@@ -812,6 +812,27 @@
 	.breadcrumbs{
 		margin: 20px 0 30px;
 	}
+
+
+	.adresess__coll{
+		width: 100%;
+	}
+
+	.adresess__colr{
+		display: none;
+	}
+
+	.tabs__item{
+		background: #FCFBFB;
+	}
+
+	.adresess__tab{
+		display: none;
+	}
+
+	.contacts_marg{
+		margin-top: 30px;
+	}
 	/*------------
 		Commit
 	------------*/
