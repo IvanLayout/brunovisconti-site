@@ -25,4 +25,24 @@
 	{
 		padding: 45px;
 	}
+
+
+	.article_subscribe
+	{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.uppercase-font 
+	{
+        font-size: 65px;
+    }
+
+
+	.about-stages__name,
+	.we-believe__name,
+	.collections__name
+	{
+		font-size: 22px;
+	}
 }

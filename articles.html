@@ -2254,7 +2254,10 @@
 								</div>
 							</div>
 
-							<img data-src="images/small_banner_img.jpg" src="images/img_plug.png" alt="" class="small-banner__bg lazyload">
+							<picture>
+								<source srcset="images/img_plug.png" data-srcset="images/small_banner_mob_img.jpg" type="image/jpg"  media="(max-width:479px)" class="lazyload">
+								<img data-src="images/small_banner_img.jpg" src="images/img_plug.png" alt="" class="small-banner__bg lazyload">
+							</picture>
 						</div>
 					</div>
 				</section>

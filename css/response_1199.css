@@ -114,7 +114,8 @@
 		Commit
 	------------*/
 
-	.page-title 
+	.page-title,
+	.about-info__title
 	{
 		font-size: 46px;
 	}
@@ -204,5 +205,90 @@
 	{
 		width: 100%;
 		margin-top: 30px;
+	}
+
+
+	.section-subscribe__wrap
+	{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	
+	.section-subscribe__info
+	{
+		width: 100%;
+	}
+
+	.section-subscribe__form
+	{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.form__input.section-subscribe__input
+	{
+		max-width: 100%;
+	}
+
+	.uppercase-font
+	{
+		top: 0;
+	}
+
+
+	.news-page__coll
+	{
+		padding: 20px;
+	}
+
+	.popular-article__wrap
+	{
+		margin-left: 20px;
+	}
+
+
+	.we-believe__items
+	{
+		margin-left: -20px;
+	}
+
+	.we-believe__item
+	{
+		width: calc(100% / 4 - 20px);
+		margin-left: 20px;
+		margin-top: 20px;
+		padding: 30px 12px;
+	}
+
+	.we-believe__number 
+	{
+		width: 56px;
+		height: 56px;
+		line-height: 56px;
+		font-size: 22px;
+	}
+
+	.we-believe__desc
+	{
+		font-size: 14px;
+	}
+
+
+	.about-info__sub-title 
+	{
+		font-size: 55px;
+		margin-top: -24px;
+	}
+
+	.about-stages__name,
+	.we-believe__name,
+	.collections__name
+	{
+		font-size: 16px;
+	}
+
+	.about-stages__desc
+	{
+		font-size: 14px;
 	}
 }

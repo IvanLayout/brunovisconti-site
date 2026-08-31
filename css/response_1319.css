@@ -116,7 +116,8 @@
 		Commit
 	------------*/
 
-	.page-title
+	.page-title,
+	.about-info__title
 	{
 		font-size: 48px;
 	}
@@ -160,5 +161,25 @@
 	.delivery-stage__name
 	{
 		font-size: 22px;
+	}
+
+
+	.small-banner__wrap 
+	{
+		padding: 60px 54px;
+	}
+
+
+	.popular-article__wrap 
+	{
+		margin-left: 60px;
+	}
+	
+
+	.about-stages__name,
+	.we-believe__name,
+	.collections__name
+	{
+		font-size: 18px;
 	}
 }

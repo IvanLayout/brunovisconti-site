@@ -65,7 +65,8 @@
 		margin-top: 70px;
 	}
 
-	.page-title
+	.page-title,
+	.about-info__title
 	{
 		font-size: 52px;
 	}
@@ -105,10 +106,70 @@
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	
+
 	.our-partners__info
 	{
 		width: 100%;
 		margin-top: 20px;
+	}
+
+
+	.popular-article__wrap
+	{
+		margin-left: 100px;
+	}
+
+	.news-page__desc,
+	.news-page__author,
+	.news-page__socials
+	{
+		margin-top: 20px;
+	}
+
+	.news-page__data 
+	{
+		margin-top: 30px;
+	}
+
+
+	.we-believe__item
+	{
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	.we-believe__number
+	{
+		width: 66px;
+		height: 66px;
+		line-height: 66px;
+	}
+
+	.we-believe__info
+	{
+		margin-top: 30px;
+	}
+
+	.we-believe__desc
+	{
+		margin-top: 15px;
+	}
+
+
+	.about-info__cols
+	{
+		padding: 45px;
+	}
+
+	.about-info__sub-title
+	{
+		font-size: 64px;
+	}
+
+	.about-stages__name, 
+	.we-believe__name,
+	.collections__name
+	{
+		font-size: 20px;
 	}
 }

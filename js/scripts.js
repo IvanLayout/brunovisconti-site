@@ -382,8 +382,8 @@ $(() => {
 	if ($('.text-block__slider').length) {
 		new Swiper(".text-block__slider", {
 			loop: false,
-			spaceBetween: 20,
-			slidesPerView: 1,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -398,7 +398,7 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 15,
-					slidesPerView: 1,
+					slidesPerView: 'auto',
 				},
 				'480': {
 					spaceBetween: 15,
@@ -406,7 +406,7 @@ $(() => {
 				},
 				'768': {
 					spaceBetween: 15,
-					slidesPerView: 3
+					slidesPerView: 2
 				},
 				'1024': {
 					spaceBetween: 24,
@@ -416,11 +416,36 @@ $(() => {
 		})
 	}
 
+	if ($('.popular-article__slider').length) {
+		new Swiper(".popular-article__slider", {
+			loop: false,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 'auto',
+				}
+			}
+		})
+	}
+
 	if ($('.collections__slider').length) {
 		new Swiper(".collections__slider", {
 			loop: false,
-			spaceBetween: 20,
-			slidesPerView: 1,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -439,15 +464,15 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 15,
-					slidesPerView: 1,
+					slidesPerView: 'auto',
 				},
 				'480': {
 					spaceBetween: 15,
-					slidesPerView: 2,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 15,
-					slidesPerView: 3
+					slidesPerView: 'auto',
 				},
 				'1024': {
 					spaceBetween: 20,

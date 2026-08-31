@@ -533,6 +533,66 @@
 	}
 
 
+	.articles__grid .article
+	{
+		width: calc(100% / 2 - 15px);
+	}
+
+	.uppercase-font 
+	{
+		font-size: 50px;
+		line-height: 1;
+	}
+
+
+	.we-believe__items
+	{
+		margin-top: 1px;
+	}
+	
+	.we-believe__item
+	{
+		width: calc(100% / 1 - 20px);
+		margin-top: 15px;
+	}
+
+
+	.about-stages__grid
+	{
+		margin-left: -15px;
+	}
+
+	.about-stages__item 
+	{
+		width: calc(100% / 2 - 15px);
+		margin-left: 15px;
+	}
+
+
+	.collections__item 
+	{
+		width: 180px;
+	}
+
+
+	.cooperation__wrap
+	{
+		flex-wrap: wrap;
+		gap: 24px;
+		padding-bottom: 50px;
+	}
+
+	.cooperation__box-btn
+	{
+		width: 100%;
+	}
+
+	.cooperation__btn
+	{
+		width: 100%;
+	}
+
+
 	.footer__top
 	{
 		padding-top: 20px;

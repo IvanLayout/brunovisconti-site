@@ -353,6 +353,251 @@
 	}
 
 
+	.categories-btns__btn
+	{
+		padding-right: 0;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.categories-btns__btn + .categories-btns__btn
+	{
+		margin-left: 15px;
+	}
+
+	.articles__grid .article 
+	{
+		width: calc(100% / 1 - 15px);
+	}
+
+	.section-subscribe__wrap
+	{
+		gap: 4px;
+	}
+
+	.uppercase-font
+	{
+		font-size: 40px;
+	}
+
+
+	.small-banner__wrap
+	{
+		aspect-ratio: 1 / 1.6;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.small-banner__info
+	{
+		width: 100%;
+	}
+
+	.small-banner__img
+	{
+		margin-top: 20px;
+		height: 69px;
+	}
+
+
+	.news-article_marg
+	{
+		margin-top: 15px;
+	}
+
+	.news-page__title
+	{
+		margin-top: 15px;
+		font-size: 30px;
+	}
+
+	.news-page__img
+	{
+		aspect-ratio: 1 / 1.069;
+	}
+
+
+	.text-block h2
+	{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.text-block * + h2 
+	{
+		margin-top: 20px;
+	}
+
+	.text-block p 
+	{
+		margin-bottom: 10px;
+	}
+
+	.text-block img
+	{
+		margin-bottom: 16px;
+	}
+
+	.text-block * + img 
+	{
+		margin-top: 16px;
+	}
+
+	.text-block * + ul 
+	{
+		margin-top: 10px;
+	}
+
+	.text-block ul
+	{
+		margin-bottom: 10px;
+	}
+
+	.text-block ul li + li 
+	{
+		margin-top: 10px;
+	}
+
+	.text-block ul li
+	{
+		padding-left: 20px;
+	}
+
+	.text-block ul li::before
+	{
+		top: 6px;
+		left: 6px;
+	}
+
+	.text-block * + .text-block__slider
+	{
+		margin-top: 10px;
+	}
+
+	.text-block__slider
+	{
+		overflow: visible;
+		margin-bottom: 16px;
+	}
+
+	.text-block__item-img
+	{
+		width: 308px;
+	}
+
+	.text-block__item-img img
+	{
+		margin-bottom: 0;
+	}
+
+
+	.popular-article__title
+	{
+		font-size: 16px;
+	}
+
+	.popular-article__item
+	{
+		gap: 10px;
+		width: 330px;
+	}
+
+	.popular-article__img
+	{
+		width: 71px;
+		height: 71px;
+	}
+
+	.popular-article__img img
+	{
+		margin-bottom: 0;
+	}
+
+	.popular-article__info 
+	{
+		width: calc(100% - 81px);
+	}
+
+	.popular-article__desc
+	{
+		margin-top: 4px;
+	}
+
+
+	.main-banner__bg-pad
+	{
+		padding-top: 95px;
+		padding-bottom: 95px;
+	}
+
+	.main-banner__bg-dark::before
+	{
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .2);
+		z-index: 1;
+	}
+
+
+	.we-believe__number 
+	{
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		font-size: 16px;
+	}
+
+	.we-believe__info
+	{
+		width: calc(100% - 51px);
+	}
+
+	.we-believe__desc
+	{
+		font-size: 12px;
+	}
+
+
+	.about-info__title
+	{
+		font-size: 32px;
+	}
+
+	.about-info__sub-title
+	{
+		font-size: 48px;
+		margin-top: -17px;
+	}
+
+
+	.about-stages__item 
+	{
+		width: calc(100% / 1 - 15px);
+	}
+
+	.about-stages__desc
+	{
+		font-size: 12px;
+	}
+
+
+	.collections__item
+	{
+		width: 146px;
+	}
+
+	.collections__name
+	{
+		font-size: 14px;
+	}
+
+
 	.section-subscribe__flex
 	{
 		flex-wrap: wrap;
