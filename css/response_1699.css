@@ -8,4 +8,21 @@
 	{
 		font-size: 34px;
 	}
+
+
+	.our-partners__item
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.our-partners__info
+	{
+		width: calc(100% - 140px);
+	}
+
+	.contact-support__wrap
+	{
+		padding: 45px;
+	}
 }

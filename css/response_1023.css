@@ -761,9 +761,14 @@
 		font-size: 24px;
 	}
 
+	.main-banner .cont
+	{
+		padding: 0;
+	}
+
 	.main-banner__bg
 	{
-		padding: 80px 30px;
+		padding: 80px 20px;
 	}
 
 	.main-banner__bg.main-banner__bg-height
@@ -950,7 +955,12 @@
 
 	.page-title 
 	{
-		font-size: 42px;
+		font-size: 40px;
+	}
+
+	.page-head__desc
+	{
+		margin-top: 16px;
 	}
 
 	.added-cart
@@ -1060,6 +1070,46 @@
 	.article__data
 	{
 		margin-top: 15px;
+	}
+
+
+	.our-partners_marg
+	{
+		margin-top: 30px;
+	}
+
+	.our-partners__grid
+	{
+		margin-left: -20px;
+	}
+
+	.our-partners__item
+	{
+		width: calc(100% / 2 - 20px);
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.our-partners__title
+	{
+		font-size: 22px;
+	}
+
+	.ship-calc .cont
+	{
+		padding: 0;
+	}
+
+	.ship-calc__wrap,
+	.contact-support__wrap
+	{
+		padding: 30px 20px;
+	}
+
+
+	.contact-support .cont
+	{
+		padding: 0;
 	}
 
 

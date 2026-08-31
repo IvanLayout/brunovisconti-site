@@ -116,7 +116,7 @@
 
 	.page-title 
 	{
-		font-size: 48px;
+		font-size: 46px;
 	}
 
 	.page-title_marg 
@@ -175,5 +175,34 @@
 	.article__name 
 	{
 		font-size: 20px;
+	}
+
+
+	.our-partners__item
+	{
+		width: calc(100% / 2 - 24px);
+	}
+
+	.ship-calc__wrap,
+	.contact-support__wrap
+	{
+		padding: 40px;
+	}
+
+	.delivery-stage__name 
+	{
+		font-size: 20px;
+	}
+
+
+	.contact-support__boxl
+	{
+		width: 100%;
+	}
+
+	.contact-support__boxr
+	{
+		width: 100%;
+		margin-top: 30px;
 	}
 }

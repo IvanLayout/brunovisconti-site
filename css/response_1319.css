@@ -118,7 +118,7 @@
 
 	.page-title
 	{
-		font-size: 52px;
+		font-size: 48px;
 	}
 
 	.product__name
@@ -139,6 +139,19 @@
 
 
 	.article__name
+	{
+		font-size: 22px;
+	}
+
+
+	.calc-table th,
+	.calc-table td
+	{
+		padding-left: 15px;
+	}
+
+
+	.delivery-stage__name
 	{
 		font-size: 22px;
 	}

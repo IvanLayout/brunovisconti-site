@@ -5943,7 +5943,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #B8956A;
 	font-weight: 700;
 	border-bottom: 1px solid currentColor;
-	transition: border .2s linear;
+	transition: border .2s linear, color .2s linear;
 	text-transform: uppercase;
 }
 
