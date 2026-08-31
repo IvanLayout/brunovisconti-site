@@ -721,6 +721,97 @@
 	.what-suitable__items{
 		margin-top: 27px;
 	}
+
+
+	.section-form__box{
+		max-width: 400px;
+	}
+
+	.checkbox__text_agree br{
+		display: none;
+	}
+
+	.checkbox__text_agree{
+		font-size: 14px;
+	}
+
+	.section-form .form__submit{
+		margin-top: 20px;
+	}
+
+	.section-form .form__submit .btn-brown{
+		width: 100%;
+	}
+
+	.form .form__input{
+		font-size: 14px;
+	}
+
+	.form__label{
+		padding-left: 16px;
+		padding-right: 16px;
+		font-size: 14px;
+	}
+
+	.select-wrap .nice-select .current{
+		font-size: 14px;
+		padding-left: 15px;
+	}
+
+
+	.accordion__open{
+		font-size: 14px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.faq-cats__flex{
+		margin: 16px 0 0 -16px;
+	}
+
+	.faq-cats__btn {
+		width: calc(100% / 4 - 16px);
+		margin-left: 16px;
+	}
+
+	.form-faq .form-faq__input{
+		font-size: 14px;
+		padding-left: 15px;
+		padding-right: 110px;
+	}
+
+	.form-faq__clear{
+		font-size: 14px;
+		margin-left: -100px;
+		width: 100px;
+	}
+
+	.contacts__grid{
+		gap: 15px;
+		margin-top: 16px;
+	}
+
+	.contacts__item{
+		padding: 20px 16px;
+	}
+
+	.contacts__icon{
+		height: 30px;
+		margin-bottom: 15px;
+	}
+
+	.contacts__link {
+		margin-top: 5px;
+		font-size: 16px;
+	}
+
+	.contacts__desc{
+		margin-top: 5px;
+	}
+
+	.breadcrumbs{
+		margin: 20px 0 30px;
+	}
 	/*------------
 		Commit
 	------------*/

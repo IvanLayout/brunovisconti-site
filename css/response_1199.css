@@ -110,6 +110,41 @@
 	.what-suitable__coll{
 		padding-right: 30px;
 	}
+
+
+	.section-form__wrap{
+		padding: 30px 20px;
+	}
+
+	.section-form__box{
+		max-width: 650px;
+	}
+
+
+	.faq-section__sector-item + .faq-section__sector-item{
+		margin-top: 50px;
+	}
+
+	.accordion__item + .accordion__item{
+		margin-top: 16px;
+	}
+
+	.faq-section__accordion{
+		margin-top: 20px;
+	}
+
+	.faq-cats__btn {
+		width: calc(100% / 4 - 20px);
+		margin-left: 20px;
+	}
+
+	.contacts__link{
+		font-size: 20px;
+	}
+
+	.contacts__grid {
+		column-gap: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

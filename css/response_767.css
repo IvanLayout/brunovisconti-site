@@ -203,6 +203,99 @@
 	.what-suitable__btn .btn-brown{
 		width: auto;
 	}
+
+
+	.section-form__wrap{
+		padding-bottom: 40%;
+	}
+
+	.section-form__bg{
+		height: auto;
+		top: auto;
+		bottom: 0;
+		height: 100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		align-content: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.section-form__bg img{
+		height: auto;
+		max-height: 100%;
+		object-position: 100% 100%;
+	}
+
+	.form .form__input{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.form .form__textarea{
+		padding: 14px 15px;
+	}
+
+	.select-wrap .nice-select .current{
+		line-height: 38px;
+		height: 40px;
+	}
+
+	.section-form__box{
+		max-width: none;
+	}
+
+	.faq-section__sector-item + .faq-section__sector-item{
+		margin-top: 30px;
+	}
+
+	.accordion__item + .accordion__item{
+		margin-top: 10px;
+	}
+
+	.faq-section__accordion{
+		margin-top: 15px;
+	}
+
+
+	.faq-top{
+		margin-top: 16px;
+	}
+
+	.form-faq{
+		margin-top: 16px;
+	}
+
+	.form-faq .form-faq__input{
+		height: 40px;
+		padding-right: 90px;
+	}
+
+	.form-faq__clear{
+		height: 40px;
+		width: 80px;
+		margin-left: -80px;
+	}
+
+
+	.faq-cats__flex{
+		gap: 10px 0;
+		margin-left: -10px;
+	}
+
+	.faq-cats__btn {
+		width: calc(100% / 2 - 10px);
+		margin-left: 10px;
+	}
+
+	.contacts__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.contacts__item_mail{
+		grid-column: span 2;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -553,7 +646,7 @@
 
 	.form__label
 	{
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 40px;
 	}
 
