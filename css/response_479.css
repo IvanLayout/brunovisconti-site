@@ -257,6 +257,102 @@
 	}
 
 
+	.our-partners__title
+	{
+		font-size: 16px;
+	}
+
+	.our-partners__img
+	{
+		height: 37px;
+	}
+
+	.our-partners__name
+	{
+		font-size: 14px;
+	}
+
+
+	.ship-calc__form
+	{
+		flex-wrap: wrap;
+	}
+
+	.ship-calc__submit
+	{
+		width: 100%;
+	}
+
+	.ship-calc__form .submit__btn
+	{
+		width: 100%;
+	}
+
+	
+	.payment-methods__img
+	{
+		height: 28px;
+	}
+
+	.payment-methods__name
+	{
+		font-size: 14px;
+	}
+
+
+	.delivery-stages__number
+	{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+
+	.delivery-stages__name
+	{
+		margin-top: 10px;
+	}
+
+	.delivery-stages__desc
+	{
+		margin-top: 8px;
+		font-size: 12px;
+	}
+
+
+	.delivery-stage__item 
+	{
+		width: calc(100% / 1 - 20px);
+	}
+
+
+	.contact-support__items
+	{
+		margin-top: -15px;
+	}
+
+	.contact-support__item
+	{
+		margin-top: 15px;
+	}
+
+	.contact-support__desc
+	{
+		margin-top: 12px;
+	}
+
+	.contact-support__boxr
+	{
+		margin-top: 20px;
+	}
+
+	.contact-support__link
+	{
+		font-size: 14px;
+		margin-top: 5px;
+	}
+
+
 	.section-subscribe__flex
 	{
 		flex-wrap: wrap;

@@ -150,6 +150,12 @@
 		padding-left: 15px;
 	}
 
+	.calc-table th:last-child,
+	.calc-table td:last-child
+	{
+		padding-right: 15px;
+	}
+
 
 	.delivery-stage__name
 	{

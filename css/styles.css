@@ -5921,6 +5921,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 0.01em;
+	font-size: 16px;
 }
 
 .our-partners__desc
@@ -6006,6 +6007,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-align: left;
 	color: #3D322C;
 	font-weight: 700;
+	vertical-align: top;
 }
 
 .calc-table th:last-child
@@ -6017,6 +6019,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	padding: 16px 0 16px 40px;
 	color: #3D322C;
+	vertical-align: top;
+}
+
+.calc-table td:last-child
+{
+	padding-right: 40px;
 }
 
 .calc-table__price-td
@@ -6076,6 +6084,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .payment-methods__name
 {
+	font-size: 16px;
 	margin-top: 30px;
 	color: #3D322C;
 	text-transform: uppercase;

@@ -1100,10 +1100,73 @@
 		padding: 0;
 	}
 
-	.ship-calc__wrap,
-	.contact-support__wrap
+	.ship-calc__wrap
 	{
 		padding: 30px 20px;
+	}
+
+
+	.delivery-stages__bg
+	{
+		background: none;
+		padding-top: 0;
+		padding-bottom: 36px;
+	}
+
+	.delivery-stages__items
+	{
+		gap: 0;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-left: -24px;
+		margin-top: 6px;
+	}
+
+	.delivery-stages__items::before
+	{
+		display: none;
+	}
+
+	.delivery-stages__stage
+	{
+		width: calc(100%/3 - 24px);
+		margin-top: 24px;
+		margin-left: 24px;
+		text-align: left;
+	}
+
+	.delivery-stages__stage:last-child 
+	{
+		text-align: left;
+	}
+
+	.delivery-stages__number
+	{
+		margin-left: 0;
+	}
+
+	.delivery-stages__grid 
+	{
+		margin-top: -20px;
+		margin-left: -20px;
+	}
+
+	.delivery-stage__item 
+	{
+		width: calc(100% / 3 - 20px);
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.delivery-stage__name
+	{
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	.delivery-stage__desc
+	{
+		margin-top: 5px;
 	}
 
 
@@ -1112,6 +1175,21 @@
 		padding: 0;
 	}
 
+	.contact-support__wrap
+	{
+		padding: 30px 20px 50px;
+	}
+
+	.contact-support__link
+	{
+		font-size: 22px;
+	}
+
+
+	._marg._marg-tablet
+	{
+		margin-top: 0;
+	}
 
 	.footer__items
 	{
