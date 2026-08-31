@@ -296,6 +296,10 @@
 	.contacts__item_mail{
 		grid-column: span 2;
 	}
+
+	.section-form__form .form__textarea{
+		height: 86px;
+	}
 	/*------------
 		Commit
 	------------*/

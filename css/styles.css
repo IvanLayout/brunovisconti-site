@@ -4343,6 +4343,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 .section-form__form{
 	margin-top: 20px;
 }
+
+.section-form__form .form__textarea{
+	height: 123px;
+}
 /*------------
     Commit
 ------------*/
