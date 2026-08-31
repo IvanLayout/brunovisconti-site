@@ -3,4 +3,9 @@
 	/*------------
 		Commit
 	------------*/
+
+	.product_big .product__name
+	{
+		font-size: 34px;
+	}
 }

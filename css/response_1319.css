@@ -116,6 +116,11 @@
 		Commit
 	------------*/
 
+	.page-title
+	{
+		font-size: 52px;
+	}
+
 	.product__name
 	{
 		font-size: 18px;
@@ -125,5 +130,16 @@
 	{
 		min-width: 50px;
 		line-height: 50px;
+	}
+
+	.categories-small__item
+	{
+		width: 330px;
+	}
+
+
+	.article__name
+	{
+		font-size: 22px;
 	}
 }

@@ -350,6 +350,21 @@ $(() => {
 		}
 	})
 
+	// Показать все
+	$('body').on('click', '.section-text__btn', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.section-text').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.section-text').find('._hide').addClass('_show')
+		}
+	})
+
 
 	// Аккордион простой
 	$('body').on('click', '.accord__open', function (e) {

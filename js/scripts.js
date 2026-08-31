@@ -299,7 +299,7 @@ $(() => {
 	if ($('.categories-small__slider').length) {
 		new Swiper(".categories-small__slider", {
 			loop: false,
-			spaceBetween: 20,
+			spaceBetween: 15,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -315,15 +315,15 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 15,
-					slidesPerView: 1,
+					slidesPerView: 'auto',
 				},
 				'480': {
 					spaceBetween: 15,
-					slidesPerView: 2,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 15,
-					slidesPerView: 3
+					slidesPerView: 'auto',
 				},
 				'1024': {
 					spaceBetween: 25,
@@ -337,7 +337,7 @@ $(() => {
 		new Swiper(".articles__slider", {
 			loop: false,
 			spaceBetween: 20,
-			slidesPerView: 1,
+			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -356,15 +356,15 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 15,
-					slidesPerView: 1,
+					slidesPerView: 'auto',
 				},
 				'480': {
 					spaceBetween: 15,
-					slidesPerView: 2,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 15,
-					slidesPerView: 3
+					slidesPerView: 'auto',
 				},
 				'1024': {
 					spaceBetween: 24,
@@ -651,6 +651,10 @@ $(window).on('load', () => {
 			$('.products__grid').find('.product').addClass('_loaded')
 		}, 100)
 	}
+
+	if ($('.filter-use_slider').length){
+		filterUse()
+	}
 });
 
 
@@ -693,6 +697,10 @@ $(window).on('resize', () => {
 		setTimeout(() => {
 			$('.products__grid').find('.product').addClass('_loaded')
 		}, 100)
+	}
+
+	if ($('.filter-use_slider').length){
+		filterUse()
 	}
 });
 
@@ -778,5 +786,53 @@ function productsHeight(context, step) {
 
 		start  = start + step
 		finish = finish + step
+	}
+}
+
+
+function filterUse(){
+	if ( $(window).width() < 1024 && !$('.filter-use_slider').hasClass('swiper-initialized') ) {
+		$('.filter-use_slider').addClass('swiper')
+		$('.filter-use_slider .filter-use__flex').addClass('swiper-wrapper').removeClass('_flex')
+		$('.filter-use_slider .filter-use__item').addClass('swiper-slide')
+
+		filterUseSwiper = new Swiper('.filter-use_slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			freeMode: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+			on: {
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
+		})
+	} else if ($(window).width() > 1023 && $('.filter-use_slider').hasClass('swiper-initialized')) {
+		filterUseSwiper.destroy(true, true)
+
+		$('..filter-use_slider').removeClass('swiper')
+		$('.filter-use_slider .filter-use__flex').removeClass('swiper-wrapper').addClass('_flex')
+		$('.filter-use_slider .filter-use__item').removeClass('swiper-slide')
 	}
 }

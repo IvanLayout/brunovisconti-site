@@ -4345,6 +4345,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .sorting__val
 {
+	font-size: 16px;
 	color: #3D322C;
 	position: absolute;
 	top: 50%;
@@ -4459,6 +4460,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	cursor: default;
 }
 
+.filter-use .swiper-scrollbar 
+{
+    display: none;
+}
+
 /*------------
     categories-small
 ------------*/
@@ -4498,7 +4504,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	width: 103px;
 	height: 103px;
-	border-radius: 66px;
+	border-radius: 50%;
+	overflow: hidden;
 	background: #fff;
 	padding: 15px;
 
@@ -5555,7 +5562,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .section-text__btn
 {
-	margin-top: 24px;
+	margin-top: 4px;
 
 	color: rgba(61, 50, 44, .5);
     font-size: 16px;
@@ -5564,21 +5571,52 @@ input[type=checkbox]:checked + .checkbox__text::after
     font-weight: 700;
     text-transform: uppercase;
 	transition: color .2s linear;
+	text-decoration: none;
 }
 
 .section-text__btn span
 {
 	border-bottom: 1px solid currentColor;
     transition: border .2s linear;
-	padding-bottom: 9px;
+}
+
+.section-text__btn span + span
+{
+	display: none;
+}
+
+.section-text__btn._active span
+{
+	display: none;
+}
+
+.section-text__btn._active span + span
+{
+	display: block;
 }
 
 @media (any-hover: hover)
 {
 	.section-text__btn:hover
 	{
-		color: rgba(61, 50, 44, 1);
+		color: #776861;
 	}
+}
+
+.section-text__btn:disabled
+{
+	color: #E8E0D5;
+	cursor: default;
+}
+
+.section-text__text ._hide
+{
+	display: none;
+}
+
+.section-text__text ._hide._show 
+{
+    display: block;
 }
 
 /*------------
@@ -6510,7 +6548,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .added-cart
 {
 	position: fixed;
-	top: 100px;
+	top: 230px;
 	left: 50%;
 
 	margin-left: 450px;
@@ -6519,7 +6557,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding: 8px;
 	width: 430px;
 
-	z-index: 100;
+	z-index: 80;
 }
 
 .added-cart__flex
@@ -6562,6 +6600,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	font-size: 12px;
 	letter-spacing: 0.01em;
+	text-transform: uppercase;
 }
 
 .added-cart__name
@@ -8425,7 +8464,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 @media (max-width: 1819px)
 {
-	.button-up
+	.button-up,
+	.added-cart
 	{
 		left: auto;
 		margin-left: 0;

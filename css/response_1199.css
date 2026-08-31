@@ -114,6 +114,21 @@
 		Commit
 	------------*/
 
+	.page-title 
+	{
+		font-size: 48px;
+	}
+
+	.page-title_marg 
+	{
+		margin-top: 155px;
+	}
+
+	.page-head__bg
+	{
+		padding: 30px;
+	}
+
 	.main-title 
 	{
 		font-size: 34px;
@@ -149,5 +164,16 @@
 	.footer__items
 	{
 		padding-right: 0;
+	}
+	
+	.product_big .product__name 
+	{
+		font-size: 26px;
+	}
+
+
+	.article__name 
+	{
+		font-size: 20px;
 	}
 }

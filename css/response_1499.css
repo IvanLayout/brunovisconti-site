@@ -87,4 +87,10 @@
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
+
+
+	.product_big .product__name 
+	{
+		font-size: 30px;
+	}
 }
