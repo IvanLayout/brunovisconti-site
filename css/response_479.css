@@ -50,6 +50,51 @@
 	.what-suitable__btn .btn-brown{
 		width: 100%;
 	}
+
+	.section-form__wrap {
+		padding-bottom: 63%;
+	}
+
+	.form-faq .form-faq__input{
+		font-size: 12px;
+		padding-right: 15px;
+	}
+
+	.form-faq__clear{
+		font-size: 12px;
+	}
+
+	.form .form__input{
+		font-size: 12px;
+	}
+
+	.form .form__textarea{
+		font-size: 12px;
+	}
+
+	.checkbox__text_agree{
+		font-size: 12px;
+	}
+
+	.select-wrap .nice-select .current{
+		font-size: 12px;
+	}
+
+	.accordion__open{
+		font-size: 12px;
+	}
+
+	.contacts__grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.contacts__item_mail{
+		grid-column: span 1;
+	}
+
+	.form-faq__clear{
+		display: none;
+	}
 	/*------------
 		Commit
 	------------*/
