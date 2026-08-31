@@ -27,6 +27,10 @@
 		width: 100%;
 	}
 
+	.header-search .products__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	.top-collection{
 		aspect-ratio: 1/.7433;
 	}

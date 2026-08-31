@@ -111,6 +111,7 @@
 	.header-search__coll{
 		overflow: visible;
 		width: 100%;
+		max-width: none;
 		order: 2;
 		padding: 0;
 		margin-top: 30px;
@@ -120,6 +121,7 @@
 	.header-search__colr{
 		overflow: visible;
 		width: 100%;
+		max-width: none;
 		padding: 0;
 		height: auto;
 	}
@@ -593,6 +595,11 @@
 		font-size: 9px;
 		padding-bottom: 1px;
 		margin-left: 2px;
+	}
+
+	.header-search .products__grid{
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px 15px;
 	}
 
 

@@ -286,7 +286,7 @@ $(() => {
 		}
 	})
 
-	$('.form__input-anim').each(function(){
+	$('.form__input, .form__textarea').each(function(){
 		let value = $(this).val()
 
 		if ( value != '' ) {
@@ -296,7 +296,7 @@ $(() => {
 		}
 	})
 
-	$('.form__input-anim').change(function() {
+	$('.form__input, .form__textarea').change(function() {
 		let value = $(this).val()
 
 		if ( value != '' ) {
