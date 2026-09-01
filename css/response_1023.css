@@ -1760,6 +1760,12 @@
 	}
 
 
+	.product-info__similar-title
+	{
+		padding-right: 0;
+	}
+
+
 	.features__feature
 	{
 		justify-content: space-between;
