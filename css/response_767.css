@@ -305,6 +305,14 @@
 	.page-error__title{
 		font-size: 32px;
 	}
+
+	.collections-products .products__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.global-title{
+		margin-bottom: 5px;
+	}
 	/*------------
 		Commit
 	------------*/

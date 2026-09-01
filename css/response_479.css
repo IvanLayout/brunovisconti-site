@@ -103,6 +103,14 @@
 	.adresess__btn .btn-border{
 		width: 100%;
 	}
+
+	.collections-products .product:nth-child(n + 4) {
+		display: block;
+	}
+
+	.products__grid{
+		gap: 20px 12px;
+	}
 	/*------------
 		Commit
 	------------*/

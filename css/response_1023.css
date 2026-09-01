@@ -846,6 +846,40 @@
 	.page-error__text{
 		margin-top: 16px;
 	}
+
+
+	.collections-products__coll{
+		width: 100%;
+	}
+
+	.collections-products__img{
+		max-width: 450px;
+	}
+
+	.collections-products__colr{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.collections-products .products__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.collections-products .product:nth-child(n + 4){
+		display: none;
+	}
+
+	.collections-products__btn{
+		padding-top: 20px;
+	}
+
+	.collections-products__cols{
+		margin-top: 15px;
+	}
+
+	.global-title{
+		margin-bottom: 10px;
+	}
 	/*------------
 		Commit
 	------------*/
