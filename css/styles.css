@@ -7279,6 +7279,12 @@ input[type=checkbox]:checked + .checkbox__text::after
     height: 736px;
 }
 
+.product-thumbs .slider-button-prev,
+.product-thumbs .slider-button-next
+{
+	display: none;
+}
+
 .product-thumbs__img
 {
     position: relative;
@@ -7443,7 +7449,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .product-info__top
 {
-	width: calc(calc(50.722% - 40px));
+	width: calc(50.722% - 40px);
 }
 
 .product-info__use
@@ -7546,7 +7552,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .product-info__col
 {
-	width: calc(calc(50.722% - 40px));
+	width: calc(50.722% - 40px);
 	margin-top: 20px;
 }
 
@@ -8152,6 +8158,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 .information__desc
 {
 	width: calc(100% - 39px);
+}
+
+.information__desc span
+{
+	white-space: nowrap;
+}
+
+.information__btn
+{
+	display: none;
 }
 
 

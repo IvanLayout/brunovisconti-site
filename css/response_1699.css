@@ -45,4 +45,24 @@
 	{
 		font-size: 22px;
 	}
+
+
+	.information__items
+	{
+		margin-top: -20px;
+		margin-left: -20px;
+	}
+
+	.information__item 
+	{
+		width: calc(100% / 2 - 20px);
+		margin: 20px 0 0 20px;
+	}
+	
+
+	.product-images__img,
+	.product-thumbs
+	{
+		height: 630px;
+	}
 }

@@ -200,4 +200,22 @@
 	{
 		font-size: 18px;
 	}
+
+
+	.product-info__top,
+	.product-info__col
+	{
+		width: calc(50.722% - 30px);
+	}
+
+	.product-info__title 
+	{
+		font-size: 30px;
+	}
+
+	.product-info__price,
+	.product-info__price-old
+	{
+		font-size: 32px;
+	}
 }

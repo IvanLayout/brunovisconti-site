@@ -1630,6 +1630,181 @@
 	}
 
 
+	.product-info__wrap
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.product-info__images
+	{
+		float: none;
+		width: 100%;
+
+		order: 2;
+		margin-top: 20px;
+	}
+
+	.product-info__top
+	{
+		float: none;
+		width: 100%;
+
+		order: 1;
+	}
+
+	.product-info__col
+	{
+		float: none;
+		width: 100%;
+
+		order: 3;
+	}
+
+	.information
+	{
+		float: none;
+		width: 100%;
+		order: 4;
+	}
+
+	.information__btn
+	{
+		display: flex;
+		margin-top: 20px;
+	}
+
+	.information__wrap
+	{
+		width: 100%;
+	}
+
+	.information__item 
+	{
+		width: calc(100% / 3 - 20px);
+	}
+
+	.product-info__title
+	{
+		font-size: 32px;
+	}
+
+	.product-thumbs
+	{
+		display: none;
+	}
+
+	.product-images
+	{
+		width: 100%;
+	}
+
+	.product-images .slider-pagination
+	{
+		display: flex;
+		margin-top: 0;
+	}
+
+	.product-info__box
+	{
+		max-width: 100%;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product-info__item._tablet-none
+	{
+		display: none;
+	}
+
+	.product-info__bonus
+	{
+		order: 1;
+		margin-top: 0;
+	}
+
+	.product-info__prices
+	{
+		order: 2;
+	}
+
+	.product-info__discount
+	{
+		order: 3;
+	}
+
+	.product-color
+	{
+		order: 4;
+		margin-top: 10px;
+	}
+
+	.product-info__city-btn
+	{
+		order: 5;
+		margin-top: 70px;
+	}
+
+	.product-info__items
+	{
+		order: 6;
+	}
+
+	.product-info__btns
+	{
+		display: none;
+	}
+
+
+	.features__feature
+	{
+		justify-content: space-between;
+		position: relative;
+	}
+
+	.features__feature::before 
+	{
+		content: "";
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		width: 100%;
+		border-bottom: 1px dashed #E8E0D5;
+	}
+
+	.features__feature-name
+	{
+		width: 50%;
+	}
+
+	.features__feature-name::before
+	{
+		display: none;
+	}
+
+	.features__feature-val
+	{
+		text-align: right;
+		width: 50%;
+	}
+
+	.features__feature-val span
+	{
+		position: relative;
+		padding-left: 5px;
+		background: #FFFCF9;
+	}
+
+	.product-info__availability::before
+	{
+		top: 6px;
+	}
+
+
 	._marg._marg-tablet
 	{
 		margin-top: 0;

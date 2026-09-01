@@ -354,4 +354,44 @@
 	{
 		font-size: 14px;
 	}
+
+
+	.product-thumbs
+	{
+		width: 80px;
+		height: 500px;
+	}
+
+	.product-images,
+	.information__wrap
+	{
+		width: calc(100% - 95px);
+	}
+
+	.product-images__img
+	{
+		height: 500px;
+	}
+
+	.information__item 
+	{
+		width: calc(100% / 1 - 20px);
+	}
+
+	.product-info__title 
+	{
+		font-size: 26px;
+	}
+
+	.product-info__price,
+	.product-info__price-old
+	{
+		font-size: 28px;
+	}
+
+
+	.features__feature-name 
+	{
+		width: 60%;
+	}
 }

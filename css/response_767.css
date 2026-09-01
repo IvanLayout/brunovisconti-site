@@ -695,6 +695,37 @@
 	}
 
 
+	.product-images__img
+	{
+		height: auto;
+		aspect-ratio: 1 / 1;
+	}
+
+	.information__item 
+	{
+		width: calc(100% / 2 - 20px);
+	}
+
+
+	.help-btn svg
+	{
+		margin-right: 15px;
+	}
+
+	.help-btn__name
+	{
+		font-size: 18px;
+		margin-top: 5px;
+		display: block;
+	}
+
+
+	.product-info__availability::before 
+	{
+		top: 5px;
+	}
+
+
 	.footer__top
 	{
 		padding-top: 20px;

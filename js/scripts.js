@@ -489,8 +489,8 @@ $(() => {
 
 	if ($('.product-info').length) {
 		galleryThumbs = new Swiper('.product-thumbs', {
-			spaceBetween: 9,
-			slidesPerView: 8,
+			spaceBetween: 24,
+			slidesPerView: 5,
 			direction: 'vertical',
 			loop: false,
 			speed: 500,
@@ -502,19 +502,11 @@ $(() => {
 			},
 			breakpoints: {
 				'768': {
-					spaceBetween: 9,
-					slidesPerView: 8
-				},
-				'1024': {
-					spaceBetween: 5,
-					slidesPerView: 7
-				},
-				'1320': {
-					spaceBetween: 8,
+					spaceBetween: 24,
 					slidesPerView: 5
 				},
-				'1760': {
-					spaceBetween: 10,
+				'1024': {
+					spaceBetween: 24,
 					slidesPerView: 5
 				}
 			}

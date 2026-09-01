@@ -176,4 +176,39 @@
 	{
 		font-size: 20px;
 	}
+
+
+	.product-thumbs
+	{
+		width: 100px;
+		height: 580px;
+	}
+
+	.product-images,
+	.information__wrap
+	{
+		width: calc(100% - 120px);
+	}
+
+	.product-images__img
+	{
+		height: 580px;
+	}
+
+	.product-info__title
+	{
+		font-size: 32px;
+	}
+
+	.product-info__price,
+	.product-info__price-old
+	{
+		font-size: 34px;
+	}
+
+
+	.features__feature-name
+	{
+		width: 70%;
+	}
 }
