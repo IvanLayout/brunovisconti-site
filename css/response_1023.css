@@ -1754,7 +1754,7 @@
 		order: 6;
 	}
 
-	.product-info__btns
+	.product-info .product-info__btns
 	{
 		display: none;
 	}
@@ -1808,6 +1808,38 @@
 	.product-info__availability::before
 	{
 		top: 6px;
+	}
+
+
+	.product-fixed
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		top: auto;
+		bottom: 58px;
+	}
+
+	.product-fixed__box
+	{
+		padding-left: 0;
+		width: 100%;
+	}
+
+	.product-fixed__product,
+	.product-fixed .product-info__prices
+	{
+		display: none;
+	}
+
+	.product-fixed .product-info__buy-box
+	{
+		min-width: 1px;
+	}
+
+	.product-fixed .product-info__btns
+	{
+		margin-left: 0;
+		width: 100%;
 	}
 
 

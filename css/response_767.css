@@ -726,6 +726,24 @@
 	}
 
 
+	.product-fixed .product-info__btns
+	{
+		gap: 15px;
+	}
+
+	.product-info__btns-favorite
+	{
+		width: 40px;
+		height: 40px;
+	}
+
+	.product-info__btns-favorite svg
+	{
+		width: 17px;
+		height: 15px;
+	}
+
+
 	.footer__top
 	{
 		padding-top: 20px;

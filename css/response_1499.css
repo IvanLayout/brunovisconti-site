@@ -211,4 +211,21 @@
 	{
 		width: 70%;
 	}
+
+
+	.product-fixed__product
+	{
+		width: 470px;
+	}
+
+	.product-fixed__product-name
+	{
+		font-size: 20px;
+	}
+
+	.product-fixed .product-info__price,
+	.product-fixed .product-info__price-old
+	{
+		font-size: 30px;
+	}
 }

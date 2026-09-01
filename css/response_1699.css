@@ -65,4 +65,16 @@
 	{
 		height: 630px;
 	}
+
+
+	.product-fixed .product-info__btns
+	{
+		margin-left: 30px;
+	}
+
+	.product-fixed__product-img
+	{
+		width: 100px;
+		height: 100px;
+	}
 }

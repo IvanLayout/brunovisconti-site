@@ -7474,12 +7474,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .product-info__info 
 {
-	margin: -5px 0 0 -20px;
+	margin: 5px 0 0 -20px;
 }
 
 .product-info__availability
 {
-	margin: 20px 0 0 20px;
+	margin: 10px 0 0 20px;
 	position: relative;
 	padding-left: 11px;
 }
@@ -7507,7 +7507,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .product-info__share
 {
-	margin: 20px 0 0 20px;
+	margin: 10px 0 0 20px;
 }
 
 .product-info__share a
@@ -7667,6 +7667,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-wrap: nowrap;
 }
 
+.product-fixed .product-info__btns
+{
+	margin-top: 0;
+	margin-left: 140px;
+	flex-shrink: 0;
+}
+
+.product-fixed .product-info__buy-box
+{
+	min-width: 317px;
+}
+
 .product-info__btns-favorite
 {
 	flex-shrink: 0;
@@ -7737,6 +7749,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 .product-info__buy
 {
 	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .product-info__added
@@ -8217,6 +8231,86 @@ input[type=checkbox]:checked + .checkbox__text::after
 	{
 		color: #A07D54;
 	}
+}
+
+.product-fixed 
+{
+    position: fixed;
+    z-index: 60;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    padding: 15px 0;
+    pointer-events: none;
+    opacity: 0;
+    background: #FFF;
+    box-shadow: 0 4px 38.4px 0 rgba(185, 185, 185, .25);
+    transition: opacity .2s linear, visibility .2s linear;
+}
+
+.product-fixed._show 
+{
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.product-fixed__flex 
+{
+    align-content: center;
+    align-items: center;
+	flex-wrap: nowrap;
+}
+
+.product-fixed__product 
+{
+    flex-wrap: nowrap;
+    width: 630px;
+    margin-right: auto;
+}
+
+.product-fixed__product-img 
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: 128px;
+    height: 128px;
+    margin-right: 20px;
+}
+
+.product-fixed__product-img img 
+{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-fixed__product-box 
+{
+    align-self: center;
+}
+
+.product-fixed__product-name 
+{
+	color: #3D322C;
+    font-size: 24px;
+    font-weight: 500;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	font-family: var(--second-family);
+}
+
+.product-fixed__box
+{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding-left: 30px;
 }
 
 @media (any-hover: hover)
