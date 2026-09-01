@@ -3131,6 +3131,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .f-button.is-close-button
 {
+	position: absolute;
     top: 20px;
     right: 15px;
 
@@ -5832,11 +5833,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 30px;
 	text-align: center;
 
-	position: fixed;
+	position: sticky;
 	z-index: 100;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+	width: calc(100% + 120px);
+	margin-left: -60px;
+	margin-right: -60px;
 
 	padding: 30px 60px;
 	background: #fff;
@@ -8563,7 +8566,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding: 100px 70px;
 
 	background: #fff;
-	height: 100%;
+	flex-grow: 1;
+	margin-left: auto;
 }
 
 .modal-filter
@@ -8579,7 +8583,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .modal-filter__form
 {
-	padding:  30px 60px;
+	padding:  30px 60px 0;
 	position: relative;
 }
 

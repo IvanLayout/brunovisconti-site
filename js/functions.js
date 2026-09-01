@@ -190,14 +190,9 @@ $(() => {
 		autoFocus: false,
 		dragToClose: false,
 		placeFocusBack: false,
-		
-		
 		Html: {
-			
 			tpl: myCloseBtn
 		},
-		
-		
 		Toolbar: {
 			display: {
 				right: ["close"],
@@ -207,6 +202,9 @@ $(() => {
 					tpl: myCloseBtn
 				}
 			}
+		},
+		Carousel: {
+			gestures: false
 		}
 	};
 

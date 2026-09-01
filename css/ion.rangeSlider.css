@@ -331,6 +331,7 @@
 
     cursor: default;
     white-space: nowrap;
+    pointer-events: none;
 }
 
 .irs-from
