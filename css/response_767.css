@@ -752,6 +752,39 @@
 	}
 
 
+	.sorting__btns-btn + .sorting__btns-btn 
+	{
+		margin-left: 20px;
+	}
+
+	.sorting__btns-btn span
+	{
+		display: none;
+	}
+
+	.sorting__btns-btn svg
+	{
+		margin-right: 0;
+	}
+
+
+	.search-head__form
+	{
+		margin-top: 0;
+	}
+
+	.search-head__form-input
+	{
+		font-size: 36px;
+	}
+
+
+	.search-head .categories-btns__btn + .categories-btns__btn
+	{
+		margin-left: 22px;
+	}
+
+
 	.footer__top
 	{
 		padding-top: 20px;

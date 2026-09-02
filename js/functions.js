@@ -284,9 +284,9 @@ $(() => {
 
 
 	// commit
-
+	
 	// favorite
-	$('body').on('click', '.product-favorite', function (e) {
+	$('body').on('click', '.product-favorite:not(.product-favorite_delete)', function (e) {
 		e.preventDefault()
 
 		if ($(this).hasClass('_active')) {
@@ -294,6 +294,12 @@ $(() => {
 		} else {
 			$(this).addClass('_active')
 		}
+	})
+
+	$('body').on('click', '.product-favorite_delete', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.product').remove()
 	})
 
 	$('.form__input, .form__textarea').each(function(){

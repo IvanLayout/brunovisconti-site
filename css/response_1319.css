@@ -218,4 +218,16 @@
 	{
 		font-size: 32px;
 	}
+
+
+	.search-head__form-input
+	{
+		font-size: 48px;
+		height: 77px;
+	}
+
+	.search-head__form-submit
+	{
+		height: 77px;
+	}
 }

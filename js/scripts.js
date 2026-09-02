@@ -530,6 +530,38 @@ $(() => {
 		})
 	}
 
+	if ($('.modal-images__slider').length) {
+		new Swiper(".modal-images__slider", {
+			loop: false,
+			spaceBetween: 15,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				el: ".slider-pagination",
+				type: "fraction",
+			},
+			// on: {
+			// 	init: function (swiper) {
+			// 		$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+			// 	}
+			// }
+		})
+	}
+
 	$('body').on('submit', '.form-ajax', function (e) {
 		e.preventDefault()
 

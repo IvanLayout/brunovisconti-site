@@ -394,4 +394,10 @@
 	{
 		width: 60%;
 	}
+
+
+	.search-head__form-input
+	{
+		font-size: 46px;
+	}
 }

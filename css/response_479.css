@@ -721,6 +721,18 @@
 	}
 
 
+	.page-head__btn > *
+	{
+		width: 100%;
+	}
+
+
+	.search-head__form-input
+	{
+		font-size: 32px;
+	}
+
+
 	.section-subscribe__flex
 	{
 		flex-wrap: wrap;

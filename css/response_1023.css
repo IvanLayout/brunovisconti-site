@@ -809,8 +809,8 @@
 		margin-top: 5px;
 	}
 
-	.breadcrumbs{
-		margin: 20px 0 30px;
+	.page-top{
+		padding: 20px 0 30px;
 	}
 
 
@@ -1129,6 +1129,11 @@
 		margin-top: 16px;
 	}
 
+	.page-head__btn
+	{
+		margin-top: 20px;
+	}
+
 	.added-cart
 	{
 		width: 360px;
@@ -1174,7 +1179,7 @@
 	}
 
 
-	.sorting
+	.sorting + .categories-small
 	{
 		border-top: 1px solid #E8E0D5;
 	}
@@ -1518,10 +1523,8 @@
 		margin-right: -20px;
 		margin-left: -20px;
 		padding-right: 20px;
+		padding-left: 20px;
 		white-space: nowrap;
-
-		margin-top: 20px;
-		margin-bottom: 30px;
 	}
 
 	.breadcrumbs::-webkit-scrollbar
@@ -1874,6 +1877,39 @@
 	{
 		margin-left: 0;
 		width: 100%;
+	}
+
+
+	.search-head
+	{
+		padding-top: 30px;
+	}
+
+	.search-head__form-input
+	{
+		font-size: 40px;
+		height: 58px;
+	}
+
+	.search-head__form-submit
+	{
+		height: 58px;
+	}
+
+	.categories-btns_marg,
+	._marg-small
+	{
+		margin-top: 30px;
+	}
+
+	.search-head .categories-btns::after
+	{
+		width: 100%;
+	}
+
+	.search-head__desc
+	{
+		margin-top: 20px;
 	}
 
 

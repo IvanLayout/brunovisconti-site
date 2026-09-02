@@ -44,6 +44,12 @@
 		<path d="M11 4L8 1L5 4" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M8 1V9" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="delete" viewBox="0 0 16 16">
+		<path d="M1 4H3.33333H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M12 4V12.7C12 13.0448 11.8645 13.3754 11.6234 13.6192C11.3823 13.863 11.0553 14 10.7143 14H4.28571C3.94472 14 3.6177 13.863 3.37658 13.6192C3.13546 13.3754 3 13.0448 3 12.7V4M4.92857 3.6V2.3C4.92857 1.95522 5.06403 1.62456 5.30515 1.38076C5.54627 1.13696 5.87329 1 6.21429 1H8.78571C9.12671 1 9.45373 1.13696 9.69485 1.38076C9.93597 1.62456 10.0714 1.95522 10.0714 2.3V3.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M6 7V11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M9 7V11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 	<symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 16 16">
 		<path d="M3 8H12.3333" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
