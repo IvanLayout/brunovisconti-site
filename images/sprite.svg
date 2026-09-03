@@ -58,6 +58,10 @@
 		<path d="M11.75 0.75L0.75 11.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M0.75 0.75L11.75 11.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="exit" viewBox="0 0 24 24">
+		<path d="M12.9103 16.0977L13.8407 17L19 12.0037L13.8484 7L12.918 7.90231L15.2939 10.2662C15.7052 10.6842 16.1961 11.021 16.7394 11.258H16.7856H1V12.7494H16.7856H16.7087C16.1794 12.9786 15.6995 13.3024 15.2939 13.704L12.9103 16.0977Z"/>
+		<path d="M7 2V6.61538H8.5V3.53846H20.5V20.4615H8.5V17.3846H7V22H22V2H7Z"/>
+	</symbol>
 	<symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 16 16">
 		<path d="M3 8H12.3333" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
