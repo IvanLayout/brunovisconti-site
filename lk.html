@@ -31,6 +31,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1699.css" media="(max-width: 1699px)">
@@ -2323,7 +2324,7 @@
 																<div class="radios _flex">
 																	<div class="radio">
 																		<label class="radio__label">
-																			<input type="radio" name="radio_become" checked>
+																			<input type="radio" name="radio_become">
 						
 																			<span class="radio__text">Мужчина</span>
 																		</label>
@@ -2346,9 +2347,9 @@
 														<div class="lk-info__data">
 															<div class="form__line">
 																<div class="form__field">
-																	<input type="text" value="" class="form__input form__input-anim">
+																	<input type="text" value="" id="datepicker" placeholder="" class="form__input form__input-anim">
 		
-																	<label class="form__label">Фамилия*</label>
+																	<label class="form__label">ДД.ММ.ГГГГ</label>
 																</div>
 															</div>
 														</div>
@@ -2359,6 +2360,8 @@
 		
 														<div class="lk-info__data">
 															<div class="form__line">
+																<button type="button" class="form__btn-confirm">Подтвердить</button>
+
 																<div class="form__field">
 																	<input type="mail" value="" class="form__input form__input-anim">
 		
@@ -2767,6 +2770,7 @@
 		<script src="js/fancybox.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="js/air-datepicker.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

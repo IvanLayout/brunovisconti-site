@@ -542,6 +542,17 @@ $(() => {
 	})
 
 
+	if ($('#datepicker').length) {
+		new AirDatepicker('#datepicker', {
+			container: '#datepicker-here1',
+			autoClose: true,
+			position: 'bottom left',
+			range: true,
+    		multipleDatesSeparator: '-'
+		})
+	}
+
+
 	//
 	$('body').on('click', '.amount__btn_minus', function (e) {
 		e.preventDefault()
