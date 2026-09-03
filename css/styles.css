@@ -8804,7 +8804,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 6px;
 }
 
-.lk-info
+.lk-info_width
 {
 	max-width: 736px;
 }
@@ -9027,6 +9027,67 @@ input[type=checkbox]:checked + .checkbox__text::after
 	{
 		background: #A07D54;
 	}
+}
+
+
+/*------------
+    history-table
+------------*/
+
+.history-table
+{
+	width: 100%;
+
+	width: 100%;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.history-table tr td
+{
+	color: #3D322C;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 26px;
+}
+
+.history-table tr td:first-child
+{
+	padding-left: 30px;
+}
+
+.history-table tr td:last-child
+{
+	padding-right: 30px;
+}
+
+.history-table tr:nth-child(odd) td
+{
+	background: #fff;
+}
+
+.history-table tr td.history-table__plus-bonus
+{
+	font-family: var(--second-family);
+	color: #2C7E00;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.history-table tr td.history-table__minus-bonus
+{
+	font-family: var(--second-family);
+	color: #FF4037;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.history-table tr td.history-table__date
+{
+	white-space: nowrap;
+	color: #5A4A42;
+
+	text-align: right;
 }
 
 @media (any-hover: hover)
