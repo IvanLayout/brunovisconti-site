@@ -8814,6 +8814,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-bottom: 30px;
 }
 
+.lk-info__top._flex
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
 .lk-info__desc
 {
 	margin-top: 10px;
@@ -9208,9 +9215,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 /*------------
-    Footer
+    lk-orders
 ------------*/
 
+.lk-orders
+{
+	
+}
 
 
 @media (any-hover: hover)
