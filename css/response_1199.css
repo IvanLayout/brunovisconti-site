@@ -400,4 +400,45 @@
 	{
 		font-size: 46px;
 	}
+
+
+	.lk-head 
+	{
+		height: 280px;
+		padding-bottom: 20px;
+	}
+
+	.aside-lk
+	{
+		width: 250px;
+	}
+
+	.lk-content__wrap
+	{
+		width: calc(100% - 280px);
+	}
+
+	.lk-info__item-title, 
+	.lk-bonus__level, 
+	.aside-lk__name,
+	.lk-orders__total-price
+	{
+		font-size: 20px;
+	}
+
+	.lk-bonus__item
+	{
+		padding: 20px;
+	}
+
+	.lk-bonus__title 
+	{
+		font-size: 40px;
+	}
+
+	.lk-orders__info 
+	{
+		width: 340px;
+		margin-right: 20px;
+	}
 }

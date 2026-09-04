@@ -283,6 +283,22 @@ $(() => {
 	})
 
 
+	$('body').on('click', '.aside-lk__item-btn', function (e) {
+		e.preventDefault()
+
+		$('.lk-content__wrap').addClass('_show')
+
+		$('body').addClass('_lk-open-mob')
+	})
+
+	$('body').on('click', '.lk-info-head', function (e) {
+		e.preventDefault()
+
+		$('.lk-content__wrap').removeClass('_show')
+
+		$('body').removeClass('_lk-open-mob')
+	})
+
 	// commit
 	
 	// favorite

@@ -1914,6 +1914,175 @@
 	}
 
 
+	.lk-content .cont
+	{
+		padding: 0;
+	}
+
+	.aside-lk__links-item._mob-btn
+	{
+		display: block;
+	}
+
+	.lk-head
+	{
+		display: none;
+	}
+
+	.aside-lk
+	{
+		width: 100%;
+		border-right: none;
+		padding-bottom: 50px;
+	}
+
+	.aside-lk__top
+	{
+		padding-top: 30px;
+		padding-left: 20px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #E8E0D5;
+	}
+
+	.aside-lk__top::after
+	{
+		display: none;
+	}
+
+	.aside-lk__name
+	{
+		font-size: 32px;
+	}
+
+	.aside-lk__info
+	{
+		padding: 0;
+	}
+
+	.aside-lk__items
+	{
+		padding: 20px;
+		border-bottom: 1px solid #E8E0D5;
+	}
+
+	.aside-lk__item._mob-none
+	{
+		display: none;
+	}
+
+	.aside-lk__item._mob-btn
+	{
+		display: block;
+	}
+
+	.aside-lk__links
+	{
+		margin-top: 0;
+		padding: 20px;
+		border-bottom: 1px solid #E8E0D5;
+	}
+
+	.aside-lk__help-btn
+	{
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	._lk-open-mob 
+	{
+		overflow: hidden;
+	}
+
+	.lk-content__wrap
+	{
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity .2s linear, visibility .2s linear;
+		background: #FFFCF9;
+
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+
+	.lk-content__wrap._show 
+	{
+		visibility: visible;
+		pointer-events: auto;
+		opacity: 1;
+	}
+
+	.lk-info 
+	{
+		overflow: hidden;
+		overflow-y: auto;
+		height: 100%;
+		padding: 0 20px;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	.lk-info_width
+	{
+		max-width: 100%;
+	}
+
+	.lk-info-head 
+	{
+		position: sticky;
+		z-index: 15;
+		top: 0;
+		left: -20px;
+		color: #3D322C;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.3;
+		text-transform: uppercase;
+		font-family: var(--second-family);
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: calc(100% + 40px);
+		height: 61px;
+		margin: 0 -20px 30px;
+		padding: 0 20px;
+		background: #FFFCF9;
+		border-bottom: 1px solid #E8E0D5;
+	}
+
+	.lk-info-head::before
+	{
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 20px;
+
+		display: block;
+
+		width: 8px;
+		height: 5px;
+
+		transform: rotate(90deg);
+
+		background: url(../images/ic_arrow.svg) 50% no-repeat;
+	}
+
+	.lk-info__top
+	{
+		display: none;
+	}
+
+
 	._marg._marg-tablet
 	{
 		margin-top: 0;

@@ -785,6 +785,20 @@
 	}
 
 
+	.lk-info__item-title, 
+	.lk-bonus__level, 
+	.aside-lk__name, 
+	.lk-orders__total-price
+	{
+		font-size: 18px;
+	}
+
+	.lk-info__data
+	{
+		margin-top: 16px;
+	}
+
+
 	.footer__top
 	{
 		padding-top: 20px;

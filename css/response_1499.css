@@ -234,4 +234,36 @@
 	{
 		font-size: 52px;
 	}
+
+
+	.lk-head
+	{
+		height: 320px;
+	}
+
+	.lk-bonus__title
+	{
+		font-size: 52px;
+	}
+
+	.lk-order__coll
+	{
+		width: calc(45% - 10px);
+	}
+
+	.lk-order__colr
+	{
+		width: calc(55% - 10px);
+	}
+
+	.lk-order .checkout-table__table .checkout-table__img
+	{
+		width: 90px;
+	}
+
+	.lk-order .checkout-table__table .checkout-table__name,
+	.lk-order .checkout-table__table .checkout-table__price
+	{
+		font-size: 18px;
+	}
 }

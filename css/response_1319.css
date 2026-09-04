@@ -230,4 +230,41 @@
 	{
 		height: 77px;
 	}
+
+
+	.lk-order__coll
+	{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.lk-order__colr
+	{
+		width: 100%;
+		max-width: 100%;
+		margin-top: 30px;
+	}
+
+	.lk-info__item-title,
+	.lk-bonus__level,
+	.aside-lk__name,
+	.lk-orders__total-price
+	{
+		font-size: 22px;
+	}
+
+	.lk-bonus__item
+	{
+		padding: 25px;
+	}
+
+	.lk-bonus__title 
+	{
+		font-size: 46px;
+	}
+
+	.lk-order .checkout-table__table .checkout-table__img 
+	{
+		width: 105px;
+	}
 }
