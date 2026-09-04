@@ -354,6 +354,13 @@ button
 	z-index: 91;
 }
 
+.header_lk
+{
+	position: absolute;
+	background: none;
+	width: 100%;
+}
+
 .header__top{
 	background: #9DB39E;
 	padding: 6px 0;
@@ -9927,6 +9934,7 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 	background: #fff;
 
 	padding: 10px;
+	margin: 10px 0 0 10px;
 }
 
 .lk-orders__images-img img
@@ -9982,6 +9990,21 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 	border-bottom: 1px solid currentColor;
 }
 
+.lk-orders__btn span + span
+{
+	display: none;
+}
+
+.lk-orders__btn._active span
+{
+	display: none;
+}
+
+.lk-orders__btn._active span + span
+{
+	display: block;
+}
+
 .lk-orders__btn svg
 {
 	position: absolute;
@@ -10014,8 +10037,7 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 {
 	margin-top: 35px;
 	border-top: 1px solid #E8E0D5;
-	padding-top: 30px;
-	padding-bottom: 35px;
+	padding: 30px 10px 35px;
 	position: relative;
 }
 
@@ -10135,12 +10157,14 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 
 .lk-order__coll
 {
-	width: calc(40% - 50px);
+	width: calc(43.11% - 20px);
+	max-width: 569px;
 }
 
 .lk-order__colr
 {
-	width: calc(60% - 50px);
+	width: calc(56.89% - 20px);
+	max-width: 764px;
 }
 
 .lk-order__box + .lk-order__box
@@ -10250,6 +10274,80 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 	width: 100%;
 }
 
+.lk-order .checkout-table__table .checkout-table__img
+{
+	width: 105px;
+	padding-left: 0;
+}
+
+.lk-order .checkout-table__table td
+{
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.lk-order .checkout-table__info-flex
+{
+	font-size: 12px;
+}
+
+.checkout-table__val
+{
+	text-align: right;
+}
+
+.lk-order__btns
+{
+	margin-top: 30px;
+}
+
+.lk-order__btns._flex
+{
+	gap: 20px;
+}
+
+.lk-order__btns._flex > *
+{
+	width: calc(50% - 10px);
+}
+
+.lk-order__btn-repeat
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.lk-order__btn-repeat svg
+{
+	display: block;
+	width: 16px;
+	height: 15px;
+
+	stroke: currentColor;
+	fill: none;
+	margin-right: 10px;
+}
+
+.lk-order__note
+{
+	text-align: center;
+	margin-top: 20px;
+
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+
+.lk-info__bot-btn
+{
+	margin-top: 40px;
+	text-align: center;
+}
 
 @media (any-hover: hover)
 {
