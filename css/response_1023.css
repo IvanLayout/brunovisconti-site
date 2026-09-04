@@ -1813,7 +1813,8 @@
 	{
 		content: "";
 		position: absolute;
-		bottom: 5px;
+		top: 12px;
+		bottom: auto;
 		left: 0;
 		width: 100%;
 		border-bottom: 1px dashed #E8E0D5;

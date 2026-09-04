@@ -709,6 +709,11 @@
 		font-size: 12px;
 	}
 
+	.features__feature::before
+	{
+		top: 10px;
+	}
+
 	.help-btn svg
 	{
 		width: 38px;
