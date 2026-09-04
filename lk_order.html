@@ -2605,7 +2605,7 @@
 																<div class="lk-order__total-price">3 450 ₽</div>
 															</div>
 
-															<button type="button" class="lk-order__receipt-btn btn-border">Скачать чек</button>
+															<button type="button" data-content="#modal-receipt" class="lk-order__receipt-btn btn-border modal-btn">Скачать чек</button>
 														</div>
 
 														<div class="lk-order__colr">
@@ -3150,11 +3150,64 @@
 			</div>
 		</div>
 
-
+		
 		<div id="modal-confirm" class="modal">
-			<div class="main-title">Подтвердите вашу почту</div>
+			<div class="modal__box">
+				<div class="main-title">Подтвердите вашу почту</div>
 
-			<div class="modal__desc">На вашу почту mail.com отправлено <br>письмо с подтверждением. Если письмо <br>долго не приходит, проверьте папку спам.</div>
+				<div class="modal__desc">На вашу почту mail.com отправлено <br>письмо с подтверждением. Если письмо <br>долго не приходит, проверьте папку спам.</div>
+			</div>
+		</div>
+
+
+		<div id="modal-receipt" class="modal modal-receipt">
+			<div class="modal__box">
+				<div class="main-title">Заказ #1024</div>
+
+				<div class="modal-receipt__links">
+					<div class="modal-receipt__item-link">
+						<a href="/" class="modal-receipt__link">
+							<span class="modal-receipt__link-icon">
+								<img data-src="images/ic_file.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</span>
+
+							<span class="modal-receipt__link-info">
+								<span class="modal-receipt__link-name">чек покупки</span>
+
+								<span class="modal-receipt__date">16 апреля 2026</span>
+							</span>
+						</a>
+					</div>
+					<div class="modal-receipt__item-link">
+						<a href="/" class="modal-receipt__link">
+							<span class="modal-receipt__link-icon">
+								<img data-src="images/ic_file.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</span>
+
+							<span class="modal-receipt__link-info">
+								<span class="modal-receipt__link-name">чек доставки</span>
+
+								<span class="modal-receipt__date">17 апреля 2026</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-exit" class="modal modal-small">
+			<div class="modal__box">
+				<div class="modal-small__desc">Вы уверены, что хотите выйти?</div>
+
+				<div class="modal-small__btns _flex">
+					<a href="/" class="modal-small__btn btn-brown">Да</a>
+
+					<button type="button" class="modal-small__btn modal-small__btn-bord" data-fancybox-close>
+						<span>Нет</span>
+					</button>
+				</div>
+			</div>
 		</div>
 
 		<!-- Подключение javascript файлов -->

@@ -2233,7 +2233,7 @@
 				<section class="lk-head">
 					<img data-src="images/lk_bg.jpg" src="images/img_plug.png" alt="" class="lk-head__bg lazyload">
 					<div class="cont">
-						<button type="button" class="lk-head__btn">
+						<button type="button" data-content="#modal-exit" class="lk-head__btn modal-btn">
 							Выйти
 
 							<svg>
@@ -2455,7 +2455,7 @@
 																<use xlink:href="images/sprite.svg#pencil"></use>
 															</svg>
 														</button>
-														<button type="button" class="lk-adres__btn">
+														<button type="button" data-content="#modal-adresDel" class="lk-adres__btn modal-btn">
 															<svg style="width: 13px; height: 13px">
 																<use xlink:href="images/sprite.svg#close2"></use>
 															</svg>
@@ -2481,7 +2481,7 @@
 																<use xlink:href="images/sprite.svg#pencil"></use>
 															</svg>
 														</button>
-														<button type="button" class="lk-adres__btn">
+														<button type="button" data-content="#modal-adresDel" class="lk-adres__btn modal-btn">
 															<svg style="width: 13px; height: 13px">
 																<use xlink:href="images/sprite.svg#close2"></use>
 															</svg>
@@ -2507,13 +2507,26 @@
 																<use xlink:href="images/sprite.svg#pencil"></use>
 															</svg>
 														</button>
-														<button type="button" class="lk-adres__btn">
+														<button type="button" data-content="#modal-adresDel" class="lk-adres__btn modal-btn">
 															<svg style="width: 13px; height: 13px">
 																<use xlink:href="images/sprite.svg#close2"></use>
 															</svg>
 														</button>
 													</div>
 												</div>
+												
+												<button type="button" data-content="#modal-adres" class="lk-adres__btn-add modal-btn btn-border">Добавить новый адрес</button>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="lk-info__box _marg">
+										<div class="main-title">Адреса доставки</div>
+
+										<div class="lk-info__data">
+											<div class="lk-adres">
+												<div class="lk-adres__top-desc">Нет адресов. Добавьте адрес доставки</div>
 												
 												<button type="button" data-content="#modal-adres" class="lk-adres__btn-add modal-btn btn-border">Добавить новый адрес</button>
 											</div>
@@ -2765,9 +2778,40 @@
 
 
 		<div id="modal-confirm" class="modal">
-			<div class="main-title">Подтвердите вашу почту</div>
+			<div class="modal_box">
+				<div class="main-title">Подтвердите вашу почту</div>
 
 			<div class="modal__desc">На вашу почту mail.com отправлено <br>письмо с подтверждением. Если письмо <br>долго не приходит, проверьте папку спам.</div>
+			</div>
+		</div>
+
+
+		<div id="modal-exit" class="modal modal-small">
+			<div class="modal__box">
+				<div class="modal-small__desc">Вы уверены, что хотите выйти?</div>
+
+				<div class="modal-small__btns _flex">
+					<a href="/" class="modal-small__btn btn-brown">Да</a>
+
+					<button type="button" class="modal-small__btn modal-small__btn-bord" data-fancybox-close>
+						<span>Нет</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-adresDel" class="modal modal-small">
+			<div class="modal__box">
+				<div class="modal-small__desc">Вы уверены, что хотите <br>удалить адрес?</div>
+
+				<div class="modal-small__btns _flex">
+					<a href="/" class="modal-small__btn btn-brown">Да</a>
+
+					<button type="button" class="modal-small__btn modal-small__btn-bord" data-fancybox-close>
+						<span>Нет</span>
+					</button>
+				</div>
+			</div>
 		</div>
 
 		<!-- Подключение javascript файлов -->
