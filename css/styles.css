@@ -10349,6 +10349,16 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 	text-align: center;
 }
 
+.lk-info__empty
+{
+	margin-top: 30px;
+}
+
+.lk-info__empty .lk-info__desc
+{
+	margin-top: 16px;
+}
+
 @media (any-hover: hover)
 {
 	
