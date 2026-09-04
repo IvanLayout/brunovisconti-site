@@ -613,13 +613,57 @@ $(() => {
 			let titleCatalog = $('.header-catalog__close').data('title-close')
 			$('.header-catalog__close').text(titleCatalog)
 		} else {
-			console.log('asd')
 			$('.open-catalog').removeClass('_active')
 			$('.header-catalog').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
 			$('body').removeClass('_look-cat')
 		}
 	})
+
+	$('body').on('click', '.checkout-table__open', function (e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+			$('.checkout-table__table').removeClass('_hide')
+		} else {
+			$(this).addClass('_active')
+			$('.checkout-table__table').addClass('_hide')
+		}
+	})
+
+	$('#city-input').on('input', function () {
+		let value = $(this).val().trim()
+
+		if (value.length > 0) {
+			$(this).closest('.select-city').addClass('_active')
+		} else {
+			$(this).closest('.select-city').removeClass('_active')
+		}
+	});
+
+	$('#city-input').on('focus', function () {
+		if ($(this).val().trim() !== '') {
+			$(this).closest('.select-city').addClass('_active')
+		}
+	})
+
+	$('.select-city__close').on('click', function () {
+		$('#city-input').val('')
+		$(this).closest('.select-city').removeClass('_active')
+	});
+
+	$('.select-city__list-item').on('click', function () {
+		let city = $(this).text().trim()
+
+		$('#city-input').val(city)
+		$(this).closest('.select-city__list').find('.select-city__list-item').removeClass('selected')
+		$(this).addClass('selected')
+		$(this).closest('.select-city').removeClass('_active')
+		// $(this).closest('.select-city').addClass('_hide')
+		// $(this).closest('.pade-checkout__sector').find('.delivery-info').addClass('_show')
+		// $(this).closest('.pade-checkout__sector').find('.delivery-info__title').text(city)
+	});
 })
 
 
@@ -700,64 +744,66 @@ function setHeight(className){
 
 const is_touch_device = () => !!('ontouchstart' in window)
 
-
 let yandexMapsReady = false;
-const mapsQueue = [];
 
-ymaps.ready(() => {
-	yandexMapsReady = true;
+if (document.querySelector('.map-js')) {
+	const mapsQueue = [];
 
-	mapsQueue.forEach(map => {
-		initMap(map);
+	ymaps.ready(() => {
+		yandexMapsReady = true;
+
+		mapsQueue.forEach(map => {
+			initMap(map);
+		});
+
+		mapsQueue.length = 0;
 	});
 
-	mapsQueue.length = 0;
-});
-
-function initMap(element) {
-	if (element.classList.contains('map-loaded')) {
-		return;
-	}
-
-	// Захист від прихованих tab
-	if (element.offsetParent === null) {
-		return;
-	}
-
-	element.classList.add('map-loaded');
-
-	let center;
-	let placemark;
-
-	switch (element.id) {
-		case 'map':
-			center = [55.714115, 37.435331];
-			placemark = [55.714115, 37.435331];
-			break;
-
-		case 'map2':
-			center = [55.655402, 37.880554];
-			placemark = [55.655402, 37.880554];
-			break;
-
-		default:
+	function initMap(element) {
+		if (element.classList.contains('map-loaded')) {
 			return;
-	}
-
-	const myMap = new ymaps.Map(element.id, {
-		center: center,
-		zoom: 14
-	});
-
-	const myPlacemark = new ymaps.Placemark(
-		placemark,
-		{},
-		{
-			iconImageHref: 'images/marker.svg',
-			iconImageSize: [50, 50],
-			iconImageOffset: [25, 25]
 		}
-	);
 
-	myMap.geoObjects.add(myPlacemark);
+		// Захист від прихованих tab
+		if (element.offsetParent === null) {
+			return;
+		}
+
+		element.classList.add('map-loaded');
+
+		let center;
+		let placemark;
+
+		switch (element.id) {
+			case 'map':
+				center = [55.714115, 37.435331];
+				placemark = [55.714115, 37.435331];
+				break;
+
+			case 'map2':
+				center = [55.655402, 37.880554];
+				placemark = [55.655402, 37.880554];
+				break;
+
+			default:
+				return;
+		}
+
+		const myMap = new ymaps.Map(element.id, {
+			center: center,
+			zoom: 14
+		});
+
+		const myPlacemark = new ymaps.Placemark(
+			placemark,
+			{},
+			{
+				iconImageHref: 'images/marker.svg',
+				iconImageSize: [50, 50],
+				iconImageOffset: [25, 25]
+			}
+		);
+
+		myMap.geoObjects.add(myPlacemark);
+	}
 }
