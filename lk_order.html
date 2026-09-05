@@ -2304,13 +2304,23 @@
 									<div class="lk-info__top _flex">
 										<h1 class="main-title lk-info__title">Мои заказы</h1>
 
-										<div class="select-wrap sorting-choice select-wrap_left-list">
-											<select>
-												<option value="1">текущие</option>
-												<option value="2">завершенные</option>
-												<option value="3">отмененные</option>
-												<option value="4">все</option>
-											</select>
+										<div class="lk-sorting mini-modal">
+											<button type="button" class="mini-modal__btn lk-sorting__btn">Текущие</button>
+			
+											<div class="mini-modal__modal lk-sorting__list">
+												<div class="lk-sorting__item">
+													<a href="/" class="lk-sorting__link">Все</a>
+												</div>
+												<div class="lk-sorting__item">
+													<a class="lk-sorting__link active">Текущие</a>
+												</div>
+												<div class="lk-sorting__item">
+													<a href="/" class="lk-sorting__link">Завершенные</a>
+												</div>
+												<div class="lk-sorting__item">
+													<a href="/" class="lk-sorting__link">Отмененные</a>
+												</div>
+											</div>
 										</div>
 									</div>
 
