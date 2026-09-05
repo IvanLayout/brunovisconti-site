@@ -939,7 +939,8 @@
 	}
 
 	.modal-adres__form .form__submit,
-	.modal-notify__form .form__submit
+	.modal-notify__form .form__submit,
+	.modal__btn
 	{
 		margin-top: 10px;
 	}

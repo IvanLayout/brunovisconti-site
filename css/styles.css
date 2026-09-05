@@ -11161,6 +11161,10 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 }
 
 
+.modal__btn
+{
+	margin-top: 32px;
+}
 
 
 .modal-preorder
