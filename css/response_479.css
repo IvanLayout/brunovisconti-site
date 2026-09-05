@@ -905,9 +905,16 @@
 		margin-top: 16px;
 	}
 
-	.modal-adres__form .form__submit
+	.modal-adres__form .form__submit,
+	.modal-notify__form .form__submit
 	{
 		margin-top: 10px;
+	}
+
+	.modal-adres__form .form__line,
+	.modal-notify__form .form__line
+	{
+		margin-bottom: 10px;
 	}
 
 	.modal-adres__bot

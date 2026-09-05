@@ -709,6 +709,11 @@
 		aspect-ratio: 1 / 1;
 	}
 
+	.product-color
+	{
+		max-width: 100%;
+	}
+
 	.information__item 
 	{
 		width: calc(100% / 2 - 20px);
@@ -749,6 +754,12 @@
 	{
 		width: 17px;
 		height: 15px;
+	}
+
+	.product-info__amount .amount__btn,
+	.product-info__amount.amount .amount__input
+	{
+		height: 40px;
 	}
 
 
@@ -979,6 +990,11 @@
 		margin-top: 20px;
 	}
 
+	.modal
+	{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 
 	.modal-small__btn-bord
 	{

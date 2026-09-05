@@ -1791,7 +1791,8 @@
 		order: 6;
 	}
 
-	.product-info .product-info__btns
+	.product-info .product-info__btns,
+	.product-info  .product-info__notify
 	{
 		display: none;
 	}
@@ -1878,6 +1879,12 @@
 	{
 		margin-left: 0;
 		width: 100%;
+	}
+
+	.product-fixed__notify
+	{
+		display: block;
+		margin-top: 10px;
 	}
 
 
@@ -2284,6 +2291,13 @@
 	.order-info__item::before
 	{
 		top: 12px;
+	}
+
+
+	.modal-socials,
+	.modal-notify__form
+	{
+		margin-top: 30px;
 	}
 
 
