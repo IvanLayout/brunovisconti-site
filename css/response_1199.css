@@ -210,8 +210,7 @@
 
 	.reviews__item 
 	{
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding: 50px 20px;
 	}
 
 	.reviews__name-city
