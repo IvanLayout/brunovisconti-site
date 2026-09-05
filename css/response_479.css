@@ -111,6 +111,60 @@
 	.products__grid{
 		gap: 20px 12px;
 	}
+
+
+	.checkout-bonus__title{
+		font-size: 14px;
+	}
+
+	.checkout-point__btn .btn-border{
+		width: 100%;
+	}
+
+	.form__flex._three .form__line{
+		width: 100%;
+	}
+
+	.checkout-point__btns .btn-border{
+		width: 100%;
+	}
+
+	.radio-delivery__box{
+		padding-right: 9px;
+	}
+
+	.radio-delivery__name{
+		padding-right: 26px;
+	}
+
+
+	.checkout__colr .checkbox__text{
+		font-size: 12px;
+	}
+
+	.checkbox-dot__wrap{
+		width: 30px;
+		height: 14px;
+	}
+
+	.checkbox-dot__wrap::before{
+		left: 1px;
+		top: 1px;
+		width: 12px;
+		height: 12px;
+	}
+
+	input[type=checkbox]:checked + .checkbox-dot__wrap::before{
+		left: 16px;
+	}
+
+	.checkout-payment__cart-title{
+		font-size: 12px;
+	}
+
+	.radio-delivery__desc br{
+		display: none;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -886,73 +940,5 @@
 	{
 		width: 12px;
 		height: 10px;
-	}
-
-
-	.form__submit
-	{
-		margin-top: 20px;
-	}
-
-	.form__agree
-	{
-		font-size: 12px;
-	}
-
-
-	.modal
-	{
-		padding: 70px 20px;
-	}
-
-	.modal-filter__form
-	{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	.filter__bot 
-	{
-		width: calc(100% + 40px);
-		margin-left: -20px;
-		margin-right: -20px;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	.modal-small
-	{
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	.modal__desc
-	{
-		margin-top: 16px;
-	}
-
-	.modal-preorder__name
-	{
-		font-size: 14px;
-	}
-
-	.modal-adres__form .form__submit,
-	.modal-notify__form .form__submit,
-	.modal__btn
-	{
-		margin-top: 10px;
-	}
-
-	.modal-adres__form .form__line,
-	.modal-notify__form .form__line
-	{
-		margin-bottom: 10px;
-	}
-
-	.modal-adres__bot
-	{
-		margin-top: 15px;
 	}
 }

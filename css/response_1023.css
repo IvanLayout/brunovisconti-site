@@ -880,6 +880,53 @@
 	.global-title{
 		margin-bottom: 10px;
 	}
+
+
+	.checkout-table__table .checkout-table__img{
+		width: 130px;
+	}
+
+	.checkout-table__info {
+		width: 45%;
+	}
+
+	.checkout-table__name{
+		font-size: 16px;
+	}
+
+	.checkout-table__price{
+		font-size: 16px;
+	}
+
+	.checkout-delivery__item{
+		margin-top: 30px;
+	}
+	
+	.checkout-sector + .checkout-sector{
+		margin-top: 30px;
+	}
+
+	.checkout-additional{
+		margin-top: 30px;
+	}
+
+	.small-title{
+		font-size: 20px;
+		margin-bottom: 16px;
+	}
+
+	.checkout-total__line-val{
+		font-size: 18px;
+	}
+	
+	.checkout .radio__text{
+		padding-left: 26px;
+	}
+
+	.checkout-payment__cart{
+		margin-top: 7px;
+		margin-left: 26px;
+	}
 	/*------------
 		Commit
 	------------*/

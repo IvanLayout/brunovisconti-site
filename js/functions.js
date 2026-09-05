@@ -642,9 +642,11 @@ $(() => {
 		if ( $(this).hasClass('_active') ) {
 			$(this).removeClass('_active')
 			$('.checkout-table__table').removeClass('_hide')
+			$('.checkout__marg').addClass('_marg')
 		} else {
 			$(this).addClass('_active')
 			$('.checkout-table__table').addClass('_hide')
+			$('.checkout__marg').removeClass('_marg')
 		}
 	})
 
@@ -670,16 +672,23 @@ $(() => {
 	});
 
 	$('.select-city__list-item').on('click', function () {
-		let city = $(this).text().trim()
+		let cityText = $(this).data('city')
+		$(this).closest('.checkout-delivery').find('.checkout-delivery__city').text(cityText)
+		$(this).closest('.checkout-delivery').find('.checkout-delivery__wrap').addClass('_show')
 
-		$('#city-input').val(city)
-		$(this).closest('.select-city__list').find('.select-city__list-item').removeClass('selected')
-		$(this).addClass('selected')
-		$(this).closest('.select-city').removeClass('_active')
+		$(this).closest('.select-city').removeClass('_active').addClass('_hide')
+
 		// $(this).closest('.select-city').addClass('_hide')
 		// $(this).closest('.pade-checkout__sector').find('.delivery-info').addClass('_show')
 		// $(this).closest('.pade-checkout__sector').find('.delivery-info__title').text(city)
 	});
+
+	$('body').on('click', '.radio-delivery__label_js', function (e) {
+		$('.checkout-delivery__item').removeClass('_show')
+
+		let deliveryItem = $(this).data('delivery')
+		$(deliveryItem).addClass('_show')
+	})
 })
 
 

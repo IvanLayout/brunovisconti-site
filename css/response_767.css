@@ -313,6 +313,175 @@
 	.global-title{
 		margin-bottom: 5px;
 	}
+
+	.small-title{
+		font-size: 16px;
+	}
+
+	.checkout__colr{
+		padding: 20px;
+	}
+
+	.form-promo__submit{
+		height: 40px;
+		font-size: 12px;
+		width: 90px;
+		margin-left: -90px;
+	}
+
+	.checkout-bonus{
+		margin-top: 20px;
+	}
+
+	.checkout-total__btn{
+		margin-top: 20px;
+	}
+
+	.checkout-total__line-val{
+		font-size: 14px;
+	}
+
+	.select-city__close{
+		width: 40px;
+		height: 40px;
+		margin-left: -40px;
+	}
+
+	.form .form__input_select{
+		padding-right: 50px;
+	}
+
+	.checkout .radio + .radio{
+		margin-top: 16px;
+	}
+
+	.checkout-point__radio{
+		padding-bottom: 15px;
+	}
+
+
+	.radio-delivery{
+		margin-top: 16px;
+	}
+
+	.radio-delivery__box {
+		min-height: 1px;
+		padding: 9px 36px 9px 9px;
+	}
+
+	.radio-delivery__box::before {
+		content: "";
+		position: absolute;
+		top: 9px;
+		right: 9px;
+		width: 16px;
+		height: 16px;
+	}
+
+	.radio-delivery__box::after {
+		top: 12px;
+		right: 12px;
+	}
+
+	.checkout-point__btns{
+		margin-top: 20px;
+		gap: 10px;
+	}
+
+	.checkout-table__table tr{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #E8E0D5;
+		position: relative;
+		min-height: 125px;
+		position: relative;
+		padding-left: 120px;
+	}
+
+	.checkout-table__table tr + tr{
+		margin-top: 16px;
+	}
+
+	.checkout-table__table tr:last-child{
+		padding-bottom: 0;
+		min-height: 109px;
+		border-bottom: none;
+	}
+
+	.checkout-table__table td{
+		padding: 0;
+		border: none;
+	}
+
+	.checkout-table__table .checkout-table__img{
+		width: 105px;
+		padding-top: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.checkout-table__img-wrap span{
+		min-height: 109px;
+	}
+
+	.checkout-table__table .checkout-table__info{
+		width: 100%;
+		padding-bottom: 17px;
+	}
+
+	.checkout-table__name{
+		font-size: 14px;
+		padding-right: 30px;
+	}
+
+	.checkout-table__delete{
+		margin: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.checkout-table .amount__btn{
+		height: 30px;
+	}
+
+	.checkout-table .amount .amount__input{
+		font-size: 12px;
+		height: 30px;
+	}
+
+	.page-head__back{
+		margin: 30px 0;
+	}
+
+	.checkout-table__price{
+		align-self: center;
+	}
+
+
+	.select-city__list-item{
+		color: rgba(61, 54, 48, 0.5);
+
+		padding: 12px 16px;
+	}
+
+	.checkout-table__open{
+		position: relative;
+		top: 0;
+	}
+
+	.checkout-table__table{
+		margin-bottom: 30px;
+	}
+
+	.checkout__marg{
+		margin-top: 50px;
+	}
 	/*------------
 		Commit
 	------------*/

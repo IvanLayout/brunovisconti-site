@@ -173,6 +173,20 @@
 	.adresess__coll {
 		width: calc(42% - 16px);
 	}
+
+	.checkout__coll{
+		width: 100%;
+		max-width: none;
+	}
+
+	.checkout__colr{
+		width: 100%;
+		max-width: none;
+		margin-top: 30px;
+		position: static;
+		top: 0;
+		left: 0;
+	}
 	/*------------
 		Commit
 	------------*/
