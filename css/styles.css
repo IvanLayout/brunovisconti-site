@@ -10798,7 +10798,7 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 	margin-left: auto;
 }
 
-.modal-filter
+.modal.modal-filter
 {
 	width: 800px;
 	padding: 0;

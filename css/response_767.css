@@ -990,7 +990,8 @@
 		margin-top: 20px;
 	}
 
-	.modal
+	.modal,
+	.modal-filter__form
 	{
 		padding-left: 50px;
 		padding-right: 50px;
@@ -999,6 +1000,20 @@
 	.modal-small__btn-bord
 	{
 		line-height: 40px;
+	}
+
+	.filter__reset
+	{
+		font-size: 14px;
+	}
+
+	.filter__bot
+	{
+		width: calc(100% + 100px);
+		margin-left: -50px;
+		margin-right: -50px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
 
