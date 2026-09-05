@@ -403,7 +403,8 @@ button
 	color: #fff;
 }
 
-.header__top-links a{
+.header__top-links a,
+.header__top-links button{
 	color: #fff;
 	text-decoration: none;
 	transition: .2s linear;
@@ -411,7 +412,8 @@ button
 }
 
 @media (any-hover: hover){
-	.header__top-links a:hover{
+	.header__top-links a:hover,
+	.header__top-links button:hover{
 		border-bottom-color: currentColor;
 	}
 }

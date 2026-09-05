@@ -51,7 +51,7 @@
 							<div class="header__top-flex _flex">
 								<div class="header__top-info">Бесплатная доставка от 5 000 <i class="rub">у</i>&emsp;<a href="/">Подробности</a></div>
 								<div class="header__top-links">
-									<span><a href="/">Войти</a>&ensp;&bull;&ensp;</span><a href="/">Отслеживать закакз</a>
+									<span><button type="button" data-content="#modal-login" class="modal-btn">Войти</button>&ensp;&bull;&ensp;</span><a href="/">Отслеживать закакз</a>
 								</div>
 							</div>
 						</div>
@@ -4732,23 +4732,25 @@
 
 		<div id="modal-login" class="modal modal_login">
 			<div class="modal__box">
-				<div class="modal__title">Войдите в профиль</div>
+				<div class="main-title main-title_center">Войти в личный кабинеть</div>
 
-				<div class="modal__subtitle">Чтобы следить за статусом заказов и получать персональные предложения</div>
+				<div class="modal__desc">Через сервис</div>
 
-				<div class="modal__link">
-					<a href="/" class="btn-red btn-red_big">Войти</a>
-				</div>
+				<div class="socials modal-socials">
+					<div class="socials__flex _flex">
+						<a href="/" target="_blank" class="socials__link">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_soc3"></use>
+							</svg>
 
-				<div class="modal__list">
-					<div class="modal__list-item">
-						<a href="/" class="modal__list-link">
-							Избранное <span>999</span>
+							<span class="socials__name">Яндекс ID</span>
 						</a>
-					</div>
-					<div class="modal__list-item">
-						<a href="/" class="modal__list-link">
-							Сравнение <span>999</span>
+						<a href="/" target="_blank" class="socials__link">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_soc4"></use>
+							</svg>
+
+							<span class="socials__name">VK ID</span>
 						</a>
 					</div>
 				</div>
