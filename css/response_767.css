@@ -786,8 +786,7 @@
 
 
 	.lk-info__item-title, 
-	.lk-bonus__level, 
-	.aside-lk__name, 
+	.lk-bonus__level,
 	.lk-orders__total-price
 	{
 		font-size: 18px;
@@ -797,6 +796,170 @@
 	{
 		margin-top: 16px;
 	}
+
+	.aside-lk__bonus
+	{
+		margin-top: 10px;
+	}
+
+	.aside-lk__bonus span
+	{
+		line-height: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.form__btn-confirm
+	{
+		height: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+
+	.lk-adres__item + .lk-adres__item,
+	.lk-info__form .form__submit,
+	.lk-adres__btn-add
+	{
+		margin-top: 10px;
+	}
+
+
+	.lk-bonus__item
+	{
+		width: 100%;
+		aspect-ratio: 1 / .514;
+	}
+
+	.lk-bonus__item + .lk-bonus__item
+	{
+		margin-top: 10px;
+	}
+
+	.lk-bonus__title 
+	{
+		font-size: 38px;
+		margin-top: 5px;
+	}
+
+	.lk-bonus__note
+	{
+		margin-top: 57px;
+	}
+
+	.lk-bonus__level-next
+	{
+		margin-top: 5px;
+	}
+
+	.lk-bonus__info
+	{
+		margin-top: 15px;
+	}
+
+	.lk-bonus__bot
+	{
+		margin-top: 5px;
+	}
+
+	.history-table tr td
+	{
+		padding-left: 20px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	.history-table tr td:first-child
+	{
+		padding-left: 20px;
+	}
+
+	.history-table tr td:last-child
+	{
+		padding-right: 20px;
+	}
+
+
+	.lk-orders__head
+	{
+		flex-wrap: wrap;
+		padding-bottom: 0;
+	}
+
+	.lk-orders__info
+	{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.lk-orders__workflow
+	{
+		margin-top: 15px;
+	}
+
+	.lk-orders__workflow-item
+	{
+		flex-shrink: 0;
+	}
+
+	.lk-orders__workflow-item:last-child
+	{
+		text-align: right;
+	}
+
+	.lk-orders__workflow-arrow
+	{
+		width: 100%;
+	}
+
+	.lk-orders__images
+	{
+		margin-top: 15px;
+		width: 100%;
+	}
+
+	.lk-orders__total
+	{
+		margin-top: 15px;
+		margin-left: 0;
+		text-align: left;
+		padding-left: 0;
+	}
+
+	.lk-orders__head .lk-orders__btn
+	{
+		right: 0;
+		left: auto;
+	}
+
+	.lk-order__number,
+	.lk-order__total-price
+	{
+		font-size: 20px;
+	}
+
+	.lk-order__title
+	{
+		margin-bottom: 15px;
+	}
+
+	.lk-order__cols,
+	.lk-order__box + .lk-order__box
+	{
+		margin-top: 25px;
+	}
+
+	.lk-order__note
+	{
+		margin-top: 10px;
+	}
+
+
+	.lk-info__bot-btn
+	{
+		margin-top: 20px;
+	}
+
 
 
 	.footer__top

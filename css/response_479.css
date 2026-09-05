@@ -738,6 +738,110 @@
 	}
 
 
+	.lk-info__top
+	{
+		margin-bottom: 20px;
+	}
+
+	.lk-bonus__title 
+	{
+		font-size: 32px;
+	}
+
+	.lk-orders__item
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.lk-sorting__link
+	{
+		font-size: 12px;
+	}
+	
+	.lk-orders__status
+	{
+		line-height: 25px;
+		font-size: 12px;
+	}
+
+	.lk-orders__workflow-date
+	{
+		font-size: 16px;
+	}
+
+	.lk-orders__workflow-arrow
+	{
+		margin-top: 12px;
+	}
+
+	.lk-orders__images-img
+	{
+		margin-top: 4px;
+	}
+
+	.lk-orders__total-price,
+	.lk-order__number, 
+	.lk-order__total-price,
+	.lk-info__item-title,
+	.lk-info__box .main-title,
+	.lk-bonus__level
+	{
+		font-size: 16px;
+	}
+
+
+	.lk-orders__data
+	{
+		padding-top: 25px;
+		padding-bottom: 20px;
+	}
+
+
+	.lk-order__stage 
+	{
+		min-width: 145px;
+	}
+
+	.lk-order__stage-date
+	{
+		font-size: 14px;
+	}
+
+	.lk-order__stage-desc,
+	.lk-order__total-desc
+	{
+		font-size: 12px;
+	}
+
+	.lk-order__title
+	{
+		font-size: 14px;
+	}
+
+
+	.order-info__item::before 
+	{
+		top: 10px;
+	}
+
+	.lk-order__total-price
+	{
+		margin-top: 0;
+	}
+
+
+	.lk-order__btns._flex
+	{
+		gap: 10px;
+	}
+
+	.lk-order__btns._flex > * 
+	{
+		width: 100%;
+	}
+
+
 	.section-subscribe__flex
 	{
 		flex-wrap: wrap;

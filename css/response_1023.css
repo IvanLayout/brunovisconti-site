@@ -2077,9 +2077,187 @@
 		background: url(../images/ic_arrow.svg) 50% no-repeat;
 	}
 
-	.lk-info__top
+	.lk-info__top,
+	.lk-info__title
 	{
 		display: none;
+	}
+
+	.lk-info__top._flex
+	{
+		display: block;
+	}
+
+	.lk-sorting__btn
+	{
+		display: none;
+	}
+
+	.lk-sorting__list
+	{
+		position: relative;
+		top: 0;
+		left: 0;
+
+		min-width: 1px;
+
+		visibility: visible;
+		pointer-events: auto;
+		opacity: 1;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+
+		background: none;
+		z-index: 1;
+	}
+
+	.lk-sorting__list::before
+	{
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+		height: 1px;
+
+		background: #E8E0D5;
+	}
+
+	.lk-sorting__item
+	{
+		position: relative;
+	}
+
+	.lk-sorting__item + .lk-sorting__item
+	{
+		margin-left: 20px;
+	}
+
+	.lk-sorting__link
+	{
+		padding: 0 0 10px 0;
+		text-transform: uppercase;
+		border-bottom: 1px solid transparent;
+	}
+
+	.lk-sorting__link.active
+	{
+		border-bottom-color: #AF895B;
+		background: none;
+		font-weight: 400;
+	}
+
+	.lk-sorting__link::before
+	{
+		display: none;
+	}
+
+	.lk-order__stages-flex
+	{
+		overflow: hidden;
+		overflow-x: auto;
+		width: calc(100% + 40px);
+		margin-right: -20px;
+		margin-left: -20px;
+		padding-right: 20px;
+		padding-left: 20px;
+		white-space: nowrap;
+	}
+
+	.lk-order__stages::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+	.lk-order__stage
+	{
+		min-width: 160px;
+	}
+
+	.lk-info__item + .lk-info__item
+	{
+		margin-top: 30px;
+	}
+
+	.radios._flex 
+	{
+		margin-left: -20px;
+	}
+
+	.radios._flex .radio
+	{
+		margin-left: 20px;
+	}
+
+	.radio__text
+	{
+		padding-left: 26px;
+		line-height: 16px;
+	}
+
+	.lk-adres .radio__text
+	{
+		padding: 9px 10px 9px 36px;
+		line-height: 16px;
+
+		border: 1px solid #E8E0D5;
+		transition: border .2s linear;
+	}
+
+	input[type=radio]:checked + .radio__text
+	{
+		border-color: #AF895B;
+	}
+
+	.radio__text::before
+	{
+		width: 16px;
+		height: 16px;
+	}
+
+	.radio__text::after
+	{
+		top: 4px;
+		left: 4px;
+		width: 8px;
+		height: 8px;
+	}
+
+	.lk-adres .radio__text::before
+	{
+		top: 12px;
+		left: 10px;
+	}
+
+	.lk-adres .radio__text::after
+	{
+		top: 16px;
+        left: 14px;
+	}
+
+	.lk-adres__btns
+	{
+		opacity: 1;
+		top: 10px;
+		right: 10px;
+	}
+
+	.lk-order .checkout-table__img-wrap
+	{
+		border: 1px solid #E8E0D5;
+	}
+
+
+	.order-info__item::before
+	{
+		top: 12px;
 	}
 
 
