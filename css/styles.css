@@ -11180,7 +11180,6 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 {
 	width: 101px;
 	height: 101px;
-	padding: 20px;
 	border: 1px solid #E8E0D5;
 
 	display: flex;
@@ -11208,6 +11207,7 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 .modal-preorder__name
 {
 	color: #3D322C;
+	text-transform: uppercase;
 
 	font-family: var(--second-family);
 	font-size: 20px;

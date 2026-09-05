@@ -1017,6 +1017,49 @@
 	}
 
 
+	.modal-preorder__thumb
+	{
+		margin-right: 10px;
+	}
+
+	.modal-preorder__info
+	{
+		flex-wrap: wrap;
+		width: calc(100% - 111px);
+	}
+
+	.modal-preorder__box
+	{
+		width: 100%;
+	}
+
+	.modal-preorder__name
+	{
+		font-size: 16px;
+	}
+
+	.modal-preorder__prices
+	{
+		margin-top: 2px;
+		margin-left: -10px;
+
+		font-size: 16px;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.modal-preorder__price,
+	.modal-preorder__price-old
+	{
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+
 	.footer__top
 	{
 		padding-top: 20px;

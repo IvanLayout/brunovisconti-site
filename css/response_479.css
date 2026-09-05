@@ -889,6 +889,17 @@
 	}
 
 
+	.form__submit
+	{
+		margin-top: 20px;
+	}
+
+	.form__agree
+	{
+		font-size: 12px;
+	}
+
+
 	.modal
 	{
 		padding: 70px 20px;
@@ -920,6 +931,11 @@
 	.modal__desc
 	{
 		margin-top: 16px;
+	}
+
+	.modal-preorder__name
+	{
+		font-size: 14px;
 	}
 
 	.modal-adres__form .form__submit,
