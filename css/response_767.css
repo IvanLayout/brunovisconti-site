@@ -900,6 +900,8 @@
 	.lk-orders__workflow-item
 	{
 		flex-shrink: 0;
+		position: relative;
+		padding-bottom: 20px;
 	}
 
 	.lk-orders__workflow-item:last-child
@@ -910,6 +912,23 @@
 	.lk-orders__workflow-arrow
 	{
 		width: 100%;
+	}
+
+	.lk-orders__workflow-desc
+	{
+		position: absolute;
+		bottom: 0;
+		white-space: nowrap;
+	}
+
+	.lk-orders__workflow-item:first-child .lk-orders__workflow-desc
+	{
+		left: 0;
+	}
+
+	.lk-orders__workflow-item:last-child .lk-orders__workflow-desc
+	{
+		right: 0;
 	}
 
 	.lk-orders__images
@@ -960,6 +979,11 @@
 		margin-top: 20px;
 	}
 
+
+	.modal-small__btn-bord
+	{
+		line-height: 40px;
+	}
 
 
 	.footer__top

@@ -2088,6 +2088,7 @@
 		display: block;
 	}
 
+
 	.lk-sorting__btn
 	{
 		display: none;
@@ -2113,9 +2114,29 @@
 
 		background: none;
 		z-index: 1;
+
+		overflow: hidden;
+		overflow-x: auto;
+		width: calc(100% + 40px);
+		margin-right: -20px;
+		margin-left: -20px;
+		padding-right: 20px;
+		padding-left: 20px;
+		white-space: nowrap;
 	}
 
-	.lk-sorting__list::before
+	.lk-sorting__list::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+	.lk-sorting__item
+	{
+		position: relative;
+		flex: 0 0 auto;
+	}
+
+	.lk-sorting__item::before
 	{
 		position: absolute;
 		content: '';
@@ -2124,15 +2145,15 @@
 
 		display: block;
 
-		width: 100%;
+		width: calc(100% + 20px);
 		height: 1px;
 
 		background: #E8E0D5;
 	}
 
-	.lk-sorting__item
+	.lk-sorting__item:last-child:before
 	{
-		position: relative;
+		width: 100%;
 	}
 
 	.lk-sorting__item + .lk-sorting__item
@@ -2240,6 +2261,11 @@
 	{
 		top: 16px;
         left: 14px;
+	}
+
+	.lk-adres__name
+	{
+		padding-right: 60px;
 	}
 
 	.lk-adres__btns

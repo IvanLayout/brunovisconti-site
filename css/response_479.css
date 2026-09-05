@@ -842,6 +842,7 @@
 	}
 
 
+
 	.section-subscribe__flex
 	{
 		flex-wrap: wrap;
@@ -885,5 +886,32 @@
 	{
 		width: 12px;
 		height: 10px;
+	}
+
+
+	.modal
+	{
+		padding: 70px 20px;
+	}
+
+	.modal-small
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.modal__desc
+	{
+		margin-top: 16px;
+	}
+
+	.modal-adres__form .form__submit
+	{
+		margin-top: 10px;
+	}
+
+	.modal-adres__bot
+	{
+		margin-top: 15px;
 	}
 }
