@@ -6556,6 +6556,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	align-content: center;
 	flex-wrap: wrap;
 	opacity: .4;
+	width: 100%;
 }
 
 .quotes-border::before
@@ -11077,7 +11078,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
     width: 600px;
     max-width: 100%;
-	padding: 100px 70px;
+	padding: 100px 60px;
 
 	background: #fff;
 	flex-grow: 1;
@@ -11093,7 +11094,134 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .modal__box
 {
 	width: 100%;
+
+	display: flex;
+	flex-direction: column;
 }
+
+.modal .main-title
+{
+	text-align: center;
+}
+
+.modal__subtitle
+{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.modal__wrap
+{
+	flex: 1 0 auto;
+	margin-top: 20px;
+}
+
+.modal__wrap_marg
+{
+	margin-top: 100px;
+}
+
+.modal__max-width
+{
+	max-width: 416px;
+	margin: 0 auto;
+}
+
+.modal__phone-btn
+{
+	width: 100%;
+}
+
+.modal__bot
+{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.modal .form__line
+{
+	margin-bottom: 10px;
+}
+
+.modal .form__submit
+{
+	margin-top: 20px;
+}
+
+.form__time
+{
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.form__line-code
+{
+	margin-top: 10px;
+}
+
+.resend-code
+{
+	color: #3D322C;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	border-bottom: 1px solid currentColor;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.resend-code:hover
+	{
+		color: #7D6F69;
+	}
+}
+
+.modal__box-flex
+{
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 15px;
+}
+
+.modal__number-phone
+{
+	color: #AF895B;
+	white-space: nowrap;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+}
+
+.modal__change-btn
+{
+	color: #5A4A42;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	border-bottom: 1px solid currentColor;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.modal__change-btn:hover
+	{
+		color: #7D6F69;
+	}
+}
+
+
+.modal_review-info
+{
+	max-width: 405px;
+	margin: 0 auto;
+}
+
+
 
 .modal-filter__form
 {
@@ -11104,8 +11232,6 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .modal-filter__filter
 {
 	margin-top: 30px;
-	/* overflow: hidden;
-    overflow-y: auto; */
 }
 
 
@@ -11199,12 +11325,6 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	}
 }
 
-.modal__desc
-{
-	margin-top: 20px;
-	text-align: center;
-}
-
 .modal-socials
 {
 	margin-top: 40px;
@@ -11225,6 +11345,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .modal-socials .socials__link svg
 {
 	margin: 0 auto;
+	width: 40px;
+	height: 40px;
 }
 
 .socials__name
@@ -11234,6 +11356,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	line-height: 1.5;
 	display: block;
 }
+
+
 
 
 .modal-notify__box
