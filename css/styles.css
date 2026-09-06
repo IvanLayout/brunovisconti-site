@@ -1762,21 +1762,16 @@ button
 /*------------
     breadcrumbs
 ------------*/
-
-.page-top
-{
-	padding: 40px 0 37px;
-}
-
 .breadcrumbs
 {
 	color: #5A4A42;
 	line-height: normal;
 	
 	font-weight: 700;
+	padding: 40px 0 37px;
 }
 
-.page-head__bg .page-top
+.page-head__bg .breadcrumbs
 {
 	padding-top: 0;
 }
