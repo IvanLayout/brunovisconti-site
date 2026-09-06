@@ -747,6 +747,15 @@ $(() => {
 		$(this).closest('.modal-cart_full').find('.modal-cart__delete').removeClass('_show')
 		$(this).closest('.modal-cart_full').removeClass('modal-cart_full')
 	})
+
+	// Кнопка 'Вверх'
+	$('body').on('click', '.button-up', function(e) {
+		e.preventDefault()
+
+		$('body, html').stop(false, false).animate({
+			scrollTop: 0
+		}, 1000)
+	})
 })
 
 
