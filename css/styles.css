@@ -11359,46 +11359,6 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
 
 
-
-.modal-notify__box
-{
-	display: flex;
-	flex-direction: column;
-
-	width: 100%;
-}
-
-.modal-notify__top
-{
-	width: 100%;
-}
-
-.modal-notify__form
-{
-	margin-top: 40px;
-	flex: 1 0 auto;
-	display: flex;
-	flex-direction: column;
-}
-
-.modal-notify__form-top
-{
-	flex: 1 0 auto;
-}
-
-.modal-notify__form .form__submit 
-{
-    margin-top: 20px;
-}
-
-.modal-notify__form  .form__agree
-{
-	margin: 30px auto 0;
-	max-width: 406px;
-	text-align: center;
-}
-
-
 .modal-adres
 {
 	padding-left: 50px;
