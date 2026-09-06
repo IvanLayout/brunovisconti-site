@@ -99,12 +99,12 @@
 											<use xlink:href="images/sprite.svg#favorite"></use>
 										</svg>
 									</a>
-									<a href="/" class="header__btn">
+									<button type="button" data-content="#modal-cart" class="header__btn modal-btn">
 										<span class="header__btn-number">0</span>
 										<svg>
 											<use xlink:href="images/sprite.svg#cart"></use>
 										</svg>
-									</a>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -2216,7 +2216,7 @@
 
 						<span class="fix-btns__btn-name">Избранное</span>
 					</a>
-					<a href="/" class="fix-btns__btn">
+					<button type="button" data-content="#modal-cart" class="fix-btns__btn modal-btn">
 						<span class="fix-btns__btn-icon">
 							<svg style="width: 19px; height: 19px;">
 								<use xlink:href="images/sprite.svg#cart"></use>
@@ -2226,7 +2226,7 @@
 						<span class="fix-btns__btn-number">0</span>
 
 						<span class="fix-btns__btn-name">Корзина</span>
-					</a>
+					</button>
 				</div>
 				<!-- End Шапка -->
 
@@ -2280,7 +2280,7 @@
 															</div>
 														</div>
 													</td>
-													<td class="checkout-table__price">10 369<i class="rub">у</i></td>
+													<td class="checkout-table__price">10 369 <i class="rub">у</i></td>
 													<td class="checkout-table__last">
 														<div class="amount">
 															<div class="amount__val _flex">
@@ -2333,7 +2333,7 @@
 															</div>
 														</div>
 													</td>
-													<td class="checkout-table__price">10 369<i class="rub">у</i></td>
+													<td class="checkout-table__price">10 369 <i class="rub">у</i></td>
 													<td class="checkout-table__last">
 														<div class="amount">
 															<div class="amount__val _flex">
@@ -2386,7 +2386,7 @@
 															</div>
 														</div>
 													</td>
-													<td class="checkout-table__price">10 369<i class="rub">у</i></td>
+													<td class="checkout-table__price">10 369 <i class="rub">у</i></td>
 													<td class="checkout-table__last">
 														<div class="amount">
 															<div class="amount__val _flex">
@@ -2511,7 +2511,7 @@
 															<span class="radio-delivery__box">
 																<span class="radio-delivery__name">Самовывоз</span>
 																<span class="radio-delivery__desc">5post, CDEK, Яндекс-<br>доставка, Почта России</span>
-																<span class="radio-delivery__price">Стоимость от300<i class="rub">у</i></span>
+																<span class="radio-delivery__price">Стоимость от 300 <i class="rub">у</i></span>
 															</span>
 														</label>
 													</div>
@@ -2522,7 +2522,7 @@
 															<span class="radio-delivery__box">
 																<span class="radio-delivery__name">Курьер</span>
 																<span class="radio-delivery__desc">CDEK, Яндекс-доставка, <br>Почта России</span>
-																<span class="radio-delivery__price">Стоимость от300<i class="rub">у</i></span>
+																<span class="radio-delivery__price">Стоимость от 300 <i class="rub">у</i></span>
 															</span>
 														</label>
 													</div>
@@ -2540,7 +2540,7 @@
 
 																		<span class="radio__text">
 																			<b>5post</b>
-																			<span class="radio__text-desc">Стоимость доставки <b>от300₽</b></span>
+																			<span class="radio__text-desc">Стоимость доставки <b>от 300 checkout-tablei class="rub">у</i></b></span>
 
 																			<span class="radio__btn">
 																				<button type="button" class="btn-border modal-btn">Выбрать ПВЗ</button>
@@ -2554,7 +2554,7 @@
 
 																		<span class="radio__text">
 																			<b>ПВЗСDEK</b>
-																			<span class="radio__text-desc">Стоимость доставки <b>от300₽</b></span>
+																			<span class="radio__text-desc">Стоимость доставки <b>от 300 <i class="rub">у</i></b></span>
 
 																			<span class="radio__btn">
 																				<button type="button" class="btn-border modal-btn">Выбрать ПВЗ</button>
@@ -2568,7 +2568,7 @@
 
 																		<span class="radio__text">
 																			<b>Яндекс-доставка</b>
-																			<span class="radio__text-desc">Стоимость доставки <b>от300₽</b></span>
+																			<span class="radio__text-desc">Стоимость доставки <b>от 300 <i class="rub">у</i></b></span>
 
 																			<span class="radio__btn">
 																				<button type="button" class="btn-border modal-btn">Выбрать ПВЗ</button>
@@ -2582,7 +2582,7 @@
 
 																		<span class="radio__text">
 																			<b>Почта России</b>
-																			<span class="radio__text-desc">Стоимость доставки <b>от300₽</b></span>
+																			<span class="radio__text-desc">Стоимость доставки <b>от 300 <i class="rub">у</i></b></span>
 
 																			<span class="radio__btn">
 																				<button type="button" class="btn-border modal-btn">Выбрать ПВЗ</button>
@@ -2600,7 +2600,7 @@
 																<div class="checkout-point__info-line"><b>Cклад СДЭК, Москва мск395, Москва, пр-т.Волгоградский</b></div>
 																<div class="checkout-point__info-line">109443, Россия, Москва, Москва, пр-т.Волгоградский, 106корп.1</div>
 																<div class="checkout-point__info-line">Пн–Чт с10:00до21:00, Пт–Сб с10:00до20:00, Всс10:00до21:00</div>
-																<div class="checkout-point__info-line"><span>Ожидаемая доставка: 5–7августа, 300₽</span></div>
+																<div class="checkout-point__info-line"><span>Ожидаемая доставка: 5–7августа, 300<i class="rub">у</i></span></div>
 															</div>
 
 															<div class="checkout-point__btns _flex">
@@ -2621,7 +2621,7 @@
 
 																		<span class="radio__text">
 																			<b>СDEK</b>
-																			<span class="radio__text-desc">Стоимость доставки <b>от300₽</b></span>
+																			<span class="radio__text-desc">Стоимость доставки <b>от 300 <i class="rub">у</i></b></span>
 																		</span>
 																	</label>
 																</div>
@@ -2631,7 +2631,7 @@
 
 																		<span class="radio__text">
 																			<b>Яндекс-доставка</b>
-																			<span class="radio__text-desc">Стоимость доставки <b>от300₽</b></span>
+																			<span class="radio__text-desc">Стоимость доставки <b>от 300 <i class="rub">у</i></b></span>
 																		</span>
 																	</label>
 																</div>
@@ -2641,7 +2641,7 @@
 
 																		<span class="radio__text">
 																			<b>Почта России</b>
-																			<span class="radio__text-desc">Стоимость доставки <b>от300₽</b></span>
+																			<span class="radio__text-desc">Стоимость доставки <b>от 300 <i class="rub">у</i></b></span>
 																		</span>
 																	</label>
 																</div>
@@ -2692,7 +2692,7 @@
 																<label class="checkbox__label">
 																	<input type="checkbox" name="" checked>
 
-																	<span class="checkbox__text checkbox__text_agree">Подарочная упаковка +300₽</span>
+																	<span class="checkbox__text checkbox__text_agree">Подарочная упаковка +300<i class="rub">у</i></span>
 																</label>
 															</div>
 															<div class="checkbox">
@@ -2768,19 +2768,19 @@
 										<div class="checkout-total__items">
 											<div class="checkout-total__item _flex">
 												<div class="checkout-total__item-name">Стоимость</div>
-												<div class="checkout-total__item-val">5 560<i class="rub">у</i></div>
+												<div class="checkout-total__item-val">5 560 <i class="rub">у</i></div>
 											</div>
 											<div class="checkout-total__item _flex">
 												<div class="checkout-total__item-name checkout-total__item-name_light">Скидка</div>
-												<div class="checkout-total__item-val checkout-total__item-val_light">−500<i class="rub">у</i></div>
+												<div class="checkout-total__item-val checkout-total__item-val_light">−500 <i class="rub">у</i></div>
 											</div>
 											<div class="checkout-total__item _flex">
 												<div class="checkout-total__item-name">Подарочная упаковка</div>
-												<div class="checkout-total__item-val">300<i class="rub">у</i></div>
+												<div class="checkout-total__item-val">300 <i class="rub">у</i></div>
 											</div>
 											<div class="checkout-total__item _flex">
 												<div class="checkout-total__item-name checkout-total__item-name_gray">Доставка</div>
-												<div class="checkout-total__item-val">350<i class="rub">у</i></div>
+												<div class="checkout-total__item-val">350 <i class="rub">у</i></div>
 											</div>
 										</div>
 
@@ -2789,14 +2789,14 @@
 										<div class="checkout-total__lines">
 											<div class="checkout-total__line _flex">
 												<div class="checkout-total__line-name">Итого коплате</div>
-												<div class="checkout-total__line-val">5 060<i class="rub">у</i></div>
+												<div class="checkout-total__line-val">5 060 <i class="rub">у</i></div>
 											</div>
 										</div>
 									</div>
 
 									<div class="form-promo">
 										<div class="form-promo__flex _flex">
-											<input type="text" value="" placeholder="Промокод" id="form-promo__input" class="form__input form-promo__input">
+											<input type="text" value="" placeholder="Промокод" class="form__input form-promo__input">
 
 											<button type="submit" class="form-promo__submit">Применить</button>
 										</div>
@@ -3605,6 +3605,374 @@
 					</div>
 				</div>
 			</form>
+		</div>
+
+		<div id="modal-cart" class="modal modal-cart modal-cart_full">
+			<div class="modal__box">
+				<div class="modal-cart__empty">
+					<div class="main-title main-title_left">В корзине <br>ничего нет…</div>
+
+					<div class="modal-cart__empty-desk">Посмотрите наши <a href="/">новинки</a> или воспользуйтесь. <br><a href="/">поиском</a>, если ищете что‑то конкретное.</div>
+				</div>
+				<div class="modal-cart__main">
+					<div class="modal-cart__top _flex">
+						<div class="main-title main-title_left">Корзина / 5 шт</div>
+
+						<div class="modal-cart__top-btns _flex">
+							<button type="button" class="modal-cart__top-btn modal-btn">
+								<svg width="16" height="20">
+									<use xlink:href="images/sprite.svg#share2"></use>
+								</svg>
+							</button>
+							<button type="button" class="modal-cart__top-btn modal-cart__top-delete">
+								<svg width="20" height="20">
+									<use xlink:href="images/sprite.svg#delete2"></use>
+								</svg>
+							</button>
+							<button type="button" data-fancybox-close class="modal-cart__top-btn modal-cart__top-btn_close">
+								<svg width="18" height="18">
+									<use xlink:href="images/sprite.svg#close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="free-delivery">
+						<span>Бесплатная доставка</span>
+					</div>
+
+					<div class="delivery-progress">
+						<div class="delivery-progress__top _flex">
+							<div class="delivery-progress__top-title">Платная доставка</div>
+							<div class="delivery-progress__top-sum">
+								<span>Осталось 2 440 ₽</span>
+							</div>
+							<div class="delivery-progress__top-free">Бесплатная доставка</div>
+						</div>	
+						<div class="delivery-progress__line">
+							<div class="delivery-progress__line-dot"></div>
+							<div class="delivery-progress__line-progres" style="width: 51%;"></div>
+						</div>
+						<div class="delivery-progress__prices _flex">
+							<div class="delivery-progress__price">0 ₽</div>
+							<div class="delivery-progress__price">от 5 000 ₽</div>
+						</div>
+					</div>
+
+					<form action="" class="form">
+						<div class="checkout-table">
+							<table class="checkout-table__table">
+								<tbody>
+									<tr>
+										<td class="checkout-table__img">
+											<a href="/" class="checkout-table__img-wrap">
+												<span>
+													<img src="images/tmp/cart_product1.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td class="checkout-table__info">
+											<div class="checkout-table__name">
+												<a href="/">Тетрадь общая «СКАЗОЧНЫЙ ЛЕС»</a>
+											</div>
+
+											<div class="checkout-table__info-flex _flex">
+												<div class="checkout-table__codes">Артикул 10-TRx-LCD</div>
+												<div class="checkout-table__line"></div>
+												<div class="checkout-table__colors">
+													<div class="checkout-table__color _flex">
+														<div class="checkout-table__color-img">
+															<img data-src="images/tmp/color1.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+														<div class="checkout-table__color-name">Мокко</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="checkout-table__price">10 369 <i class="rub">у</i></td>
+										<td class="checkout-table__last">
+											<div class="amount">
+												<div class="amount__val _flex">
+													<button type="button" class="amount__btn amount__btn_minus">
+														<svg>
+															<use xlink:href="images/sprite.svg#minus"></use>
+														</svg>
+													</button>
+
+													<input type="text" value="1" data-minimum="1" data-maximum="99" data-step="1" class="amount__input" maxlength="2" inputmode="numeric" pattern="[0-9]*">
+
+													<button type="button" class="amount__btn amount__btn_plus">
+														<svg>
+															<use xlink:href="images/sprite.svg#plus"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+
+											<a href="/" class="checkout-table__delete">
+												<svg>
+													<use xlink:href="images/sprite.svg#delete2"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="checkout-table__img">
+											<a href="/" class="checkout-table__img-wrap">
+												<span>
+													<img src="images/tmp/cart_product1.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td class="checkout-table__info">
+											<div class="checkout-table__name">
+												<a href="/">Тетрадь общая «СКАЗОЧНЫЙ ЛЕС»</a>
+											</div>
+
+											<div class="checkout-table__info-flex _flex">
+												<div class="checkout-table__codes">Артикул 10-TRx-LCD</div>
+												<div class="checkout-table__line"></div>
+												<div class="checkout-table__colors">
+													<div class="checkout-table__color _flex">
+														<div class="checkout-table__color-img">
+															<img data-src="images/tmp/color1.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+														<div class="checkout-table__color-name">Мокко</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="checkout-table__price">10 369 <i class="rub">у</i></td>
+										<td class="checkout-table__last">
+											<div class="amount">
+												<div class="amount__val _flex">
+													<button type="button" class="amount__btn amount__btn_minus">
+														<svg>
+															<use xlink:href="images/sprite.svg#minus"></use>
+														</svg>
+													</button>
+
+													<input type="text" value="1" data-minimum="1" data-maximum="99" data-step="1" class="amount__input" maxlength="2" inputmode="numeric" pattern="[0-9]*">
+
+													<button type="button" class="amount__btn amount__btn_plus">
+														<svg>
+															<use xlink:href="images/sprite.svg#plus"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+
+											<a href="/" class="checkout-table__delete">
+												<svg>
+													<use xlink:href="images/sprite.svg#delete2"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="checkout-table__img">
+											<a href="/" class="checkout-table__img-wrap">
+												<span>
+													<img src="images/tmp/cart_product1.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td class="checkout-table__info">
+											<div class="checkout-table__name">
+												<a href="/">Тетрадь общая «СКАЗОЧНЫЙ ЛЕС»</a>
+											</div>
+
+											<div class="checkout-table__info-flex _flex">
+												<div class="checkout-table__codes">Артикул 10-TRx-LCD</div>
+												<div class="checkout-table__line"></div>
+												<div class="checkout-table__colors">
+													<div class="checkout-table__color _flex">
+														<div class="checkout-table__color-img">
+															<img data-src="images/tmp/color1.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+														<div class="checkout-table__color-name">Мокко</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="checkout-table__price">10 369 <i class="rub">у</i></td>
+										<td class="checkout-table__last">
+											<div class="amount">
+												<div class="amount__val _flex">
+													<button type="button" class="amount__btn amount__btn_minus">
+														<svg>
+															<use xlink:href="images/sprite.svg#minus"></use>
+														</svg>
+													</button>
+
+													<input type="text" value="1" data-minimum="1" data-maximum="99" data-step="1" class="amount__input" maxlength="2" inputmode="numeric" pattern="[0-9]*">
+
+													<button type="button" class="amount__btn amount__btn_plus">
+														<svg>
+															<use xlink:href="images/sprite.svg#plus"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+
+											<a href="/" class="checkout-table__delete">
+												<svg>
+													<use xlink:href="images/sprite.svg#delete2"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="checkout-table">
+							<div class="checkout-table__top _flex">
+								<div class="small-title">Нет в наличии</div>
+								<button type="button" class="checkout-table__clear">очистить</button>
+							</div>
+
+							<table class="checkout-table__table checkout-table__table_available">
+								<tbody>
+									<tr>
+										<td class="checkout-table__img">
+											<a href="/" class="checkout-table__img-wrap">
+												<span>
+													<img src="images/tmp/cart_product1.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td class="checkout-table__info">
+											<div class="checkout-table__name">
+												<a href="/">Тетрадь общая «СКАЗОЧНЫЙ ЛЕС»</a>
+											</div>
+
+											<div class="checkout-table__info-flex _flex">
+												<div class="checkout-table__codes">Артикул 10-TRx-LCD</div>
+											</div>
+										</td>
+										<td class="checkout-table__available">нет в наличии</td>
+									</tr>
+									<tr>
+										<td class="checkout-table__img">
+											<a href="/" class="checkout-table__img-wrap">
+												<span>
+													<img src="images/tmp/cart_product1.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td class="checkout-table__info">
+											<div class="checkout-table__name">
+												<a href="/">Тетрадь общая «СКАЗОЧНЫЙ ЛЕС»</a>
+											</div>
+
+											<div class="checkout-table__info-flex _flex">
+												<div class="checkout-table__codes">Артикул 10-TRx-LCD</div>
+											</div>
+										</td>
+										<td class="checkout-table__available">нет в наличии</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="checkout-additional">
+							<div class="small-title">Дополнительные параметры</div>
+
+							<div class="checkboxes">
+								<div class="checkbox">
+									<label class="checkbox__label">
+										<input type="checkbox" name="" checked>
+
+										<span class="checkbox__text checkbox__text_agree">Подарочная упаковка +300<i class="rub">у</i></span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<label class="checkbox__label">
+										<input type="checkbox" name="" checked>
+
+										<span class="checkbox__text checkbox__text_agree">Добавить сообщение</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="form__line checkout-additional__bot">
+								<div class="form__field">
+									<input type="text" value="Сднём рождения!" class="form__input ">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-promo">
+							<div class="form-promo__flex _flex">
+								<input type="text" value="" placeholder="Промокод" class="form__input form-promo__input">
+
+								<button type="submit" class="form-promo__submit">Применить</button>
+							</div>
+						</div>
+
+						<div class="checkout-total view_box">
+							<div class="small-title">Детали заказа</div>
+
+							<div class="checkout-total__items">
+								<div class="checkout-total__item _flex">
+									<div class="checkout-total__item-name">Стоимость</div>
+									<div class="checkout-total__item-val">5 560 <i class="rub">у</i></div>
+								</div>
+								<div class="checkout-total__item _flex">
+									<div class="checkout-total__item-name checkout-total__item-name_light">Скидка</div>
+									<div class="checkout-total__item-val checkout-total__item-val_light">−500 <i class="rub">у</i></div>
+								</div>
+								<div class="checkout-total__item _flex">
+									<div class="checkout-total__item-name">Подарочная упаковка</div>
+									<div class="checkout-total__item-val">300 <i class="rub">у</i></div>
+								</div>
+								<div class="checkout-total__item _flex">
+									<div class="checkout-total__item-name checkout-total__item-name_gray">Доставка</div>
+									<div class="checkout-total__item-val">350 <i class="rub">у</i></div>
+								</div>
+							</div>
+
+							<div class="checkout-total__bord"></div>
+
+							<div class="checkout-total__lines">
+								<div class="checkout-total__line _flex">
+									<div class="checkout-total__line-name">Итого коплате</div>
+									<div class="checkout-total__line-val">5 060 <i class="rub">у</i></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal-cart__bot">
+							<div class="modal-cart__bot-flex _flex">
+								<div class="modal-cart__bot-items _flex">
+									<div class="modal-cart__bot-item">
+										<div class="modal-cart__bot-title modal-cart__bot-title_brown">Скидка</div>
+										<div class="modal-cart__bot-price modal-cart__bot-price_brown">−500 <i class="rub">у</i></div>
+									</div>
+									<div class="modal-cart__bot-item">
+										<div class="modal-cart__bot-title">Стоимость</div>
+										<div class="modal-cart__bot-price">5 560 <i class="rub">у</i></div>
+									</div>
+								</div>
+								<div class="form__submit">
+									<button type="submit" class="btn-brown form__submit-btn">Оформить заказ</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-cart__delete">
+					<div class="main-title">очистить корзину?</div>
+
+					<div class="modal__subtitle">Вернуть продукты обратно в корзину не получится.</div>
+
+					<div class="modal-cart__delete-btns _flex">
+						<button type="button" class="modal-cart__delete-btn btn-brown modal-cart__clear-cart">удалить</button>
+						<a href="/" class="modal-cart__delete-btn btn-border">в избранное</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- Подключение javascript файлов -->

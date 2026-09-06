@@ -1,6 +1,6 @@
 $(() => {
 	// Observer API
-	const boxes = document.querySelectorAll('.lazyload, .map-js')
+	const boxes = document.querySelectorAll('.lazyload, .map-js, .view_box')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
@@ -25,6 +25,14 @@ $(() => {
 					initMap(entry.target);
 				} else {
 					mapsQueue.push(entry.target);
+				}
+			}
+
+			if (entry.target.classList.contains('view_box')) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('_in')
+				} else {
+					entry.target.classList.remove('_in')
 				}
 			}
 		}
@@ -220,7 +228,9 @@ $(() => {
 		setTimeout(() => {
 			Fancybox.show([{
 				src: target,
-				type: 'inline'
+				type: 'inline',
+				showClass: 'f-fadeIn',
+				hideClass: 'f-fadeOut',
 			}], {
 				...commonOptions,
 				on: {
@@ -671,13 +681,19 @@ $(() => {
 
 		if ( $(this).hasClass('_active') ) {
 			$(this).removeClass('_active')
-			$('.checkout-table__table').removeClass('_hide')
-			$('.checkout__marg').addClass('_marg')
+			$(this).closest('.checkout-table').find('.checkout-table__table').removeClass('_hide')
+			$(this).closest('.checkout').find('.checkout__marg').addClass('_marg')
 		} else {
 			$(this).addClass('_active')
-			$('.checkout-table__table').addClass('_hide')
-			$('.checkout__marg').removeClass('_marg')
+			$(this).closest('.checkout-table').find('.checkout-table__table').addClass('_hide')
+			$(this).closest('.checkout').find('.checkout__marg').removeClass('_marg')
 		}
+	})
+
+	$('body').on('click', '.checkout-table__clear', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.checkout-table').remove()
 	})
 
 	$('#city-input').on('input', function () {
@@ -718,6 +734,18 @@ $(() => {
 
 		let deliveryItem = $(this).data('delivery')
 		$(deliveryItem).addClass('_show')
+	})
+
+
+	$('.modal-cart__top-delete').on('click', function () {
+		$(this).closest('.modal-cart_full').find('.modal-cart__main').addClass('_hide')
+		$(this).closest('.modal-cart_full').find('.modal-cart__delete').addClass('_show')
+	})
+
+	$('.modal-cart__clear-cart').on('click', function () {
+		$(this).closest('.modal-cart_full').find('.modal-cart__main').removeClass('_hide')
+		$(this).closest('.modal-cart_full').find('.modal-cart__delete').removeClass('_show')
+		$(this).closest('.modal-cart_full').removeClass('modal-cart_full')
 	})
 })
 
