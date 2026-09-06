@@ -809,7 +809,7 @@
 		margin-top: 5px;
 	}
 
-	.page-top{
+	.breadcrumbs{
 		padding: 20px 0 30px;
 	}
 
@@ -1562,7 +1562,7 @@
 	}
 
 
-	.breadcrumbs
+	.breadcrumbs__scroll
 	{
 		overflow: hidden;
 		overflow-x: auto;
@@ -1574,7 +1574,7 @@
 		white-space: nowrap;
 	}
 
-	.breadcrumbs::-webkit-scrollbar
+	.breadcrumbs__scroll::-webkit-scrollbar
     {
         display: none;
     }
