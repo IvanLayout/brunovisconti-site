@@ -2778,6 +2778,107 @@
 		</div>
 
 
+		<div id="modal-login" class="modal">
+			<form action="" class="modal__box form">
+				<div class="main-title">Войти в личный кабинеть</div>
+
+				<div class="modal__subtitle">Через сервис</div>
+
+				<div class="socials modal-socials">
+					<div class="socials__flex _flex">
+						<a href="/" target="_blank" class="socials__link">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_soc3"></use>
+							</svg>
+
+							<span class="socials__name">Яндекс ID</span>
+						</a>
+						<a href="/" target="_blank" class="socials__link">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_soc4"></use>
+							</svg>
+
+							<span class="socials__name">VK ID</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="modal__wrap modal__wrap_marg">
+					<div class="modal__max-width">
+						<button type="button" data-content="#modal-phone" class="modal__phone-btn btn-border modal-btn">по номеру телефона</button>
+					</div>
+				</div>
+
+				<div class="modal__agree modal__max-width">
+					При входе и регистрации я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a>
+				</div>
+			</form>
+		</div>
+
+		<div id="modal-phone" class="modal">
+			<form action="" data-content="#modal-phone-confirm" class="modal__box form form-ajax">
+				<div class="main-title">Вход по телефону</div>
+
+				<div class="modal__subtitle">Введите номер, мы отправим код в СМС</div>
+
+
+				<div class="modal__wrap">
+					<div class="modal__max-width">
+						<div class="form__line">
+							<div class="form__field">
+								<div class="form__field">
+									<input type="tel" value="" name="" placeholder="" data-mask="+7 (999) 999-99-99" class="form__input form__input-anim">
+									<label class="form__label">+7 999 000-00-00</label>
+								</div>
+							</div>
+						</div>
+						<div class="form__submit">
+							<button type="submit" class="btn-brown form__submit-btn">Получить код</button>
+						</div>
+	
+						<div class="form__time">Повторно через 00:59</div>
+					</div>
+				</div>
+
+				<div class="modal__agree modal__max-width">
+					При входе и регистрации я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a>
+				</div>
+			</form>
+		</div>
+
+		<div id="modal-phone-confirm" class="modal">
+			<form action="" class="modal__box form">
+				<div class="main-title">подтвердить номер</div>
+
+				<div class="modal__box-flex _flex">
+					<div class="modal__number-phone">+7 963 000-00-00</div>
+
+					<button type="button" data-content="modal-phone" class="modal__change-btn modal-btn">Изменить</button>
+				</div>
+
+
+				<div class="modal__wrap">
+					<div class="modal__max-width">
+						<div class="form__line">
+							<div class="form__field">
+								<div class="form__field">
+									<input type="text" value="" name="" placeholder="" class="form__input form__input-anim">
+									<label class="form__label">Введите код</label>
+								</div>
+							</div>
+
+							<div class="form__line-code">
+								<button type="button" class="resend-code">Отправить код повторно</button>
+							</div>
+						</div>
+						<div class="form__submit">
+							<button type="submit" class="btn-brown form__submit-btn">Подтвердить номер</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 
