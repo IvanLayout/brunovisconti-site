@@ -10344,12 +10344,12 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	display: none;
 }
 
-.lk-orders__btn._active span
+.lk-orders__item._active .lk-open span
 {
 	display: none;
 }
 
-.lk-orders__btn._active span + span
+.lk-orders__item._active .lk-open span + span
 {
 	display: block;
 }
@@ -10365,8 +10365,6 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	width: 8px;
 	height: 5px;
 
-	/* transform: rotate(180deg); */
-
 	margin-top: -3px;
 
 	stroke: currentColor;
@@ -10379,6 +10377,11 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	{
 		color: #AF895B;
 	}
+}
+
+.lk-orders__item._active .lk-open svg
+{
+	transform: rotate(180deg);
 }
 
 
@@ -10446,7 +10449,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
 .lk-order__stages-flex
 {
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	flex-wrap: nowrap;
 	gap: 20px;
 }

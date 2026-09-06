@@ -411,6 +411,21 @@ $(() => {
 		}
 	})
 
+	// Аккордион личного кабинета
+	$('body').on('click', '.lk-open', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.lk-orders__item')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.lk-orders__data').slideUp(300)
+		} else {
+			parent.addClass('_active')
+			parent.find('.lk-orders__data').slideDown(300)
+		}
+	})
+
 	$('.filter__item-more').click(function(e) {
 		e.preventDefault()
 
