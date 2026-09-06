@@ -52,7 +52,7 @@
 							<div class="header__top-flex _flex">
 								<div class="header__top-info">Бесплатная доставка от5 000 <i class="rub">у</i>&emsp;<a href="/">Подробности</a></div>
 								<div class="header__top-links">
-									<span><button type="button" data-content="#modal-login" class="modal-btn">Войти</button>&ensp;&bull;&ensp;</span><a href="/">Отслеживать закакз</a>
+									<span><button type="button" data-content="#modal-share" class="modal-btn">Войти</button>&ensp;&bull;&ensp;</span><a href="/">Отслеживать закакз</a>
 								</div>
 							</div>
 						</div>
@@ -3505,7 +3505,6 @@
 			</div>
 		</div>
 
-
 		<div id="modal-login" class="modal">
 			<form action="" class="modal__box form">
 				<div class="main-title">Войти в личный кабинеть</div>
@@ -3970,6 +3969,85 @@
 					<div class="modal-cart__delete-btns _flex">
 						<button type="button" class="modal-cart__delete-btn btn-brown modal-cart__clear-cart">удалить</button>
 						<a href="/" class="modal-cart__delete-btn btn-border">в избранное</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-share" class="modal modal-share">
+			<img data-src="images/modal_share_bg.jpg" src="images/img_plug.png" alt="" class="modal-share__bg lazyload">
+
+			<div class="modal__box">
+				<div class="modal-share__top-img">
+					<img data-src="images/sailboat_img.jpg" src="images/img_plug.png" alt="" class="lazyload">
+				</div>
+
+				<div class="main-title">Поделиться корзиной</div>
+
+				<div class="modal__subtitle">Отправьте подборку товаров красиво</div>
+
+				<div class="modal-share__items">
+					<div class="modal-share__item">
+						<div class="modal-share__title modal-share__title-center">Ваша подборка из 23 товаров</div>
+
+						<div class="modal-share__grid _flex">
+							<a href="/" class="modal-share__product">
+								<span class="modal-share__product-img">
+									<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="modal-share__product">
+								<span class="modal-share__product-img">
+									<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+							<a href="/" class="modal-share__product">
+								<span class="modal-share__all">ещё 21</span>
+
+								<span class="modal-share__product-img">
+									<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="modal-share__item modal-share__item-border">
+						<div class="modal-share__title">Поделиться через:</div>
+
+						<div class="modal-share__flex _flex">
+							<button type="button" class="modal-share__copy-btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#copy"></use>
+								</svg>
+
+								<span>Копировать ссылку</span>
+							</button>
+
+							<div class="socials modal-share__socials">
+								<div class="socials__flex _flex">
+									<a href="/" target="_blank" class="socials__link">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_soc1"></use>
+										</svg>
+									</a>
+									<a href="/" target="_blank" class="socials__link">
+										<svg>
+											<use xlink:href="images/sprite.svg#ic_soc2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-share__item">
+						<div class="modal-share__title">Добавить личное сообщение:</div>
+
+						<div class="form__line">
+							<div class="form__field">
+								<textarea placeholder="Привет! Посмотри, что я нашёл…" class="form__textarea"></textarea>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
