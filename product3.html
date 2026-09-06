@@ -4381,37 +4381,32 @@
 
 
 		<div id="modal-notify" class="modal">
-			<div class="modal__box">
+			<form action="" data-content="#modal-notify2" class="modal__box form form-ajax">
 				<div class="main-title">Узнать <br>о поступлении</div>
 
 				<div class="modal__subtitle">Оставьте ваш номер телефона, и мы <br>оповестим вас, когда товар появится</div>
 
 				<div class="modal__wrap">
 					<div class="modal__max-width">
-						<form action="" data-content="#modal-notify2" class="form form-ajax">
-							<div class="form__line">
+						<div class="form__line">
+							<div class="form__field">
 								<div class="form__field">
-									<div class="form__field">
-										<input type="tel" value="" name="" placeholder="" data-mask="+7 (999) 999-99-99" class="form__input form__input-anim">
-										<label class="form__label">+7 999 000-00-00</label>
-									</div>
+									<input type="tel" value="" name="" placeholder="" data-mask="+7 (999) 999-99-99" class="form__input form__input-anim">
+									<label class="form__label">+7 999 000-00-00</label>
 								</div>
 							</div>
-							<div class="form__submit">
-								<button type="submit" class="btn-brown form__submit-btn">уведомить</button>
-							</div>
-		
-							<div class="form__agree"></a></div>
-						</form>
+						</div>
+						<div class="form__submit">
+							<button type="submit" class="btn-brown form__submit-btn">уведомить</button>
+						</div>
 					</div>
 				</div>
 
 				<div class="modal__agree modal__max-width">
 					Я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a>
 				</div>
-			</div>
+			</form>
 		</div>
-
 
 		<div id="modal-notify2" class="modal modal-notify">
 			<div class="modal__box">
@@ -4427,10 +4422,10 @@
 
 
 		<div id="modal-preorder" class="modal modal-preorder">
-			<div class="modal__box">
+			<form action="" class="modal__box form">
 				<div class="main-title">Оформить предзаказ</div>
 
-				<form action="" class="form modal-preorder__form">
+				<div class="modal-preorder__form">
 					<div class="modal-preorder__product _flex">
 						<div class="modal-preorder__thumb">
 							<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
@@ -4535,8 +4530,8 @@
 						<button type="submit" class="btn-brown form__submit-btn">Оформить предзаказ</button>
 					</div>
 					<div class="form__agree">Я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a></div>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 
 		<!-- Подключение javascript файлов -->

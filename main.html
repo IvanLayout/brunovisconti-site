@@ -4697,7 +4697,7 @@
 		</div>
 
 		<div id="modal-login" class="modal">
-			<div class="modal__box">
+			<form action="" class="modal__box form">
 				<div class="main-title">Войти в личный кабинеть</div>
 
 				<div class="modal__subtitle">Через сервис</div>
@@ -4728,13 +4728,13 @@
 				</div>
 
 				<div class="modal__agree modal__max-width">
-					При входе и регистрации я даю согласие на обработку своих персональных данных в соответствии с политикой обработки персональных данных
+					При входе и регистрации я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a>
 				</div>
-			</div>
+			</form>
 		</div>
 
 		<div id="modal-phone" class="modal">
-			<div class="modal__box">
+			<form action="" data-content="#modal-phone-confirm" class="modal__box form form-ajax">
 				<div class="main-title">Вход по телефону</div>
 
 				<div class="modal__subtitle">Введите номер, мы отправим код в СМС</div>
@@ -4742,32 +4742,30 @@
 
 				<div class="modal__wrap">
 					<div class="modal__max-width">
-						<form action="" data-content="#modal-phone-confirm" class="form form-ajax">
-							<div class="form__line">
+						<div class="form__line">
+							<div class="form__field">
 								<div class="form__field">
-									<div class="form__field">
-										<input type="tel" value="" name="" placeholder="" data-mask="+7 (999) 999-99-99" class="form__input form__input-anim">
-										<label class="form__label">+7 999 000-00-00</label>
-									</div>
+									<input type="tel" value="" name="" placeholder="" data-mask="+7 (999) 999-99-99" class="form__input form__input-anim">
+									<label class="form__label">+7 999 000-00-00</label>
 								</div>
 							</div>
-							<div class="form__submit">
-								<button type="submit" class="btn-brown form__submit-btn">Получить код</button>
-							</div>
-		
-							<div class="form__time">Повторно через 00:59</div>
-						</form>
+						</div>
+						<div class="form__submit">
+							<button type="submit" class="btn-brown form__submit-btn">Получить код</button>
+						</div>
+	
+						<div class="form__time">Повторно через 00:59</div>
 					</div>
 				</div>
 
 				<div class="modal__agree modal__max-width">
-					При входе и регистрации я даю согласие на обработку своих персональных данных в соответствии с политикой обработки персональных данных
+					При входе и регистрации я даю согласие на обработку своих персональных данных в соответствии с <a href="/">политикой обработки персональных данных</a>
 				</div>
-			</div>
+			</form>
 		</div>
 
 		<div id="modal-phone-confirm" class="modal">
-			<div class="modal__box">
+			<form action="" class="modal__box form">
 				<div class="main-title">подтвердить номер</div>
 
 				<div class="modal__box-flex _flex">
@@ -4779,26 +4777,24 @@
 
 				<div class="modal__wrap">
 					<div class="modal__max-width">
-						<form action=""  class="form">
-							<div class="form__line">
+						<div class="form__line">
+							<div class="form__field">
 								<div class="form__field">
-									<div class="form__field">
-										<input type="tel" value="" name="" placeholder="" class="form__input form__input-anim">
-										<label class="form__label">Введите код</label>
-									</div>
+									<input type="tel" value="" name="" placeholder="" class="form__input form__input-anim">
+									<label class="form__label">Введите код</label>
 								</div>
+							</div>
 
-								<div class="form__line-code">
-									<button type="button" class="resend-code">Отправить код повторно</button>
-								</div>
+							<div class="form__line-code">
+								<button type="button" class="resend-code">Отправить код повторно</button>
 							</div>
-							<div class="form__submit">
-								<button type="submit" class="btn-brown form__submit-btn">Подтвердить номер</button>
-							</div>
-						</form>
+						</div>
+						<div class="form__submit">
+							<button type="submit" class="btn-brown form__submit-btn">Подтвердить номер</button>
+						</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 
 
