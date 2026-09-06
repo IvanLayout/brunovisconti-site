@@ -1183,8 +1183,8 @@
 	.modal,
 	.modal-filter__form
 	{
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.modal-small__btn-bord
@@ -1199,11 +1199,11 @@
 
 	.filter__bot
 	{
-		width: calc(100% + 100px);
-		margin-left: -50px;
-		margin-right: -50px;
-		padding-left: 50px;
-		padding-right: 50px;
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 
@@ -1247,6 +1247,33 @@
 	{
 		margin-top: 10px;
 		margin-left: 10px;
+	}
+
+	.modal-receipt__link-name
+	{
+		font-size: 16px;
+	}
+
+
+	.modal-return__table .checkout-table__table
+	{
+		margin-bottom: 0;
+	}
+
+	.modal-return__table .checkout-table__table .checkout-table__img
+	{
+		width: 131px;
+		padding-left: 26px;
+	}
+
+	.modal-return__table .checkout-table__table tr
+	{
+		padding-left: 145px;
+	}
+
+	.modal-return__table .checkout-table__table .checkout-table__info
+	{
+		padding-bottom: 0;
 	}
 
 

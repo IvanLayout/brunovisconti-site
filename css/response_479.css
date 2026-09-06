@@ -950,4 +950,27 @@
 		width: 12px;
 		height: 10px;
 	}
+
+
+	.modal
+	{
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	.modal__agree,
+	.modal .form__agree
+	{
+		font-size: 12px;
+	}
+
+	.modal-adres__bot
+	{
+		margin-top: 15px;
+	}
+
+	.filter__reset
+	{
+		font-size: 12px;
+	}
 }

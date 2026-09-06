@@ -2341,10 +2341,14 @@
 	}
 
 
-	.modal-socials,
-	.modal-notify__form
+	.modal-socials
 	{
 		margin-top: 30px;
+	}
+
+	.modal-receipt__link-name
+	{
+		font-size: 20px;
 	}
 
 
