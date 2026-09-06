@@ -169,6 +169,79 @@
 	.checkout-done__btn{
 		width: 100%;
 	}
+
+	.delivery-progress{
+		overflow: hidden;
+		overflow-x: auto;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.delivery-progress::-webkit-scrollbar{
+		display: none;
+	}
+
+	.delivery-progress__wrap{
+		min-width: 500px;
+	}
+
+	.delivery-progress__top-title{
+		font-size: 12px;
+	}
+
+	.delivery-progress__top-sum{
+		font-size: 12px;
+	}
+
+	.delivery-progress__top-free{
+		font-size: 12px;
+	}
+
+	.modal-cart__bot-items{
+		display: none;
+	}
+
+	.modal-cart__bot .form__submit{
+		width: 100%;
+	}
+
+	.modal-cart_full .f-button.is-close-button{
+		display: flex;
+	}
+
+	.modal-cart__top{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.modal-cart__top-btns{
+		gap: 10px;
+		width: 100%;
+	}
+
+	.modal-cart__top-btn_close{
+		display: none;
+	}
+
+	.modal-cart__top-delete{
+		order: -1;
+	}
+
+	.modal-cart__top-btn{
+		width: 16px;
+		height: 16px;
+	}
+
+	.modal-cart__top-btn svg{
+		width: 12px;
+		height: 16px;
+	}
+
+	.modal-cart__top-delete svg{
+		width: 16px;
+	}
 	/*------------
 		Commit
 	------------*/

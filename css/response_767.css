@@ -496,6 +496,140 @@
 		margin-top: 30px;
 		gap: 10px;
 	}
+
+	
+	.modal-share__copy-btn{
+		height: 40px;
+		padding: 0 15px;
+	}
+
+	.modal-share__copy-btn svg{
+		margin-right: 10px;
+	}
+
+	.socials__flex {
+		gap: 10px;
+	}
+
+	.modal-share__socials .socials__link{
+		width: 40px;
+		height: 40px;
+	}
+
+	.modal-share__socials .socials__link svg{
+		width: 40px;
+		height: 40px;
+	}
+
+	.modal-share__item{
+		margin-top: 20px;
+	}
+
+	.modal-share__item-border{
+		padding-top: 20px;
+	}
+
+	.modal-share__grid {
+		margin: -15px 0 0 -15px;
+	}
+
+	.modal-share__product {
+		width: calc(100% / 3 - 15px);
+		margin: 15px 0 0 15px;
+	}
+
+	.modal-share__top-img{
+		margin-bottom: 20px;
+		height: 83px;
+	}
+
+	.modal-share__item .form__line:last-child{
+		margin-bottom: 0;
+	}
+
+
+	.modal-cart__bot {
+		margin-left: -20px;
+		margin-right: -20px;
+		width: calc(100% + 40px);
+		padding: 20px;
+	}
+
+	.modal-cart__bot .form__submit{
+		width: 200px;
+	}
+
+	.modal-cart__bot-items{
+		gap: 12px 16px;
+	}
+
+	.modal-cart__bot-price{
+		font-size: 16px;
+	}
+
+	.delivery-progress__top{
+		margin-top: 18px;
+	}
+
+	.delivery-progress__top-title{
+		font-size: 10px;
+	}
+
+	.delivery-progress__top-sum{
+		font-size: 10px;
+	}
+
+	.delivery-progress__top-free{
+		font-size: 10px;
+	}
+
+	.free-delivery{
+		margin-top: 12px;
+	}
+
+	.free-delivery span{
+		padding: 5px 9px;
+	}
+
+	.modal-cart .checkout-table__table tr{
+		padding-bottom: 20px;
+		min-height: 131px;
+	}
+
+	.modal-cart .checkout-table__table tr:last-child{
+		padding-bottom: 0;
+		min-height: 111px;
+	}
+
+	.modal-cart .checkout-table__table tr + tr{
+		margin-top: 20px;
+	}
+
+	.modal-cart .checkout-table__table td{
+		padding-top: 0;
+	}
+
+	.checkout-table__available{
+		margin-top: 22px;
+		font-size: 16px;
+	}
+
+	.modal-cart .form-promo{
+		margin-top: 30px;
+	}
+
+	.modal-cart__delete{
+		padding-top: 40px;
+	}
+
+	.modal__subtitle{
+		margin-top: 16px;
+	}
+
+	.modal-cart__delete-btns{
+		margin-top: 30px;
+		gap: 10px;
+	}
 	/*------------
 		Commit
 	------------*/

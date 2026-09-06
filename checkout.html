@@ -52,7 +52,7 @@
 							<div class="header__top-flex _flex">
 								<div class="header__top-info">Бесплатная доставка от5 000 <i class="rub">у</i>&emsp;<a href="/">Подробности</a></div>
 								<div class="header__top-links">
-									<span><button type="button" data-content="#modal-share" class="modal-btn">Войти</button>&ensp;&bull;&ensp;</span><a href="/">Отслеживать закакз</a>
+									<span><button type="button" data-content="#modal-login" class="modal-btn">Войти</button>&ensp;&bull;&ensp;</span><a href="/">Отслеживать закакз</a>
 								</div>
 							</div>
 						</div>
@@ -3618,7 +3618,7 @@
 						<div class="main-title main-title_left">Корзина / 5 шт</div>
 
 						<div class="modal-cart__top-btns _flex">
-							<button type="button" class="modal-cart__top-btn modal-btn">
+							<button type="button" data-content="#modal-share" class="modal-cart__top-btn modal-btn">
 								<svg width="16" height="20">
 									<use xlink:href="images/sprite.svg#share2"></use>
 								</svg>
@@ -3641,20 +3641,22 @@
 					</div>
 
 					<div class="delivery-progress">
-						<div class="delivery-progress__top _flex">
-							<div class="delivery-progress__top-title">Платная доставка</div>
-							<div class="delivery-progress__top-sum">
-								<span>Осталось 2 440 ₽</span>
+						<div class="delivery-progress__wrap">
+							<div class="delivery-progress__top _flex">
+								<div class="delivery-progress__top-title">Платная доставка</div>
+								<div class="delivery-progress__top-sum">
+									<span>Осталось 2 440 ₽</span>
+								</div>
+								<div class="delivery-progress__top-free">Бесплатная доставка</div>
+							</div>	
+							<div class="delivery-progress__line">
+								<div class="delivery-progress__line-dot"></div>
+								<div class="delivery-progress__line-progres" style="width: 51%;"></div>
 							</div>
-							<div class="delivery-progress__top-free">Бесплатная доставка</div>
-						</div>	
-						<div class="delivery-progress__line">
-							<div class="delivery-progress__line-dot"></div>
-							<div class="delivery-progress__line-progres" style="width: 51%;"></div>
-						</div>
-						<div class="delivery-progress__prices _flex">
-							<div class="delivery-progress__price">0 ₽</div>
-							<div class="delivery-progress__price">от 5 000 ₽</div>
+							<div class="delivery-progress__prices _flex">
+								<div class="delivery-progress__price">0 ₽</div>
+								<div class="delivery-progress__price">от 5 000 ₽</div>
+							</div>
 						</div>
 					</div>
 
@@ -3988,7 +3990,7 @@
 
 				<div class="modal-share__items">
 					<div class="modal-share__item">
-						<div class="modal-share__title modal-share__title-center">Ваша подборка из 23 товаров</div>
+						<div class="small-title small-title_center">Ваша подборка из 23 товаров</div>
 
 						<div class="modal-share__grid _flex">
 							<a href="/" class="modal-share__product">
@@ -4012,7 +4014,7 @@
 					</div>
 
 					<div class="modal-share__item modal-share__item-border">
-						<div class="modal-share__title">Поделиться через:</div>
+						<div class="small-title">Поделиться через:</div>
 
 						<div class="modal-share__flex _flex">
 							<button type="button" class="modal-share__copy-btn">
@@ -4041,13 +4043,15 @@
 					</div>
 
 					<div class="modal-share__item">
-						<div class="modal-share__title">Добавить личное сообщение:</div>
+						<div class="small-title">Добавить личное сообщение:</div>
 
-						<div class="form__line">
-							<div class="form__field">
-								<textarea placeholder="Привет! Посмотри, что я нашёл…" class="form__textarea"></textarea>
+						<form action="" class="form">
+							<div class="form__line">
+								<div class="form__field">
+									<textarea placeholder="Привет! Посмотри, что я нашёл…" class="form__textarea"></textarea>
+								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
