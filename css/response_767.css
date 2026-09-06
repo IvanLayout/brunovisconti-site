@@ -1153,6 +1153,27 @@
 		margin-top: 10px;
 	}
 
+	.lk-order .checkout-table__table .checkout-table__img
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.lk-order .checkout-table__table td
+	{
+		padding: 0;
+	}
+
+	.lk-order .checkout-table__table .checkout-table__info
+	{
+		padding-bottom: 17px;
+	}
+
+	.lk-order .checkout-table__table .checkout-table__name
+	{
+		font-size: 14px;
+	}
+
 
 	.lk-info__bot-btn
 	{

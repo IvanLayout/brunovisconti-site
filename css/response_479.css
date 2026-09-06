@@ -899,6 +899,11 @@
 		width: 100%;
 	}
 
+	.lk-order .checkout-table__table .checkout-table__price
+	{
+		font-size: 16px;
+	}
+
 
 
 	.section-subscribe__flex

@@ -5043,6 +5043,7 @@ input[type=checkbox]:checked + .checkbox-dot__wrap::before
 	flex-wrap: wrap;
 
 	aspect-ratio: 1;
+	width: 100%;
 }
 
 .checkout-table__img-wrap span img{
@@ -10655,6 +10656,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .checkout-table__val
 {
 	text-align: right;
+	white-space: nowrap;
 }
 
 .lk-order__btns
