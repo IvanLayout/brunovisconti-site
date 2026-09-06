@@ -5567,6 +5567,42 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	width: 12px;
 	height: 12px;
 }
+
+
+.checkout-done{
+	padding-top: 40px;
+}
+
+.checkout-done__title{
+	margin-top: 20px;
+
+	font-family: var(--second-family);
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #5A4A42;
+}
+
+.checkout-done__item{
+	margin-top: 20px;
+}
+
+.checkout-done__item-title{
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: rgba(61, 50, 44, 0.5);
+}
+
+.checkout-done__item-val{
+	margin-top: 5px;
+}
+
+.checkout-done__btns{
+	margin-top: 24px;
+	gap: 20px;
+}
 /*------------
     Commit
 ------------*/

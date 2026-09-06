@@ -927,6 +927,14 @@
 		margin-top: 7px;
 		margin-left: 26px;
 	}
+
+	.checkout-done{
+		padding-top: 30px;
+	}
+
+	.checkout-done__title{
+		font-size: 20px;
+	}
 	/*------------
 		Commit
 	------------*/
