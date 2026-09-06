@@ -165,6 +165,10 @@
 	.radio-delivery__desc br{
 		display: none;
 	}
+
+	.checkout-done__btn{
+		width: 100%;
+	}
 	/*------------
 		Commit
 	------------*/
