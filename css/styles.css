@@ -11171,6 +11171,10 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	text-align: center;
 }
 
+.modal .main-title_left{
+	text-align: left;
+}
+
 .modal__subtitle
 {
 	margin-top: 20px;
@@ -11862,6 +11866,35 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .modal-return .form__textarea
 {
 	height: 140px;
+}
+
+
+.modal.modal-cart{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 800px;
+}
+
+.modal-cart__empty{
+	margin-top: 16px;
+	color: #5A4A42;
+}
+
+.modal-cart__empty a{
+	color: #3D322C;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+	.modal-cart__empty a:hover{
+		border-bottom-color: transparent;
+	}
+}
+
+.modal-cart__empty a:active{
+	border-bottom-color: transparent;
 }
 
 

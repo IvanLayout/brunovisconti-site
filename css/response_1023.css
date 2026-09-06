@@ -935,6 +935,12 @@
 	.checkout-done__title{
 		font-size: 20px;
 	}
+
+
+	.modal.modal-cart {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	/*------------
 		Commit
 	------------*/
