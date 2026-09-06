@@ -397,6 +397,21 @@ $(() => {
 		}
 	})
 
+	// Показать все
+	$('body').on('click', '.lk-orders__btn-open', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.checkout-table').find('._tr-hide').removeClass('_tr-show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.checkout-table').find('._tr-hide').addClass('_tr-show')
+		}
+	})
+
 
 	// Аккордион простой
 	$('body').on('click', '.accord__open', function (e) {

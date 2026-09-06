@@ -10339,12 +10339,14 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	display: none;
 }
 
-.lk-orders__item._active .lk-open span
+.lk-orders__item._active .lk-open span,
+.lk-orders__btn-open._active span
 {
 	display: none;
 }
 
-.lk-orders__item._active .lk-open span + span
+.lk-orders__item._active .lk-open span + span,
+.lk-orders__btn-open._active span + span
 {
 	display: block;
 }
@@ -10374,7 +10376,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	}
 }
 
-.lk-orders__item._active .lk-open svg
+.lk-orders__item._active .lk-open svg,
+.lk-orders__btn-open._active svg
 {
 	transform: rotate(180deg);
 }
@@ -10827,6 +10830,36 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .lk-sorting__link.active::before
 {
 	opacity: 1;
+}
+
+.checkout-table__table ._tr-hide
+{
+	display: none;
+}
+
+.checkout-table__table ._tr-show
+{
+	display: table-row;
+}
+
+.lk-orders__info-bot
+{
+	position: relative;
+}
+
+.lk-orders__info-bot::after
+{	
+	position: absolute;
+	content: '';
+	top: -1px;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 1px;
+
+	background: #fff;
 }
 
 @media (any-hover: hover)
