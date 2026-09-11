@@ -450,6 +450,7 @@
 	.added-cart__name
 	{
 		margin-top: 5px;
+		max-height: 37px;
 	}
 
 

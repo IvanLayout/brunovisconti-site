@@ -248,6 +248,11 @@
 		font-size: 26px;
 	}
 
+	.product_big .product__use
+	{
+		margin-top: 20px;
+	}
+
 
 	.article__name 
 	{

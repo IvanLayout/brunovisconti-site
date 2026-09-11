@@ -1654,6 +1654,11 @@ button
 	text-align: center;
 }
 
+.wrap-btn__btn
+{
+	min-width: 258px;
+}
+
 .btn-brown
 {
     color: #FFF;
@@ -1794,7 +1799,7 @@ button
 
     border-bottom: 1px solid currentColor;
 
-    transition: border .2s linear;
+    transition: border .2s linear, color .2s linear;
 	vertical-align: middle;
 	font-weight: 400;
 }
@@ -1809,11 +1814,6 @@ button
     .breadcrumbs a:hover
     {
         color: #A07D54;
-    }
-
-	.breadcrumbs_white a:hover
-    {
-        border-bottom-color: rgba(255, 255, 255, .8);
     }
 }
 
@@ -2639,6 +2639,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	min-width: 100%;
 
     transition: opacity .2s linear;
+	box-shadow: 0 4px 38px 0 rgba(185, 185, 185, 0.25);
 }
 
 .select-wrap.select-wrap_left-list .nice-select .list
@@ -6392,6 +6393,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .product_big .product__size
 {
 	margin-top: 16px;
+	color: rgba(61, 50, 44, .5);
 }
 
 .product__prices
@@ -6434,6 +6436,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
 	width: 100%;
 	padding: 8px 40px;
+
+	z-index: 1;
 }
 
 .product__colors
@@ -8093,6 +8097,13 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	font-family: var(--second-family);
 	font-weight: 500;
 	text-transform: uppercase;
+
+	max-height: 42px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 

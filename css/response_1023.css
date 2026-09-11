@@ -1087,6 +1087,13 @@
 		margin-top: 10px;
 	}
 
+	.product__wrap-bot
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 15px;
+	}
+
 
 	.reviews__slider .swiper-overflow
 	{
@@ -1212,6 +1219,11 @@
 	.added-cart__info 
 	{
 		width: calc(100% - 95px);
+	}
+
+	.added-cart__name
+	{
+		max-height: 37px;
 	}
 
 
