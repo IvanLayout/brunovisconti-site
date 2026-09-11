@@ -872,6 +872,16 @@
 		font-size: 32px;
 	}
 
+	.search-article__all
+	{
+		font-size: 12px;
+	}
+
+	.search-article__all a
+	{
+		padding-bottom: 0;
+	}
+
 
 	.lk-info__top
 	{
