@@ -3725,7 +3725,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-family: var(--second-family);
 	font-weight: 500;
 	font-size: 56px;
-	line-height: 1.5;
+	line-height: 1.2;
 	text-align: center;
 	text-transform: uppercase;
 	color: #496893;
@@ -3739,7 +3739,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #AF895B;
 	text-align: center;
 	transform: rotate(-4deg);
-	margin-top: -46px;
+	/* margin-top: -46px; */
+	margin-top: -25px;
 }
 
 .main-slider__desc{
@@ -3862,13 +3863,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #AF895B;
 	text-align: center;
 	transform: rotate(-4deg);
-	margin-top: -46px;
+	margin-top: -27px;
 }
 
 .main-collections__desc{
 	margin: 41px auto 0;
 
-	font-size: 15px;
+	font-size: 16px;
 	max-width: 400px;
 	text-align: center;
 }
