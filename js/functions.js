@@ -351,6 +351,8 @@ $(() => {
 
 	$('body').on('click', '.product__cart-btn', function (e) {
 		e.preventDefault()
+
+		$(this).closest('.product__cart-box').addClass('_active')
 		
 		$(this).closest('.product__cart-btn').addClass('_hide')
 		$(this).closest('.product').find('.product__added').addClass('_show')

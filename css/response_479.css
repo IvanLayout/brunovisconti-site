@@ -375,7 +375,7 @@
 	}
 
 	.wrap-btn > *,
-	.section-gallery__btn > *
+	.section-gallery__btn
 	{
 		width: 100%;
 	}

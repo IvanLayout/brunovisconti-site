@@ -3058,16 +3058,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 .main-title a
 {
 	color: #B8956A;
-	border-bottom: 1px solid #B8956A;
 	text-decoration: none;
-	transition: border .2s linear;
+	transition: color .2s linear;
 }
 
 @media (any-hover: hover)
 {
 	.main-title a:hover
 	{
-		border-color: transparent;
+		color: #A07D54;
 	}
 }
 
@@ -6244,7 +6243,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 {
     .product__amount .amount__btn:not(:disabled):hover
     {
-        color: #fff;
+        color: #B8956A;
     }
 }
 
@@ -6377,6 +6376,11 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	{
 		opacity: 1;
 	}
+}
+
+.product__cart-box._active
+{
+	opacity: 1;
 }
 
 .product__size
@@ -6698,6 +6702,12 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .section-gallery__head
 {
 	width: calc(70% - 30px);
+}
+
+.section-gallery__btn
+{
+	padding-left: 24px;
+	padding-right: 24px;
 }
 
 .section-gallery .cont

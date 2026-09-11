@@ -584,6 +584,7 @@ $(() => {
 			if ( parent.hasClass('product__amount') ){
 				$(this).closest('.product').find('.product__added').removeClass('_show')
 				$(this).closest('.product').find('.product__cart-btn').removeClass('_hide')
+				$(this).closest('.product').find('.product__cart-box').removeClass('_active')
 			}
 
 			if ( parent.closest('.product-global-added').hasClass('product-global-added') ){
