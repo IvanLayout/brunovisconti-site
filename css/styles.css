@@ -6865,8 +6865,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
     top: 50%;
     right: 0;
     display: block;
-    width: 8px;
-    height: 5px;
+    width: 10px;
+    height: 7px;
     margin-top: -4px;
     stroke: #3D322C;
 	fill: none;
