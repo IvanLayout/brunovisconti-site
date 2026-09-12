@@ -7627,6 +7627,15 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	border-bottom: 1px solid #3D322C;
 	white-space: nowrap;
 	letter-spacing: 0.01em;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.contact-support__link a:hover
+	{
+		border-bottom-color: transparent;
+	}
 }
 
 .contact-support__desc
@@ -7717,6 +7726,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	z-index: 1;
 	margin: 0 auto;
 	overflow: hidden;
+
+	font-style: italic;
 }
 
 .delivery-stages__number::before
@@ -7858,13 +7869,13 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
 .news-page__desc
 {
-	margin: 40px auto 0;
+	margin: 20px auto 0;
 	max-width: 500px;
 }
 
 .news-page__author
 {
-	margin-top: 40px;
+	margin-top: 20px;
 	text-transform: uppercase;
 }
 
@@ -7891,7 +7902,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
 .news-page__socials
 {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .news-page__socials .socials__flex
@@ -7934,7 +7945,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .news-article__top
 {
 	position: sticky;
-	top: 0;
+	top: 30px;
 }
 
 .popular-article__slider
