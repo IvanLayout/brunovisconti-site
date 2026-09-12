@@ -1137,6 +1137,11 @@
 		padding-right: 15px;
 	}
 
+	.aside-lk__links-link
+	{
+		text-transform: none;
+	}
+
 	.form__btn-confirm
 	{
 		height: 40px;
@@ -1188,6 +1193,11 @@
 	.lk-bonus__bot
 	{
 		margin-top: 5px;
+	}
+
+	.lk-bonus__img._mob-img
+	{
+		display: none;
 	}
 
 	.history-table tr td
@@ -1402,6 +1412,15 @@
 		font-size: 16px;
 	}
 
+	.modal .main-title.modal-return__title-left
+	{
+		text-align: left;
+	}
+
+	.modal-return__table
+	{
+		margin-top: 0;
+	}
 
 	.modal-return__table .checkout-table__table
 	{
@@ -1417,11 +1436,31 @@
 	.modal-return__table .checkout-table__table tr
 	{
 		padding-left: 145px;
+		padding-bottom: 12px;
+	}
+
+	.modal-return__table .checkout-table__table tr + tr
+	{
+		margin-top: 0;
 	}
 
 	.modal-return__table .checkout-table__table .checkout-table__info
 	{
 		padding-bottom: 0;
+	}
+
+	.checkout-table__info-flex
+	{
+		gap: 8px;
+		margin-top: 4px;
+	}
+
+	.checkout-table__val
+	{
+		text-align: left;
+		margin-right: auto;
+		margin-left: 38px;
+		align-self: center;
 	}
 
 

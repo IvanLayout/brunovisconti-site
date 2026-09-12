@@ -926,6 +926,11 @@
 		margin-top: 4px;
 	}
 
+	.lk-orders__total-title
+	{
+		font-size: 12px;
+	}
+
 	.lk-orders__total-price,
 	.lk-order__number, 
 	.lk-order__total-price,
@@ -941,6 +946,11 @@
 	{
 		padding-top: 25px;
 		padding-bottom: 20px;
+	}
+
+	.lk-orders__order-number
+	{
+		font-size: 14px;
 	}
 
 
@@ -1039,12 +1049,6 @@
 		height: 10px;
 	}
 
-
-	.modal
-	{
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
 
 	.modal__agree,
 	.modal .form__agree

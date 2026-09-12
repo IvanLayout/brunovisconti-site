@@ -2110,6 +2110,10 @@ button
 	color: rgba(255, 56, 60, 0.4);
 }
 
+.lk-info__form .form__label span{
+	color: rgba(229, 26, 75, 0.5);
+}
+
 .section-subscribe__form .form__label
 {
 	line-height: 60px;
@@ -9707,6 +9711,11 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	margin-top: 10px;
 }
 
+.aside-lk__links-item._mob-btn
+{
+	display: none;
+}
+
 .aside-lk__links-link,
 .aside-lk__item-btn
 {
@@ -9768,6 +9777,22 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .lk-info__desc
 {
 	margin-top: 10px;
+}
+
+.lk-info__desc a
+{
+	text-decoration: none;
+	color: #5A4A42;
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.lk-info__desc a:hover
+	{
+		border-bottom-color: currentColor;
+	}
 }
 
 .lk-info__item + .lk-info__item
@@ -10367,7 +10392,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
 .lk-orders__total-title
 {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.4;
 
 	color: rgba(61, 50, 44, .5);
@@ -10730,6 +10755,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 {
 	text-align: right;
 	white-space: nowrap;
+	line-height: 1.6;
 }
 
 .lk-order__btns

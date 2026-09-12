@@ -2159,6 +2159,8 @@
 
 		transform: rotate(90deg);
 
+		margin-top: -3px;
+
 		background: url(../images/ic_arrow.svg) 50% no-repeat;
 	}
 
