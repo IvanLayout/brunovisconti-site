@@ -3550,7 +3550,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-content: center;
 	flex-wrap: wrap;
 
-    width: 36px;
+    width: 29px;
     height: 40px;
 	flex-shrink: 0;
 	color: #5A4A42;
@@ -9343,6 +9343,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .product-info__similar
 {
 	margin-top: 56px;
+	max-width: 806px;
 }
 
 .product-info__similar-title
@@ -9424,7 +9425,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 .product-fixed__product 
 {
     flex-wrap: nowrap;
-    width: 630px;
+    /* width: 630px; */
     margin-right: auto;
 }
 
@@ -9469,6 +9470,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	align-content: center;
 	flex-wrap: nowrap;
 	padding-left: 30px;
+
+	flex-shrink: 0;
 }
 
 .product-fixed__notify
@@ -11177,7 +11180,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
     width: 600px;
     max-width: 100%;
-	padding: 100px 60px;
+	padding: 70px 60px;
 
 	background: #fff;
 	flex-grow: 1;
