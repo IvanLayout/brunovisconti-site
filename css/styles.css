@@ -2172,6 +2172,11 @@ button
 	transition: border .2s linear;
 }
 
+.modal-share__item .form .form__textarea
+{
+	border-color: rgba(175, 137, 91, .4);
+}
+
 .form .form__textarea.error,
 .form .form__input.error{
 	border-color: #F52121 !important;
@@ -2430,6 +2435,12 @@ input[type=radio]:checked + .radio__text::after
     display: block;
 
     padding-left: 26px;
+}
+
+.checkbox__text-small
+{
+	font-size: 14px;
+	line-height: 1.5;
 }
 
 .checkbox__text::before
@@ -4683,6 +4694,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-left: 41px;
 	position: relative;
 	display: inline-block;
+	transition: color .2s linear;
 }
 
 .page-head__back a svg{
@@ -4694,6 +4706,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 	width: 31px;
 	height: 12px;
 	fill: currentColor;
+}
+
+@media (any-hover: hover)
+{
+	.page-head__back a:hover
+	{
+		color: #A07D54;
+	}
 }
 
 
