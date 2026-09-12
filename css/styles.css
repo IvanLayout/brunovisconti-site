@@ -2026,28 +2026,28 @@ button
 ------------------*/
 ::-webkit-input-placeholder
 {
-    color: #1B2745;
+    color: #5A4A42;
 
     opacity: .5;
 }
 
 ::-moz-placeholder
 {
-    color: #1B2745;
+    color: #5A4A42;
 
     opacity: .5;
 }
 
 :-moz-placeholder
 {
-    color: #1B2745;
+    color: #5A4A42;
 
     opacity: .5;
 }
 
 :-ms-input-placeholder
 {
-    color: #1B2745;
+    color: #5A4A42;
 
     opacity: .5;
 }
@@ -2236,6 +2236,11 @@ button
 {
     font-size: 14px;
     line-height: 1.3;
+}
+
+.form__agree.checkbox__text
+{
+	font-size: 14px;
 }
 
 .form__agree a
@@ -2456,11 +2461,11 @@ input[type=checkbox]:checked + .checkbox__text::before
     top: 6px;
     left: 3px;
 
-    width: 10px;
+    width: 11px;
     height: 8px;
 
     opacity: 0;
-    background: url(../images/ic_check.svg) 50% no-repeat;
+    background: url(../images/ic_check2.svg) 50% no-repeat;
 
     transition: opacity .2s linear;
 }
@@ -8157,6 +8162,8 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	letter-spacing: 0.01em;
 	text-transform: uppercase;
 	margin: 0 auto;
+
+	font-style: italic;
 }
 
 .we-believe__info
@@ -8271,7 +8278,6 @@ input[type=radio]:checked + .radio__text .radio__btn{
 {
 	width: calc(100%/5 - 20px);
 	margin: 20px 0 0 20px;
-	text-align: center;
 }
 
 .about-stages__img
@@ -8325,8 +8331,7 @@ input[type=radio]:checked + .radio__text .radio__btn{
 
 .about-stages__desc
 {
-	margin: 16px auto 0;
-	max-width: 280px;
+	margin-top: 16px;
 }
 
 
