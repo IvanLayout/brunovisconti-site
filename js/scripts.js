@@ -631,20 +631,22 @@ $(() => {
 
 
 	//Ползунки
-	$priceRange = $("#price_range").ionRangeSlider({
-		type     : 'double',
-		min      : 0,
-		max      : 123000,
-		from     : 11,
-		to       : 123000,
-		step     : 1,
-	}).data("ionRangeSlider")
+	if ($("#price_range").length){
+		$priceRange = $("#price_range").ionRangeSlider({
+			type     : 'double',
+			min      : 0,
+			max      : 123000,
+			from     : 11,
+			to       : 123000,
+			step     : 1,
+		}).data("ionRangeSlider")
 
-	$('.reset-btn').click(function(){
-		if ( $('.price_range').length ) {
-			$priceRange.reset()
-		}
-	})
+		$('.reset-btn').click(function(){
+			if ( $('.price_range').length ) {
+				$priceRange.reset()
+			}
+		})
+	}
 
 	$('body').on('click', '.filter-use__link', function (e) {
 		e.preventDefault()

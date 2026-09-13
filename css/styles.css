@@ -480,6 +480,10 @@ button
 	color: #B8956A;
 }
 
+.header__nav-link._active{
+	color: #B8956A;
+}
+
 .header__nav-link_burger{
 	padding-left: 37px;
 	position: relative;

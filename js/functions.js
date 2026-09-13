@@ -101,10 +101,12 @@ $(() => {
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
 
-		if ( !e.target.closest('.header-catalog') && !$(e.target).hasClass('open-catalog') && !$(e.target).closest('open-catalog') ) {
+		if ( !e.target.closest('.header-catalog') && !$(e.target).hasClass('open-catalog') && !e.target.closest('.open-catalog') ) {
 			$('.open-catalog').removeClass('_active')
 			$('.header-catalog').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
+			$('.header-list__item').removeClass('_active-pc')
+			$('.header-catalog__top').removeClass('_hide')
 			$('body').removeClass('_look-cat')
 		}
 
@@ -523,6 +525,8 @@ $(() => {
 			$(this).removeClass('_active')
 			$('.header-catalog').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
+			$('.header-list__item').removeClass('_active-pc')
+			$('.header-catalog__top').removeClass('_hide')
 			$('body').removeClass('_look-cat')
 		} else {
 			$(this).addClass('_active')
@@ -674,6 +678,8 @@ $(() => {
 			$('.open-catalog').removeClass('_active')
 			$('.header-catalog').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
+			$('.header-list__item').removeClass('_active-pc')
+			$('.header-catalog__top').removeClass('_hide')
 			$('body').removeClass('_look-cat')
 		}
 	})
