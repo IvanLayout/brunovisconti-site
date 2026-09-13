@@ -601,7 +601,7 @@
 		min-height: 111px;
 	}
 
-	.modal-cart .checkout-table__table tr + tr{
+	.modal-cart .checkout-table__table tr{
 		margin-top: 20px;
 	}
 
@@ -629,6 +629,28 @@
 	.modal-cart__delete-btns{
 		margin-top: 30px;
 		gap: 10px;
+	}
+
+	.slider-line{
+		display: none;
+	}
+
+	.product_big .product__size{
+		font-size: 14px;
+	}
+
+	.f-button.is-close-button{
+		top: 17px;
+		right: 17px;
+		width: 20px;
+		height: 20px;
+		color: #5A4A42;
+	}
+
+	.f-button.is-close-button svg{
+		width: 20px;
+		height: 20px;
+		stroke-width: 1.5px;
 	}
 	/*------------
 		Commit
@@ -1210,6 +1232,7 @@
 	.history-table tr td:first-child
 	{
 		padding-left: 20px;
+		width: 48px;
 	}
 
 	.history-table tr td:last-child
@@ -1322,7 +1345,8 @@
 		padding: 0;
 	}
 
-	.lk-order .checkout-table__table .checkout-table__info
+	.lk-order .checkout-table__table .checkout-table__info,
+	.modal-cart .checkout-table__table tr:last-child td
 	{
 		padding-bottom: 17px;
 	}

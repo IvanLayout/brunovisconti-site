@@ -941,6 +941,14 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+
+	.lk-order__stage:nth-last-child(2){
+		padding-right: 0;
+	}
+
+	.lk-order__stage._last-stage{
+		position: relative;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -1207,7 +1215,6 @@
 		width: 360px;
 		left: 20px;
 		right: 0;
-		top: 135px;
 	}
 
 	.added-cart__img
@@ -2265,8 +2272,7 @@
 		display: none;
 	}
 
-	.lk-order__stages-flex
-	{
+	.lk-order__stages{
 		overflow: hidden;
 		overflow-x: auto;
 		width: calc(100% + 40px);
@@ -2274,13 +2280,30 @@
 		margin-left: -20px;
 		padding-right: 20px;
 		padding-left: 20px;
-		white-space: nowrap;
 	}
 
 	.lk-order__stages::-webkit-scrollbar
     {
         display: none;
     }
+
+	.lk-order__stages-flex
+	{
+		white-space: nowrap;
+		gap: 0;
+	}
+
+	.lk-order__stage
+	{
+		width: calc(100%/4);
+	}
+
+	.checkout-table__img-box .checkout-table__img-fav{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	
 
 	.lk-order__stage
 	{

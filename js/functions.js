@@ -231,8 +231,6 @@ $(() => {
 			Fancybox.show([{
 				src: target,
 				type: 'inline',
-				showClass: 'f-fadeIn',
-				hideClass: 'f-fadeOut',
 			}], {
 				...commonOptions,
 				on: {
@@ -257,6 +255,7 @@ $(() => {
 	// Для картинок
 	Fancybox.bind('.fancy-img', {
 		...commonOptions,
+		zoomEffect: false,
 		Carousel: {
 			Thumbs: false,
 		},
@@ -292,6 +291,10 @@ $(() => {
 		$(this).inputmask(`${datamask}`, {
 			showMaskOnHover: false
 		})
+	})
+
+	$('[inputmode="numeric"]').inputmask('numeric', {
+		showMaskOnHover: false
 	})
 
 
@@ -359,6 +362,21 @@ $(() => {
 		$(this).closest('.product__cart-btn').addClass('_hide')
 		$(this).closest('.product').find('.product__added').addClass('_show')
 	})
+
+	let addedCartTimer;
+
+	$('body').on('click', '.add-to-cart', function (e) {
+
+		$('.added-cart').addClass('_show');
+
+		clearTimeout(addedCartTimer);
+
+		addedCartTimer = setTimeout(() => {
+			$('.added-cart').removeClass('_show');
+		}, 1000);
+
+	});
+	
 
 	$('body').on('click', '.product-global-buy', function (e) {
 		e.preventDefault()
@@ -764,6 +782,10 @@ $(() => {
 			scrollTop: 0
 		}, 1000)
 	})
+
+	if( $('.message-field').length ){
+		toggleMessageField();
+	}
 })
 
 
@@ -907,3 +929,10 @@ if (document.querySelector('.map-js')) {
 		myMap.geoObjects.add(myPlacemark);
 	}
 }
+
+function toggleMessageField() {
+    $('.checkout-additional .message-field')
+        .prop('disabled', !$('.add-message').is(':checked'));
+}
+
+$('.add-message').on('change', toggleMessageField);

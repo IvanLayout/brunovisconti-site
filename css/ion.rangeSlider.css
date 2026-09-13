@@ -332,6 +332,7 @@
     cursor: default;
     white-space: nowrap;
     pointer-events: none;
+    visibility: visible !important;
 }
 
 .irs-from
@@ -357,7 +358,7 @@
     font-weight: 400;
     line-height: 1.4;
 
-    display: block;
+    display: none;
 
     cursor: default;
     text-align: center;

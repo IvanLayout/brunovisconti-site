@@ -243,6 +243,10 @@
 	.modal-cart__top-delete svg{
 		width: 16px;
 	}
+
+	.modal-small{
+		width: 100%;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -316,6 +320,10 @@
 	.product__size,
 	.product_big .product__use
 	{
+		font-size: 12px;
+	}
+
+	.product_big .product__size{
 		font-size: 12px;
 	}
 
@@ -618,12 +626,33 @@
 
 	.text-block h2
 	{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.text-block * + h2{
+		margin-top: 30px;
+	}
+
+	.text-block h3
+	{
 		font-size: 16px;
 		margin-bottom: 10px;
 	}
 
-	.text-block * + h2 
+	.text-block * + h3 
 	{
+		margin-top: 20px;
+	}
+
+	.text-block h4
+	{
+		font-size: 14px;
+
+		margin-bottom: 10px;
+	}
+
+	.text-block * + h4{
 		margin-top: 20px;
 	}
 

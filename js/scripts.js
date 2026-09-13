@@ -73,6 +73,10 @@ $(() => {
 					let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
 
 					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+					updateSlider(swiper);
+				},
+				slideChange: function (swiper) {
+					updateSlider(swiper);
 				},
 				resize: function (swiper) {
 					let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
@@ -81,6 +85,16 @@ $(() => {
 				}
 			}
 		})
+
+		function updateSlider(swiper) {
+			let total = swiper.slides.length;
+			let current = swiper.realIndex + 1;
+			let progress = (current / total) * 100;
+
+			$(swiper.el)
+				.find('.slider-line span')
+				.css('height', progress + '%');
+		}
 	}
 
 	if ($('.inner-news__slider').length) {
@@ -547,10 +561,17 @@ $(() => {
 			container: '#datepicker-here1',
 			autoClose: true,
 			position: 'bottom left',
-			range: true,
-    		multipleDatesSeparator: '-'
 		})
 	}
+
+	$('._datetime').each(function(){
+		$(this).inputmask("datetime", {
+			alias: "datetime",
+			inputFormat: "dd.mm.yyyy",
+			placeholder: "дд.мм.гггг",
+			showMaskOnHover: false
+		})
+	})
 
 
 	//

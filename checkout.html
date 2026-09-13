@@ -1385,7 +1385,7 @@
 													</div>
 
 													<div class="product__cart-box">
-														<button type="button" class="product__cart-btn">
+														<button type="button" class="product__cart-btn add-to-cart">
 															<svg>
 																<use xlink:href="images/sprite.svg#cart"></use>
 															</svg>
@@ -1454,7 +1454,7 @@
 													</div>
 
 													<div class="product__cart-box">
-														<button type="button" class="product__cart-btn">
+														<button type="button" class="product__cart-btn add-to-cart">
 															<svg>
 																<use xlink:href="images/sprite.svg#cart"></use>
 															</svg>
@@ -1522,7 +1522,7 @@
 													</div>
 
 													<div class="product__cart-box">
-														<button type="button" class="product__cart-btn">
+														<button type="button" class="product__cart-btn add-to-cart">
 															<svg>
 																<use xlink:href="images/sprite.svg#cart"></use>
 															</svg>
@@ -1591,7 +1591,7 @@
 													</div>
 
 													<div class="product__cart-box">
-														<button type="button" class="product__cart-btn">
+														<button type="button" class="product__cart-btn add-to-cart">
 															<svg>
 																<use xlink:href="images/sprite.svg#cart"></use>
 															</svg>
@@ -2697,7 +2697,7 @@
 															</div>
 															<div class="checkbox">
 																<label class="checkbox__label">
-																	<input type="checkbox" name="" checked>
+																	<input type="checkbox" name="" checked class="add-message">
 
 																	<span class="checkbox__text checkbox__text_agree">Добавить сообщение</span>
 																</label>
@@ -2706,7 +2706,7 @@
 
 														<div class="form__line checkout-additional__bot">
 															<div class="form__field">
-																<input type="text" value="" placeholder="Добавить сообщение" class="form__input ">
+																<input type="text" value="" placeholder="Добавить сообщение" disabled class="form__input message-field">
 															</div>
 														</div>
 													</div>
@@ -3017,6 +3017,24 @@
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
 
+		<!-- добавлен в корзину -->
+
+		<div class="added-cart">
+			<div class="added-cart__flex _flex">
+				<div class="added-cart__img">
+					<img data-src="images/tmp/added_cart1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+				</div>
+
+				<div class="added-cart__info">
+					<div class="added-cart__top">добавлен в корзину</div>
+
+					<div class="added-cart__name">Ручка гелевая BrunoVisconti® 0.5 мм, синий UniWrite</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- добавлен в корзину -->
+
 		<div id="modal-filter" class="modal modal-filter">
 			<div class="modal__box">
 				<form action="" class="modal-filter__form form">
@@ -3029,7 +3047,7 @@
 									<span>Категория</span>
 
 									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
+										<use xlink:href="images/sprite.svg#arrow6"></use>
 									</svg>
 								</div>
 
@@ -3069,7 +3087,7 @@
 									<span>Цвет</span>
 
 									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
+										<use xlink:href="images/sprite.svg#arrow6"></use>
 									</svg>
 								</div>
 
@@ -3116,7 +3134,7 @@
 									<span>Формат</span>
 
 									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
+										<use xlink:href="images/sprite.svg#arrow6"></use>
 									</svg>
 								</div>
 
@@ -3167,7 +3185,7 @@
 									<span>Коллекция</span>
 
 									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
+										<use xlink:href="images/sprite.svg#arrow6"></use>
 									</svg>
 								</div>
 
@@ -3270,7 +3288,7 @@
 									<span>Наличие</span>
 
 									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
+										<use xlink:href="images/sprite.svg#arrow6"></use>
 									</svg>
 								</div>
 
@@ -3303,7 +3321,7 @@
 									<span>Статус</span>
 
 									<svg>
-										<use xlink:href="images/sprite.svg#arrow3"></use>
+										<use xlink:href="images/sprite.svg#arrow6"></use>
 									</svg>
 								</div>
 
@@ -3638,11 +3656,19 @@
 								<tbody>
 									<tr>
 										<td class="checkout-table__img">
-											<a href="/" class="checkout-table__img-wrap">
-												<span>
-													<img src="images/tmp/cart_product1.png" alt="">
-												</span>
-											</a>
+											<div class="checkout-table__img-box">
+												<a href="/" class="checkout-table__img-wrap">
+													<span>
+														<img src="images/tmp/cart_product1.png" alt="">
+													</span>
+												</a>
+
+												<button type="button" class="checkout-table__img-fav product-favorite">
+													<svg>
+														<use xlink:href="images/sprite.svg#favorite"></use>
+													</svg>
+												</button>
+											</div>
 										</td>
 										<td class="checkout-table__info">
 											<div class="checkout-table__name">
@@ -3862,7 +3888,7 @@
 								</div>
 								<div class="checkbox">
 									<label class="checkbox__label">
-										<input type="checkbox" name="" checked>
+										<input type="checkbox" name="" class="add-message">
 
 										<span class="checkbox__text checkbox__text_agree">Добавить сообщение</span>
 									</label>
@@ -3871,7 +3897,7 @@
 
 							<div class="form__line checkout-additional__bot">
 								<div class="form__field">
-									<input type="text" value="" placeholder="Добавить сообщение" class="form__input ">
+									<input type="text" value="" placeholder="Добавить сообщение" disabled class="form__input message-field">
 								</div>
 							</div>
 						</div>
