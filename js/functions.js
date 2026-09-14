@@ -125,13 +125,30 @@ $(() => {
 		}
 	})
 
-	$('body').on('click', '[data-mini-close]', function(e) {
+	$('body').on('click', '.mini-over, [data-mini-close]', function(e) {
 		e.preventDefault()
 
 		$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
 		$('.mini-over').removeClass('_show')
+		$('body').removeClass('_lock-mini')
 
 		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
+
+	// Мини всплывающие окна
+	$('.sorting__choice-btn').click(function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$('body').addClass('_lock-mini')
+
+			$('.mini-over').addClass('_show')
+		} else {
+			$('body').removeClass('_lock-mini')
+
+			$('.mini-over').addClass('_show')
+		}
 	})
 
 	// Плавная прокрутка к якорю

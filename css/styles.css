@@ -235,7 +235,8 @@ body
     background: #FFFCF9;
 }
 
-._lock-add
+._lock-add,
+._lock-mini
 {
     overflow: hidden;
 }
@@ -3683,6 +3684,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     pointer-events: auto;
 
     opacity: 1;
+}
+
+.mini-over
+{
+	display: none;
 }
 
 .main-slider{
