@@ -1271,6 +1271,11 @@
 		border-top: none;
 	}
 
+	.sorting__val
+	{
+		margin-top: -1px;
+	}
+
 	
 	.filter-use__link,
 	.filter-use__clear

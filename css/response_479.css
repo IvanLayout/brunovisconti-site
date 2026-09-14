@@ -1091,6 +1091,19 @@
 		margin-top: 15px;
 	}
 
+
+	.sorting-radio + .sorting-radio
+	{
+		margin-top: 15px;
+	}
+
+	.sorting-radio__text
+	{
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+
 	.filter__reset
 	{
 		font-size: 12px;
