@@ -1116,6 +1116,7 @@
 		padding: 30px 20px;
 		top: auto;
 		bottom: 0;
+		z-index: 92;
 	}
 
 	.sorting-radio__text
@@ -1183,7 +1184,7 @@
 	.mini-over
     {
         position: fixed;
-        z-index: 29;
+        z-index: 91;
         top: 0;
         left: 0;
 

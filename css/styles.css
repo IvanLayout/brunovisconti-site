@@ -5865,6 +5865,11 @@ input[type=radio]:checked + .radio__text .radio__btn{
 	right: 0;
 }
 
+.sorting__choice-list_right{
+	left: 0;
+	right: auto;
+}
+
 .sorting__choice-list .scrollbar
 {
     overflow: hidden;

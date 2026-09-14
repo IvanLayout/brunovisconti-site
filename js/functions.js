@@ -151,6 +151,19 @@ $(() => {
 		}
 	})
 
+	$('.sorting-radio__label').click(function (e) {
+		let nameSel = $(this).find('.sorting-radio__text').text()
+		$(this).closest('.sorting__choice').find('.sorting__choice-btn').text(nameSel)
+
+		if ( $(window).width() > 767 ) {
+			$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
+			$('.mini-over').removeClass('_show')
+			$('body').removeClass('_lock-mini')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
+
 	// Плавная прокрутка к якорю
 	$('.scroll-btn').click(function(e) {
 		e.preventDefault()
