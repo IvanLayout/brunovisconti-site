@@ -235,8 +235,7 @@ body
     background: #FFFCF9;
 }
 
-._lock-add,
-._lock-mini
+._lock-add
 {
     overflow: hidden;
 }

@@ -1211,6 +1211,10 @@
         opacity: .2;
     }
 
+	._lock-mini{
+		overflow: hidden;
+	}
+
 
 	.sorting__btns-btn + .sorting__btns-btn 
 	{
